@@ -4,30 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Resume & Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="header-top">
-      <h1>Hi, I'm Michael</h1>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/mneang" target="_blank">
-          <img src="pictures/linkedin.png" alt="LinkedIn" />
+  <!-- Header / Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Hi, I'm Michael</a>
+      <div class="d-flex">
+        <a href="https://www.linkedin.com/in/mneang" target="_blank" class="me-3">
+          <img src="pictures/linkedin.png" alt="LinkedIn" width="32" height="32" />
         </a>
         <a href="https://github.com/mneang" target="_blank">
-          <img src="pictures/github.png" alt="GitHub" />
+          <img src="pictures/github.png" alt="GitHub" width="32" height="32" />
         </a>
       </div>
     </div>
-  </header>
-  <main>
-    <!-- About Me Section with Language Picker -->
-    <section id="about">
-      <div class="section-header">
+  </nav>
+
+  <main class="container my-5">
+    <!-- About Me Section -->
+    <section id="about" class="mb-5">
+      <div class="d-flex justify-content-between align-items-center mb-3">
         <h2>About Me</h2>
         <div class="language-picker">
-          <label for="about-language">Language: </label>
-          <select id="about-language">
+          <label for="about-language" class="me-2">Language:</label>
+          <select id="about-language" class="form-select form-select-sm w-auto">
             <option value="en">English</option>
             <option value="zh">中文</option>
             <option value="ja">日本語</option>
@@ -36,46 +40,60 @@
         </div>
       </div>
       <p id="about-text">
-        Hello! With a solid background in Information Systems and Operations Management, I’ve dedicated my career to harnessing data to drive strategic decisions and optimize processes. Whether managing databases or refining business intelligence, I approach every challenge with the focus of a tactician on the field – always pushing for excellence. Let’s connect and create meaningful impact.
+        Hello! With a solid background in Information Systems and Operations Management, I’ve dedicated my career to harnessing data to drive strategic decisions and optimize processes. I approach every challenge with the focus of a tactician on the field – always pushing for excellence. Let’s connect and create meaningful impact.
       </p>
-      <img src="pictures/profile.jpeg" alt="Profile Picture" class="profile-img" />
+      <div class="text-center">
+        <img src="pictures/profile.jpeg" alt="Profile Picture" class="img-fluid rounded shadow" style="max-width:200px;" />
+      </div>
     </section>
 
-    <!-- Personal Pictures Carousel -->
-    <section id="carousel">
-      <h2>Gallery</h2>
-      <div class="carousel">
-        <img class="carousel-img active" src="pictures/personal1.jpeg" alt="In the heart of Tokyo’s teamLab Borderless—standing still in a world of light, reflection, and quiet curiosity." />
-        <img class="carousel-img" src="pictures/personal2.jpeg" alt="A shared moment with Japan’s Consul-General in Los Angeles—bridging cultures with purpose and respect." />
-        <img class="carousel-img" src="pictures/personal3.jpeg" alt="First day as a data analyst at Össur—stepping into a mission to serve through insight and intention." />
-        <!-- Add more images as needed -->
+    <!-- Gallery Carousel -->
+    <section id="carousel" class="mb-5">
+      <h2 class="mb-3">Gallery</h2>
+      <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="pictures/personal1.jpeg" class="d-block w-100" alt="In the heart of Tokyo’s teamLab Borderless—standing still in a world of light, reflection, and quiet curiosity.">
+          </div>
+          <div class="carousel-item">
+            <img src="pictures/personal2.jpeg" class="d-block w-100" alt="A shared moment with Japan’s Consul-General in Los Angeles—bridging cultures with purpose and respect.">
+          </div>
+          <div class="carousel-item">
+            <img src="pictures/personal3.jpeg" class="d-block w-100" alt="First day as a data analyst at Össur—stepping into a mission to serve through insight and intention.">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience">
+    <section id="experience" class="mb-5">
       <h2>Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Associate Data Analyst – Össur</h3>
-          <span class="date">Feb 2023 - Present</span>
-          <p>Irvine, CA</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Global Supply Chain Intern – Howmet Aerospace</h3>
-          <span class="date">Jun 2022 - Sep 2022</span>
-          <p>Carson, CA</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Internal Audit Analyst Intern – Optum</h3>
-          <span class="date">Jun 2021 - Aug 2021</span>
-          <p>Irvine, CA</p>
-        </div>
-      </div>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <h3 class="mb-1">Associate Data Analyst – Össur</h3>
+          <small class="text-muted">Feb 2023 - Present | Irvine, CA</small>
+        </li>
+        <li class="list-group-item">
+          <h3 class="mb-1">Global Supply Chain Intern – Howmet Aerospace</h3>
+          <small class="text-muted">Jun 2022 - Sep 2022 | Carson, CA</small>
+        </li>
+        <li class="list-group-item">
+          <h3 class="mb-1">Internal Audit Analyst Intern – Optum</h3>
+          <small class="text-muted">Jun 2021 - Aug 2021 | Irvine, CA</small>
+        </li>
+      </ul>
     </section>
 
     <!-- Education Section -->
-    <section id="education">
+    <section id="education" class="mb-5">
       <h2>Education</h2>
       <p>
         <strong>California State University, Long Beach</strong><br />
@@ -84,154 +102,216 @@
       </p>
     </section>
 
-    <!-- Certifications Section with Individual Images and Badge Links -->
-    <section id="certifications">
+    <!-- Certifications Section -->
+    <section id="certifications" class="mb-5">
       <h2>Certifications</h2>
-      <div class="certifications-grid">
-        <div class="cert-card">
-          <img src="pictures/powerbi.png" alt="Power BI Certification" class="cert-img" />
-          <h3>Microsoft Certified: Power BI Data Analyst Associate (PL-300)</h3>
-          <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/6F27BF93FE06C73B?sharingId=4CF480AA9FFFCD47" target="_blank">View Badge</a>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="pictures/powerbi.png" class="card-img-top mx-auto mt-3" alt="Power BI Certification" style="max-width:150px;">
+            <div class="card-body">
+              <h5 class="card-title">Microsoft Certified: Power BI Data Analyst Associate (PL-300)</h5>
+              <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/6F27BF93FE06C73B?sharingId=4CF480AA9FFFCD47" target="_blank" class="btn btn-primary btn-sm">View Badge</a>
+            </div>
+          </div>
         </div>
-        <div class="cert-card">
-          <img src="pictures/azuredata.png" alt="Azure Data Fundamentals" class="cert-img" />
-          <h3>Microsoft Certified: Azure Data Fundamentals (DP-900)</h3>
-          <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/4408CFDCBEA813A?sharingId=4CF480AA9FFFCD47" target="_blank">View Badge</a>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="pictures/azuredata.png" class="card-img-top mx-auto mt-3" alt="Azure Data Fundamentals" style="max-width:150px;">
+            <div class="card-body">
+              <h5 class="card-title">Microsoft Certified: Azure Data Fundamentals (DP-900)</h5>
+              <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/4408CFDCBEA813A?sharingId=4CF480AA9FFFCD47" target="_blank" class="btn btn-primary btn-sm">View Badge</a>
+            </div>
+          </div>
         </div>
-        <div class="cert-card">
-          <img src="pictures/azurefundamentals.png" alt="Azure Fundamentals" class="cert-img" />
-          <h3>Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
-          <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/6A74A3631AF155C0?sharingId=4CF480AA9FFFCD47" target="_blank">View Badge</a>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="pictures/azurefundamentals.png" class="card-img-top mx-auto mt-3" alt="Azure Fundamentals" style="max-width:150px;">
+            <div class="card-body">
+              <h5 class="card-title">Microsoft Certified: Azure Fundamentals (AZ-900)</h5>
+              <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/6A74A3631AF155C0?sharingId=4CF480AA9FFFCD47" target="_blank" class="btn btn-primary btn-sm">View Badge</a>
+            </div>
+          </div>
         </div>
-        <div class="cert-card">
-          <img src="pictures/tableau.png" alt="Tableau Certification" class="cert-img" />
-          <h3>Tableau Certified Data Analyst (TDA-C01)</h3>
-          <a href="https://www.credly.com/badges/4964a3ec-ab2f-4755-9ff5-6e3568ea888a/public_url" target="_blank">View Badge</a>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="pictures/tableau.png" class="card-img-top mx-auto mt-3" alt="Tableau Certification" style="max-width:150px;">
+            <div class="card-body">
+              <h5 class="card-title">Tableau Certified Data Analyst (TDA-C01)</h5>
+              <a href="https://www.credly.com/badges/4964a3ec-ab2f-4755-9ff5-6e3568ea888a/public_url" target="_blank" class="btn btn-primary btn-sm">View Badge</a>
+            </div>
+          </div>
         </div>
-        <div class="cert-card">
-          <img src="pictures/alteryx.png" alt="Alteryx Certification" class="cert-img" />
-          <h3>Alteryx Designer Advanced Certification</h3>
-          <a href="https://www.credly.com/badges/8ef70123-e9aa-48c2-9a30-7b41ad9b7cfb" target="_blank">View Badge</a>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="pictures/alteryx.png" class="card-img-top mx-auto mt-3" alt="Alteryx Certification" style="max-width:150px;">
+            <div class="card-body">
+              <h5 class="card-title">Alteryx Designer Advanced Certification</h5>
+              <a href="https://www.credly.com/badges/8ef70123-e9aa-48c2-9a30-7b41ad9b7cfb" target="_blank" class="btn btn-primary btn-sm">View Badge</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="mb-5">
       <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="pictures/User Interface.jpg" alt="Snapdragon-AI Screenshot" />
-          <h3>Snapdragon AI: Multilingual Translator</h3>
-          <p class="project-award">2nd Place out of 27 – Windows on Snapdragon AI Hackathon</p>
-          <p>
-            A multilingual, on-device translator built for Snapdragon—real-time, offline translation between English, Japanese, Korean, and Chinese, all powered by optimized <strong>AI</strong> and <strong>Python</strong>. Lightweight, fast, and quietly powerful.
-          </p>
-          <a href="https://github.com/mneang/Snapdragon-AI" target="_blank">View on GitHub</a>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="pictures/User Interface.jpg" class="card-img-top" alt="Snapdragon-AI Screenshot" />
+            <div class="card-body">
+              <h5 class="card-title">Snapdragon AI: Multilingual Translator</h5>
+              <p class="card-text text-muted">2nd Place out of 27 – Windows on Snapdragon AI Hackathon</p>
+              <p class="card-text">
+                A multilingual, on-device translator built for Snapdragon—real-time, offline translation between English, Japanese, Korean, and Chinese, all powered by optimized <strong>AI</strong> and <strong>Python</strong>. Lightweight, fast, and quietly powerful.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="https://github.com/mneang/Snapdragon-AI" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+            </div>
+          </div>
         </div>
 
-        <div class="project-card">
-          <img src="pictures/sakura guide.png" alt="Sakura-Guide Screenshot" />
-          <h3>Sakura Guide さくらガイド</h3>
-          <p>
-            Your thoughtful companion through Japan—an elegant blend of <strong>JavaScript</strong>, design, and real-time guidance, delivering bilingual, location-aware travel insights with grace and clarity.
-          </p>
-          <a href="https://github.com/mneang/Sakura-Guide" target="_blank">View on GitHub</a>
+        <div class="col">
+          <div class="card h-100">
+            <img src="pictures/sakura guide.png" class="card-img-top" alt="Sakura-Guide Screenshot" />
+            <div class="card-body">
+              <h5 class="card-title">Sakura Guide さくらガイド</h5>
+              <p class="card-text">
+                Your thoughtful companion through Japan—an elegant blend of <strong>JavaScript</strong>, design, and real-time guidance, delivering bilingual, location-aware travel insights with grace and clarity.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="https://github.com/mneang/Sakura-Guide" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+            </div>
+          </div>
         </div>
 
-        <div class="project-card">
-          <img src="pictures/supplychainoptimization.png" alt="Supply Chain Optimization Screenshot" />
-          <h3>Supply Chain Optimization</h3>
-          <p>
-            A focused analysis of supplier lead times and inventory risk using <strong>Python</strong>. This project identifies inefficiencies and supports better planning through clear, actionable data insights.
-          </p>
-          <a href="https://github.com/mneang/data-analytics/tree/main/Supply-chain-optimization" target="_blank">View on GitHub</a>
+        <div class="col">
+          <div class="card h-100">
+            <img src="pictures/supplychainoptimization.png" class="card-img-top" alt="Supply Chain Optimization Screenshot" />
+            <div class="card-body">
+              <h5 class="card-title">Supply Chain Optimization</h5>
+              <p class="card-text">
+                A focused analysis of supplier lead times and inventory risk using <strong>Python</strong>. This project identifies inefficiencies and supports better planning through clear, actionable data insights.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="https://github.com/mneang/data-analytics/tree/main/Supply-chain-optimization" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+            </div>
+          </div>
         </div>
 
-        <div class="project-card">
-          <img src="pictures/retail.png" alt="Retail Superstore Analysis Screenshot" />
-          <h3>Retail Superstore Analysis</h3>
-          <p>
-            A calm, clear look at retail performance—built with <strong>SQL</strong>, <strong>Excel</strong>, and <strong>Tableau</strong>, this dashboard uncovers patterns and trends that quietly guide smart business moves.
-          </p>
-          <a href="https://github.com/mneang/data-analytics/tree/main/retail-superstore-analysis" target="_blank">View on GitHub</a>
+        <div class="col">
+          <div class="card h-100">
+            <img src="pictures/retail.png" class="card-img-top" alt="Retail Superstore Analysis Screenshot" />
+            <div class="card-body">
+              <h5 class="card-title">Retail Superstore Analysis</h5>
+              <p class="card-text">
+                A calm, clear look at retail performance—built with <strong>SQL</strong>, <strong>Excel</strong>, and <strong>Tableau</strong>, this dashboard uncovers patterns and trends that quietly guide smart business moves.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="https://github.com/mneang/data-analytics/tree/main/retail-superstore-analysis" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+            </div>
+          </div>
         </div>
 
-        <div class="project-card">
-          <img src="pictures/smartainventory.png" alt="SmartAInventory Screenshot" />
-          <h3>SmartAInventory</h3>
-          <p class="project-award">Top 13 out of 83 – Microsoft Fabric and AI Learning Hackathon</p>
-          <p>
-            A data-driven inventory system built with <strong>Microsoft Fabric</strong>, <strong>Power BI</strong>, and <strong>Azure OpenAI</strong>. Fusing engineering and analytics, it forecasts demand, reduces risk, and helps businesses stay agile with insight-led decisions.
-          </p>
-          <a href="https://github.com/mneang/SmartAInventory" target="_blank">View on GitHub</a>
+        <div class="col">
+          <div class="card h-100">
+            <img src="pictures/smartainventory.png" class="card-img-top" alt="SmartAInventory Screenshot" />
+            <div class="card-body">
+              <h5 class="card-title">SmartAInventory</h5>
+              <p class="card-text text-muted">Top 13 out of 83 – Microsoft Fabric and AI Learning Hackathon</p>
+              <p class="card-text">
+                A data-driven inventory system built with <strong>Microsoft Fabric</strong>, <strong>Power BI</strong>, and <strong>Azure OpenAI</strong>. Fusing engineering and analytics, it forecasts demand, reduces risk, and helps businesses stay agile with insight-led decisions.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="https://github.com/mneang/SmartAInventory" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="mb-5">
       <h2>Key Competencies</h2>
-      <div class="skills-category">
-        <h3>Data Visualization & Reporting</h3>
-        <ul>
-          <li>Power BI</li>
-          <li>Tableau</li>
-        </ul>
-      </div>
-      <div class="skills-category">
-        <h3>Data Analysis & Manipulation</h3>
-        <ul>
-          <li>SQL (Microsoft SQL Server, PostgreSQL)</li>
-          <li>DAX</li>
-          <li>Python</li>
-          <li>R</li>
-          <li>M Language (Power Query)</li>
-        </ul>
-      </div>
-      <div class="skills-category">
-        <h3>Database & Cloud Technologies</h3>
-        <ul>
-          <li>MongoDB, Apache Gremlin, NoSQL</li>
-          <li>Azure Synapse Analytics</li>
-          <li>Azure Data Factory</li>
-          <li>Azure Cosmos DB</li>
-        </ul>
-      </div>
-      <div class="skills-category">
-        <h3>Excel & Automation</h3>
-        <ul>
-          <li>VBA</li>
-          <li>Pivot Tables/Charts</li>
-          <li>Power Pivot</li>
-          <li>Lookups</li>
-        </ul>
-      </div>
-      <div class="skills-category">
-        <h3>General Software</h3>
-        <ul>
-          <li>Microsoft Office Suite (Excel, Access, Word, PowerPoint, Visio, OneNote, Teams)</li>
-        </ul>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h3>Data Visualization & Reporting</h3>
+          <ul>
+            <li>Power BI</li>
+            <li>Tableau</li>
+          </ul>
+        </div>
+        <div class="col-md-6 mb-3">
+          <h3>Data Analysis & Manipulation</h3>
+          <ul>
+            <li>SQL (Microsoft SQL Server, PostgreSQL)</li>
+            <li>DAX</li>
+            <li>Python</li>
+            <li>R</li>
+            <li>M Language (Power Query)</li>
+          </ul>
+        </div>
+        <div class="col-md-6 mb-3">
+          <h3>Database & Cloud Technologies</h3>
+          <ul>
+            <li>MongoDB, Apache Gremlin, NoSQL</li>
+            <li>Azure Synapse Analytics</li>
+            <li>Azure Data Factory</li>
+            <li>Azure Cosmos DB</li>
+          </ul>
+        </div>
+        <div class="col-md-6 mb-3">
+          <h3>Excel & Automation</h3>
+          <ul>
+            <li>VBA</li>
+            <li>Pivot Tables/Charts</li>
+            <li>Power Pivot</li>
+            <li>Lookups</li>
+          </ul>
+        </div>
+        <div class="col-md-12">
+          <h3>General Software</h3>
+          <ul>
+            <li>Microsoft Office Suite (Excel, Access, Word, PowerPoint, Visio, OneNote, Teams)</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <!-- Contact Me Section -->
-    <section id="contact">
+    <section id="contact" class="mb-5">
       <h2>Contact Me</h2>
-      <form action="mailto:mikeyneang11@gmail.com" method="post" enctype="text/plain">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="submit">Send Message</button>
+      <form action="mailto:mikeyneang11@gmail.com" method="post" enctype="text/plain" class="w-100">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" id="name" name="name" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message:</label>
+          <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Send Message</button>
       </form>
     </section>
   </main>
-  <footer>
-    <p>© 2025 Michael Neang. All rights reserved.</p>
+
+  <footer class="bg-dark text-center text-white py-3">
+    <p class="mb-0">© 2025 Michael Neang. All rights reserved.</p>
   </footer>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
