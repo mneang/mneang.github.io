@@ -17,26 +17,14 @@
     <div class="container">
       <a class="navbar-brand" href="#" data-key="navbarTitle">Hi, I'm Michael</a>
       <div class="d-flex align-items-center">
-        <select
-          id="languageSelect"
-          class="form-select form-select-sm me-3 w-auto"
-        >
+        <select id="languageSelect" class="form-select form-select-sm me-3 w-auto">
           <option value="en">English</option>
           <option value="ja">日本語</option>
           <option value="zh">中文</option>
           <option value="ko">한국어</option>
         </select>
-        <a
-          href="https://www.linkedin.com/in/mneang"
-          target="_blank"
-          class="me-2"
-        >
-          <img
-            src="pictures/linkedin.png"
-            alt="LinkedIn"
-            width="32"
-            height="32"
-          />
+        <a href="https://www.linkedin.com/in/mneang" target="_blank" class="me-2">
+          <img src="pictures/linkedin.png" alt="LinkedIn" width="32" height="32" />
         </a>
         <a href="https://github.com/mneang" target="_blank">
           <img src="pictures/github.png" alt="GitHub" width="32" height="32" />
@@ -45,92 +33,35 @@
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <main class="container my-5">
-    <!-- About Section with Two Columns -->
+  <!-- Hero Section -->
+  <header class="hero-section text-center py-5 mb-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold" data-key="heroTitle">Your Data, My Passion</h1>
+      <p class="lead" data-key="heroSubtitle">
+        Transforming insights into impact—one dataset at a time.
+      </p>
+      <a href="#about" class="btn btn-outline-light btn-lg" data-key="heroButton">Discover More</a>
+    </div>
+  </header>
+
+  <main class="container mb-5">
+    <!-- About Section (Expanded) -->
     <section id="about" class="mb-5">
-      <div class="row align-items-start">
-        <div class="col-lg-6 mb-4">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
           <h2 data-key="aboutTitle">Introduction</h2>
           <p data-key="aboutText">
-            Welcome! With a strong foundation in Information Systems and
-            Operations Management, I dedicate my work to harnessing data to spark
-            meaningful decisions and drive innovation. I view every challenge as
-            an opportunity to excel and inspire change. Join me on this journey
-            toward impactful transformation.
+            I am a dedicated data professional with a relentless passion for transforming raw data into compelling stories and strategic insights. With a robust background in Information Systems and Operations Management, I approach every challenge with creativity, determination, and a commitment to excellence. I believe data is more than numbers—it’s the key to unlocking potential and driving sustainable growth. My mission is to empower organizations with innovative, data-driven solutions that inspire change and deliver real value.
           </p>
-          <div class="text-center">
-            <img
-              src="pictures/profile.jpeg"
-              alt="Profile Picture"
-              class="img-fluid rounded shadow"
-              style="max-width: 200px;"
-            />
-          </div>
         </div>
-        <!-- Carousel in the Right Column -->
-        <div class="col-lg-6">
-          <div
-            id="aboutCarousel"
-            class="carousel slide shadow-sm"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="pictures/personal1.jpeg"
-                  class="d-block w-100 about-carousel-img"
-                  alt="Experiencing the brilliance of Tokyo’s teamLab Borderless"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <p data-key="carousel1">Experiencing the brilliance of Tokyo’s teamLab Borderless</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="pictures/personal2.jpeg"
-                  class="d-block w-100 about-carousel-img"
-                  alt="A memorable moment with Japan’s Consul-General in LA"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <p data-key="carousel2">A memorable moment with Japan’s Consul-General in LA</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="pictures/personal3.jpeg"
-                  class="d-block w-100 about-carousel-img"
-                  alt="My inaugural day as a data analyst at Össur"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <p data-key="carousel3">My inaugural day as a data analyst at Össur</p>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#aboutCarousel"
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden" data-key="prev">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#aboutCarousel"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden" data-key="next">Next</span>
-            </button>
-          </div>
+        <div class="col-lg-6 text-center">
+          <img src="pictures/profile.jpeg" alt="Profile Picture" class="img-fluid rounded shadow" style="max-width:250px;">
+          <!-- Optionally, you can include a small carousel here if you want additional images near your profile -->
         </div>
       </div>
     </section>
 
-    <!-- Experience Section (Timeline) -->
+    <!-- Experience Section (Timeline Style) -->
     <section id="experience" class="mb-5">
       <h2 data-key="experienceTitle">Experience</h2>
       <div class="timeline">
@@ -158,7 +89,7 @@
       </div>
     </section>
 
-    <!-- Education Section (Card Style) -->
+    <!-- Education Section -->
     <section id="education" class="mb-5">
       <h2 data-key="educationTitle">Education</h2>
       <div class="card bg-light shadow-sm">
@@ -179,48 +110,53 @@
         <!-- Certification Card 1 -->
         <div class="col">
           <div class="card h-100 text-center">
-            <img
-              src="pictures/powerbi.png"
-              class="card-img-top mx-auto mt-3 cert-img"
-              alt="Power BI Certification"
-            />
+            <img src="pictures/powerbi.png" class="card-img-top mx-auto mt-3 cert-img" alt="Power BI Certification">
             <div class="card-body">
-              <h5 class="card-title" data-key="cert1Title"
-                >Microsoft Certified: Power BI Data Analyst Associate (PL-300)</h5
-              >
-              <a
-                href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/6F27BF93FE06C73B?sharingId=4CF480AA9FFFCD47"
-                target="_blank"
-                class="btn btn-primary btn-sm"
-                data-key="viewBadge"
-                >View Badge</a
-              >
+              <h5 class="card-title" data-key="cert1Title">Microsoft Certified: Power BI Data Analyst Associate (PL-300)</h5>
+              <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/6F27BF93FE06C73B?sharingId=4CF480AA9FFFCD47" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
             </div>
           </div>
         </div>
-        <!-- Additional Cert Cards ... -->
+        <!-- Certification Card 2 -->
         <div class="col">
           <div class="card h-100 text-center">
-            <img
-              src="pictures/azuredata.png"
-              class="card-img-top mx-auto mt-3 cert-img"
-              alt="Azure Data Fundamentals"
-            />
+            <img src="pictures/azuredata.png" class="card-img-top mx-auto mt-3 cert-img" alt="Azure Data Fundamentals">
             <div class="card-body">
-              <h5 class="card-title" data-key="cert2Title"
-                >Microsoft Certified: Azure Data Fundamentals (DP-900)</h5
-              >
-              <a
-                href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/4408CFDCBEA813A?sharingId=4CF480AA9FFFCD47"
-                target="_blank"
-                class="btn btn-primary btn-sm"
-                data-key="viewBadge"
-                >View Badge</a
-              >
+              <h5 class="card-title" data-key="cert2Title">Microsoft Certified: Azure Data Fundamentals (DP-900)</h5>
+              <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/4408CFDCBEA813A?sharingId=4CF480AA9FFFCD47" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
             </div>
           </div>
         </div>
-        <!-- ... and so on for the rest of your certifications ... -->
+        <!-- Certification Card 3 -->
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="pictures/azurefundamentals.png" class="card-img-top mx-auto mt-3 cert-img" alt="Azure Fundamentals">
+            <div class="card-body">
+              <h5 class="card-title" data-key="cert3Title">Microsoft Certified: Azure Fundamentals (AZ-900)</h5>
+              <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/6A74A3631AF155C0?sharingId=4CF480AA9FFFCD47" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
+            </div>
+          </div>
+        </div>
+        <!-- Certification Card 4 -->
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="pictures/tableau.png" class="card-img-top mx-auto mt-3 cert-img" alt="Tableau Certification">
+            <div class="card-body">
+              <h5 class="card-title" data-key="cert4Title">Tableau Certified Data Analyst (TDA-C01)</h5>
+              <a href="https://www.credly.com/badges/4964a3ec-ab2f-4755-9ff5-6e3568ea888a/public_url" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
+            </div>
+          </div>
+        </div>
+        <!-- Certification Card 5 -->
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="pictures/alteryx.png" class="card-img-top mx-auto mt-3 cert-img" alt="Alteryx Certification">
+            <div class="card-body">
+              <h5 class="card-title" data-key="cert5Title">Alteryx Designer Advanced Certification</h5>
+              <a href="https://www.credly.com/badges/8ef70123-e9aa-48c2-9a30-7b41ad9b7cfb" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -231,51 +167,92 @@
         <!-- Project Card 1 -->
         <div class="col">
           <div class="card h-100 project-card">
-            <img
-              src="pictures/User Interface.jpg"
-              class="card-img-top"
-              alt="Snapdragon-AI Screenshot"
-              style="object-fit: cover; max-height: 200px;"
-            />
+            <img src="pictures/User Interface.jpg" class="card-img-top" alt="Snapdragon-AI Screenshot" style="object-fit: cover; max-height: 200px;" />
             <div class="card-body">
-              <h5 class="card-title" data-key="proj1Title"
-                >Snapdragon AI: Multilingual Translator</h5
-              >
-              <p class="card-text text-info" data-key="proj1Award"
-                >2nd Place out of 27 – Windows on Snapdragon AI Hackathon</p
-              >
-              <p class="card-text" data-key="proj1Text"
-                >An innovative on-device translator for Snapdragon that offers
-                real-time, offline translation between English, Japanese, Korean,
-                and Chinese using optimized AI and Python. Efficient, swift, and
-                subtly powerful.</p
-              >
+              <h5 class="card-title" data-key="proj1Title">Snapdragon AI: Multilingual Translator</h5>
+              <p class="card-text text-info" data-key="proj1Award">2nd Place out of 27 – Windows on Snapdragon AI Hackathon</p>
+              <p class="card-text" data-key="proj1Text">
+                An innovative on-device translator for Snapdragon that offers real-time, offline translation between English, Japanese, Korean, and Chinese using optimized AI and Python. Efficient, swift, and subtly powerful.
+              </p>
             </div>
             <div class="card-footer text-center">
-              <a
-                href="https://github.com/mneang/Snapdragon-AI"
-                target="_blank"
-                class="btn btn-outline-primary btn-sm"
-                data-key="viewOnGitHub"
-                >View on GitHub</a
-              >
+              <a href="https://github.com/mneang/Snapdragon-AI" target="_blank" class="btn btn-outline-primary btn-sm" data-key="viewOnGitHub">View on GitHub</a>
             </div>
           </div>
         </div>
-        <!-- Additional Project Cards ... -->
+        <!-- Project Card 2 -->
+        <div class="col">
+          <div class="card h-100 project-card">
+            <img src="pictures/sakura guide.png" class="card-img-top" alt="Sakura-Guide Screenshot" style="object-fit: cover; max-height: 200px;" />
+            <div class="card-body">
+              <h5 class="card-title" data-key="proj2Title">Sakura Guide さくらガイド</h5>
+              <p class="card-text" data-key="proj2Text">
+                A refined travel companion for Japan that fuses JavaScript, design, and real-time guidance to deliver elegant bilingual, location-based travel insights.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="https://github.com/mneang/Sakura-Guide" target="_blank" class="btn btn-outline-primary btn-sm" data-key="viewOnGitHub">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="col">
+          <div class="card h-100 project-card">
+            <img src="pictures/supplychainoptimization.png" class="card-img-top" alt="Supply Chain Optimization Screenshot" style="object-fit: cover; max-height: 200px;" />
+            <div class="card-body">
+              <h5 class="card-title" data-key="proj3Title">Supply Chain Optimization</h5>
+              <p class="card-text" data-key="proj3Text">
+                A focused analysis using Python to identify inefficiencies in supplier lead times and inventory risk, delivering clear, actionable insights for improved planning.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="https://github.com/mneang/data-analytics/tree/main/Supply-chain-optimization" target="_blank" class="btn btn-outline-primary btn-sm" data-key="viewOnGitHub">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 4 -->
+        <div class="col">
+          <div class="card h-100 project-card">
+            <img src="pictures/retail.png" class="card-img-top" alt="Retail Superstore Analysis Screenshot" style="object-fit: cover; max-height: 200px;" />
+            <div class="card-body">
+              <h5 class="card-title" data-key="proj4Title">Retail Superstore Analysis</h5>
+              <p class="card-text" data-key="proj4Text">
+                A thoughtful dashboard built with SQL, Excel, and Tableau that uncovers patterns and trends in retail performance, empowering smart business decisions.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="https://github.com/mneang/data-analytics/tree/main/retail-superstore-analysis" target="_blank" class="btn btn-outline-primary btn-sm" data-key="viewOnGitHub">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 5 -->
+        <div class="col">
+          <div class="card h-100 project-card">
+            <img src="pictures/smartainventory.png" class="card-img-top" alt="SmartAInventory Screenshot" style="object-fit: cover; max-height: 200px;" />
+            <div class="card-body">
+              <h5 class="card-title" data-key="proj5Title">SmartAInventory</h5>
+              <p class="card-text text-info" data-key="proj5Award">Top 13 out of 83 – Microsoft Fabric and AI Learning Hackathon</p>
+              <p class="card-text" data-key="proj5Text">
+                A dynamic inventory management system built with Microsoft Fabric, Power BI, and Azure OpenAI that forecasts demand, reduces risk, and supports agile, insight-led decision-making.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="https://github.com/mneang/SmartAInventory" target="_blank" class="btn btn-outline-primary btn-sm" data-key="viewOnGitHub">View on GitHub</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Skills Section (with Progress Bars) -->
+    <!-- Skills Section with Progress Bars -->
     <section id="skills" class="mb-5">
       <h2 data-key="skillsTitle">Key Competencies</h2>
       <div class="row row-cols-1 row-cols-md-2 g-4">
-        <!-- Example: Data Visualization & Reporting -->
+        <!-- Card for Data Visualization & Reporting -->
         <div class="col">
           <div class="card h-100">
             <div class="card-body">
               <h5 class="card-title" data-key="skillsVisTitle">Data Visualization & Reporting</h5>
-              <!-- Skill 1 with progress bar -->
               <div class="mb-3">
                 <div class="d-flex justify-content-between">
                   <span data-key="skillPowerBI">Power BI</span>
@@ -285,7 +262,6 @@
                   <div class="progress-bar" style="width: 90%;"></div>
                 </div>
               </div>
-              <!-- Skill 2 with progress bar -->
               <div class="mb-3">
                 <div class="d-flex justify-content-between">
                   <span data-key="skillTableau">Tableau</span>
@@ -298,7 +274,7 @@
             </div>
           </div>
         </div>
-        <!-- Another Example: Data Analysis & Manipulation -->
+        <!-- Card for Data Analysis & Manipulation -->
         <div class="col">
           <div class="card h-100">
             <div class="card-body">
@@ -321,75 +297,152 @@
                   <div class="progress-bar" style="width: 80%;"></div>
                 </div>
               </div>
-              <!-- Add more as needed -->
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <span data-key="skillR">R</span>
+                  <span>75%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <span data-key="skillM">M (Power Query)</span>
+                  <span>80%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Add more cards for DB & Cloud, Excel & Automation, General Software, etc. -->
+        <!-- Card for Database & Cloud Technologies -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title" data-key="skillsDBTitle">Database & Cloud Technologies</h5>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <span data-key="skillMongoDB">MongoDB / NoSQL</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <span data-key="skillAzureSynapse">Azure Synapse</span>
+                  <span>80%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <span data-key="skillAzureDataFactory">Azure Data Factory</span>
+                  <span>75%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <span data-key="skillAzureCosmos">Azure Cosmos DB</span>
+                  <span>80%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card for Excel & Automation -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title" data-key="skillsExcelTitle">Excel & Automation</h5>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <span data-key="skillVBA">VBA</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <span data-key="skillPivot">Pivot Tables/Charts</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <span data-key="skillPowerPivot">Power Pivot</span>
+                  <span>80%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <span data-key="skillLookups">Lookups</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card for General Software -->
+        <div class="col-12">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title" data-key="skillsGeneralTitle">General Software</h5>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <span data-key="skillMSOffice">Microsoft Office Suite</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 95%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="mb-5">
       <h2 data-key="contactTitle">Get in Touch</h2>
-      <form
-        action="mailto:mikeyneang11@gmail.com"
-        method="post"
-        enctype="text/plain"
-        class="w-100"
-      >
+      <form action="mailto:mikeyneang11@gmail.com" method="post" enctype="text/plain" class="w-100">
         <div class="mb-3">
-          <label
-            for="name"
-            class="form-label"
-            data-key="contactNameLabel"
-            >Name:</label
-          >
-          <input
-            type="text"
-            id="name"
-            name="name"
-            class="form-control"
-            required
-          />
+          <label for="name" class="form-label" data-key="contactNameLabel">Name:</label>
+          <input type="text" id="name" name="name" class="form-control" required />
         </div>
         <div class="mb-3">
-          <label
-            for="email"
-            class="form-label"
-            data-key="contactEmailLabel"
-            >Email:</label
-          >
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="form-control"
-            required
-          />
+          <label for="email" class="form-label" data-key="contactEmailLabel">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" required />
         </div>
         <div class="mb-3">
-          <label
-            for="message"
-            class="form-label"
-            data-key="contactMessageLabel"
-            >Message:</label
-          >
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            class="form-control"
-            required
-          ></textarea>
+          <label for="message" class="form-label" data-key="contactMessageLabel">Message:</label>
+          <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
         </div>
-        <button
-          type="submit"
-          class="btn btn-dark"
-          data-key="sendMessageBtn"
-        >
-          Send Message
-        </button>
+        <button type="submit" class="btn btn-dark" data-key="sendMessageBtn">Send Message</button>
       </form>
     </section>
   </main>
