@@ -36,11 +36,11 @@ body {
 
 /* About Section */
 #about p {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.8;
 }
 
-/* About Carousel (in About Section) */
+/* About Carousel */
 .about-carousel-img {
   object-fit: cover;
   width: 100%;
@@ -102,22 +102,27 @@ body {
   height: 150px;
 }
 
-/* Skills Section with Progress Bars */
+/* Skills Section (Simple List with Custom Icons) */
 #skills h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 #skills ul {
-  list-style-type: disc;
-  margin-left: 1.5rem;
+  list-style: none;
+  padding-left: 0;
   font-size: 1rem;
 }
-.progress {
-  height: 8px;
-  border-radius: 4px;
+#skills ul li {
+  padding: 0.25rem 0;
+  position: relative;
+  padding-left: 1.5rem;
 }
-.progress-bar {
-  background-color: #007bff;
+#skills ul li::before {
+  content: "\2713"; /* Check mark */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #007bff;
 }
 
 /* Contact Form */
@@ -125,7 +130,8 @@ body {
   font-weight: 600;
   font-size: 1rem;
 }
-#contact input, #contact textarea {
+#contact input,
+#contact textarea {
   font-size: 1rem;
 }
 

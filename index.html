@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-key="pageTitle">My Professional Journey</title>
   <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="bg-light text-dark">
@@ -44,24 +41,38 @@
     </div>
   </header>
 
+  <!-- Main Content -->
   <main class="container mb-5">
-    <!-- About Section (Expanded) -->
+    <!-- About Section (Expanded with Integrated Gallery Carousel) -->
     <section id="about" class="mb-5">
       <div class="row align-items-center">
         <div class="col-lg-6">
           <h2 data-key="aboutTitle">Introduction</h2>
           <p data-key="aboutText">
-            I am a dedicated data professional with a relentless passion for transforming raw data into compelling stories and strategic insights. With a robust background in Information Systems and Operations Management, I approach every challenge with creativity, determination, and a commitment to excellence. I believe data is more than numbers—it’s the key to unlocking potential and driving sustainable growth. My mission is to empower organizations with innovative, data-driven solutions that inspire change and deliver real value.
+            I am a dedicated data professional with a relentless passion for transforming raw data into compelling stories and strategic insights. With a robust background in Information Systems and Operations Management, I tackle every challenge with creativity and commitment. I believe data isn’t just numbers—it’s the spark that ignites growth and innovation. Join me in this journey of exploration, excellence, and transformation.
           </p>
         </div>
-        <div class="col-lg-6 text-center">
-          <img src="pictures/profile.jpeg" alt="Profile Picture" class="img-fluid rounded shadow" style="max-width:250px;">
-          <!-- Optionally, you can include a small carousel here if you want additional images near your profile -->
+        <div class="col-lg-6">
+          <img src="pictures/profile.jpeg" alt="Profile Picture" class="img-fluid rounded shadow mb-3" style="max-width:250px;">
+          <!-- Integrated Gallery Carousel (Auto-playing, controls hidden) -->
+          <div id="aboutGalleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="pictures/personal1.jpeg" class="d-block w-100 about-carousel-img" alt="Experiencing Tokyo’s teamLab Borderless">
+              </div>
+              <div class="carousel-item">
+                <img src="pictures/personal2.jpeg" class="d-block w-100 about-carousel-img" alt="Moment with Japan’s Consul-General in LA">
+              </div>
+              <div class="carousel-item">
+                <img src="pictures/personal3.jpeg" class="d-block w-100 about-carousel-img" alt="My first day at Össur">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Experience Section (Timeline Style) -->
+    <!-- Experience Section (Timeline) -->
     <section id="experience" class="mb-5">
       <h2 data-key="experienceTitle">Experience</h2>
       <div class="timeline">
@@ -244,7 +255,7 @@
       </div>
     </section>
 
-    <!-- Skills Section with Progress Bars -->
+    <!-- Skills Section (Simplified List without Percentages) -->
     <section id="skills" class="mb-5">
       <h2 data-key="skillsTitle">Key Competencies</h2>
       <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -253,24 +264,10 @@
           <div class="card h-100">
             <div class="card-body">
               <h5 class="card-title" data-key="skillsVisTitle">Data Visualization & Reporting</h5>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span data-key="skillPowerBI">Power BI</span>
-                  <span>90%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 90%;"></div>
-                </div>
-              </div>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span data-key="skillTableau">Tableau</span>
-                  <span>85%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 85%;"></div>
-                </div>
-              </div>
+              <ul class="list-unstyled">
+                <li data-key="skillPowerBI"><i class="bi bi-check-circle-fill me-2 text-primary"></i>Power BI</li>
+                <li data-key="skillTableau"><i class="bi bi-check-circle-fill me-2 text-primary"></i>Tableau</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -279,42 +276,13 @@
           <div class="card h-100">
             <div class="card-body">
               <h5 class="card-title" data-key="skillsAnalysisTitle">Data Analysis & Manipulation</h5>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span data-key="skillSQL">SQL</span>
-                  <span>90%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 90%;"></div>
-                </div>
-              </div>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span data-key="skillPython">Python</span>
-                  <span>80%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 80%;"></div>
-                </div>
-              </div>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span data-key="skillR">R</span>
-                  <span>75%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 75%;"></div>
-                </div>
-              </div>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span data-key="skillM">M (Power Query)</span>
-                  <span>80%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 80%;"></div>
-                </div>
-              </div>
+              <ul class="list-unstyled">
+                <li data-key="skillSQL"><i class="bi bi-check-circle-fill me-2 text-primary"></i>SQL (MS SQL Server, PostgreSQL)</li>
+                <li data-key="skillDAX"><i class="bi bi-check-circle-fill me-2 text-primary"></i>DAX</li>
+                <li data-key="skillPython"><i class="bi bi-check-circle-fill me-2 text-primary"></i>Python</li>
+                <li data-key="skillR"><i class="bi bi-check-circle-fill me-2 text-primary"></i>R</li>
+                <li data-key="skillM"><i class="bi bi-check-circle-fill me-2 text-primary"></i>M Language (Power Query)</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -323,42 +291,12 @@
           <div class="card h-100">
             <div class="card-body">
               <h5 class="card-title" data-key="skillsDBTitle">Database & Cloud Technologies</h5>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span data-key="skillMongoDB">MongoDB / NoSQL</span>
-                  <span>85%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 85%;"></div>
-                </div>
-              </div>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span data-key="skillAzureSynapse">Azure Synapse</span>
-                  <span>80%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 80%;"></div>
-                </div>
-              </div>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span data-key="skillAzureDataFactory">Azure Data Factory</span>
-                  <span>75%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 75%;"></div>
-                </div>
-              </div>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span data-key="skillAzureCosmos">Azure Cosmos DB</span>
-                  <span>80%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 80%;"></div>
-                </div>
-              </div>
+              <ul class="list-unstyled">
+                <li data-key="skillMongoDB"><i class="bi bi-check-circle-fill me-2 text-primary"></i>MongoDB & NoSQL</li>
+                <li data-key="skillAzureSynapse"><i class="bi bi-check-circle-fill me-2 text-primary"></i>Azure Synapse</li>
+                <li data-key="skillAzureDataFactory"><i class="bi bi-check-circle-fill me-2 text-primary"></i>Azure Data Factory</li>
+                <li data-key="skillAzureCosmos"><i class="bi bi-check-circle-fill me-2 text-primary"></i>Azure Cosmos DB</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -367,42 +305,12 @@
           <div class="card h-100">
             <div class="card-body">
               <h5 class="card-title" data-key="skillsExcelTitle">Excel & Automation</h5>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span data-key="skillVBA">VBA</span>
-                  <span>85%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 85%;"></div>
-                </div>
-              </div>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span data-key="skillPivot">Pivot Tables/Charts</span>
-                  <span>90%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 90%;"></div>
-                </div>
-              </div>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span data-key="skillPowerPivot">Power Pivot</span>
-                  <span>80%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 80%;"></div>
-                </div>
-              </div>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span data-key="skillLookups">Lookups</span>
-                  <span>85%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 85%;"></div>
-                </div>
-              </div>
+              <ul class="list-unstyled">
+                <li data-key="skillVBA"><i class="bi bi-check-circle-fill me-2 text-primary"></i>VBA</li>
+                <li data-key="skillPivot"><i class="bi bi-check-circle-fill me-2 text-primary"></i>Pivot Tables/Charts</li>
+                <li data-key="skillPowerPivot"><i class="bi bi-check-circle-fill me-2 text-primary"></i>Power Pivot</li>
+                <li data-key="skillLookups"><i class="bi bi-check-circle-fill me-2 text-primary"></i>Lookups</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -411,15 +319,9 @@
           <div class="card h-100">
             <div class="card-body">
               <h5 class="card-title" data-key="skillsGeneralTitle">General Software</h5>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span data-key="skillMSOffice">Microsoft Office Suite</span>
-                  <span>95%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 95%;"></div>
-                </div>
-              </div>
+              <ul class="list-unstyled">
+                <li data-key="skillMSOffice"><i class="bi bi-check-circle-fill me-2 text-primary"></i>Microsoft Office Suite</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -453,9 +355,7 @@
   </footer>
 
   <!-- Bootstrap JS Bundle with Popper -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
