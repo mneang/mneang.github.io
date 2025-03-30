@@ -5,13 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-key="pageTitle">My Professional Journey</title>
   <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="bg-light text-dark">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
     <div class="container">
@@ -33,49 +30,57 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="hero-section text-center py-5 mb-5">
-    <div class="container">
-      <h1 class="display-4 fw-bold" data-key="heroTitle">Your Data, My Passion</h1>
-      <p class="lead" data-key="heroSubtitle">
-        Transforming insights into impact—one dataset at a time.
-      </p>
-      <a href="#about" class="btn btn-outline-light btn-lg" data-key="heroButton">Discover More</a>
+  <!-- Hero Carousel (Full-Width Personal Gallery) -->
+  <header id="hero" class="mb-5">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="pictures/personal1.jpeg" class="d-block w-100 hero-img" alt="Experiencing the brilliance of Tokyo’s teamLab Borderless">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 data-key="carousel1">Experiencing the brilliance of Tokyo’s teamLab Borderless</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="pictures/personal2.jpeg" class="d-block w-100 hero-img" alt="A memorable moment with Japan’s Consul-General in LA">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 data-key="carousel2">A memorable moment with Japan’s Consul-General in LA</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="pictures/personal3.jpeg" class="d-block w-100 hero-img" alt="My inaugural day as a data analyst at Össur">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 data-key="carousel3">My inaugural day as a data analyst at Össur</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden" data-key="prev">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden" data-key="next">Next</span>
+      </button>
     </div>
   </header>
 
-  <!-- Main Content -->
   <main class="container mb-5">
-    <!-- About Section with Two Columns -->
+    <!-- About Section (Two Columns) -->
     <section id="about" class="mb-5">
       <div class="row align-items-center">
-        <div class="col-md-7">
+        <div class="col-lg-7">
           <h2 data-key="aboutTitle">Introduction</h2>
           <p data-key="aboutText">
             Welcome! With a strong foundation in Information Systems and Operations Management, I dedicate my work to harnessing data to spark meaningful decisions and drive innovation. I view every challenge as an opportunity to excel and inspire change. Join me on this journey toward impactful transformation.
           </p>
         </div>
-        <div class="col-md-5">
-          <div class="text-center mb-3">
-            <img src="pictures/profile.jpeg" alt="Profile Picture" class="img-fluid rounded shadow" style="max-width:250px;">
-          </div>
-          <!-- Compact Gallery Grid Under the Profile Picture -->
-          <div class="row g-1">
-            <div class="col-4">
-              <img src="pictures/personal1.jpeg" class="img-fluid gallery-img" alt="Gallery Image 1" />
-            </div>
-            <div class="col-4">
-              <img src="pictures/personal2.jpeg" class="img-fluid gallery-img" alt="Gallery Image 2" />
-            </div>
-            <div class="col-4">
-              <img src="pictures/personal3.jpeg" class="img-fluid gallery-img" alt="Gallery Image 3" />
-            </div>
-          </div>
+        <div class="col-lg-5 text-center">
+          <img src="pictures/profile.jpeg" alt="Profile Picture" class="img-fluid rounded shadow" style="max-width:250px;">
         </div>
       </div>
     </section>
 
-    <!-- Experience Section (Timeline Style) -->
+    <!-- Experience Section (Timeline) -->
     <section id="experience" class="mb-5">
       <h2 data-key="experienceTitle">Experience</h2>
       <div class="timeline">
@@ -124,7 +129,7 @@
         <!-- Certification Card 1 -->
         <div class="col">
           <div class="card h-100 text-center">
-            <img src="pictures/powerbi.png" class="card-img-top mx-auto mt-3" alt="Power BI Certification" style="max-width:150px;">
+            <img src="pictures/powerbi.png" class="card-img-top mx-auto mt-3 cert-img" alt="Power BI Certification">
             <div class="card-body">
               <h5 class="card-title" data-key="cert1Title">Microsoft Certified: Power BI Data Analyst Associate (PL-300)</h5>
               <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/6F27BF93FE06C73B?sharingId=4CF480AA9FFFCD47" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
@@ -134,7 +139,7 @@
         <!-- Certification Card 2 -->
         <div class="col">
           <div class="card h-100 text-center">
-            <img src="pictures/azuredata.png" class="card-img-top mx-auto mt-3" alt="Azure Data Fundamentals" style="max-width:150px;">
+            <img src="pictures/azuredata.png" class="card-img-top mx-auto mt-3 cert-img" alt="Azure Data Fundamentals">
             <div class="card-body">
               <h5 class="card-title" data-key="cert2Title">Microsoft Certified: Azure Data Fundamentals (DP-900)</h5>
               <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/4408CFDCBEA813A?sharingId=4CF480AA9FFFCD47" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
@@ -144,7 +149,7 @@
         <!-- Certification Card 3 -->
         <div class="col">
           <div class="card h-100 text-center">
-            <img src="pictures/azurefundamentals.png" class="card-img-top mx-auto mt-3" alt="Azure Fundamentals" style="max-width:150px;">
+            <img src="pictures/azurefundamentals.png" class="card-img-top mx-auto mt-3 cert-img" alt="Azure Fundamentals">
             <div class="card-body">
               <h5 class="card-title" data-key="cert3Title">Microsoft Certified: Azure Fundamentals (AZ-900)</h5>
               <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/6A74A3631AF155C0?sharingId=4CF480AA9FFFCD47" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
@@ -154,7 +159,7 @@
         <!-- Certification Card 4 -->
         <div class="col">
           <div class="card h-100 text-center">
-            <img src="pictures/tableau.png" class="card-img-top mx-auto mt-3" alt="Tableau Certification" style="max-width:150px;">
+            <img src="pictures/tableau.png" class="card-img-top mx-auto mt-3 cert-img" alt="Tableau Certification">
             <div class="card-body">
               <h5 class="card-title" data-key="cert4Title">Tableau Certified Data Analyst (TDA-C01)</h5>
               <a href="https://www.credly.com/badges/4964a3ec-ab2f-4755-9ff5-6e3568ea888a/public_url" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
@@ -164,7 +169,7 @@
         <!-- Certification Card 5 -->
         <div class="col">
           <div class="card h-100 text-center">
-            <img src="pictures/alteryx.png" class="card-img-top mx-auto mt-3" alt="Alteryx Certification" style="max-width:150px;">
+            <img src="pictures/alteryx.png" class="card-img-top mx-auto mt-3 cert-img" alt="Alteryx Certification">
             <div class="card-body">
               <h5 class="card-title" data-key="cert5Title">Alteryx Designer Advanced Certification</h5>
               <a href="https://www.credly.com/badges/8ef70123-e9aa-48c2-9a30-7b41ad9b7cfb" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
@@ -180,7 +185,7 @@
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <!-- Project Card 1 -->
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 project-card">
             <img src="pictures/User Interface.jpg" class="card-img-top" alt="Snapdragon-AI Screenshot" style="object-fit: cover; max-height: 200px;" />
             <div class="card-body">
               <h5 class="card-title" data-key="proj1Title">Snapdragon AI: Multilingual Translator</h5>
@@ -196,7 +201,7 @@
         </div>
         <!-- Project Card 2 -->
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 project-card">
             <img src="pictures/sakura guide.png" class="card-img-top" alt="Sakura-Guide Screenshot" style="object-fit: cover; max-height: 200px;" />
             <div class="card-body">
               <h5 class="card-title" data-key="proj2Title">Sakura Guide さくらガイド</h5>
@@ -211,7 +216,7 @@
         </div>
         <!-- Project Card 3 -->
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 project-card">
             <img src="pictures/supplychainoptimization.png" class="card-img-top" alt="Supply Chain Optimization Screenshot" style="object-fit: cover; max-height: 200px;" />
             <div class="card-body">
               <h5 class="card-title" data-key="proj3Title">Supply Chain Optimization</h5>
@@ -226,7 +231,7 @@
         </div>
         <!-- Project Card 4 -->
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 project-card">
             <img src="pictures/retail.png" class="card-img-top" alt="Retail Superstore Analysis Screenshot" style="object-fit: cover; max-height: 200px;" />
             <div class="card-body">
               <h5 class="card-title" data-key="proj4Title">Retail Superstore Analysis</h5>
@@ -241,7 +246,7 @@
         </div>
         <!-- Project Card 5 -->
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 project-card">
             <img src="pictures/smartainventory.png" class="card-img-top" alt="SmartAInventory Screenshot" style="object-fit: cover; max-height: 200px;" />
             <div class="card-body">
               <h5 class="card-title" data-key="proj5Title">SmartAInventory</h5>
@@ -258,20 +263,20 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Section (Using list groups for visual interest) -->
     <section id="skills" class="mb-5">
       <h2 data-key="skillsTitle">Key Competencies</h2>
       <div class="row">
         <div class="col-md-6 mb-3">
           <h3 data-key="skillsVisTitle">Data Visualization & Reporting</h3>
-          <ul class="list-group list-group-flush">
+          <ul class="list-group">
             <li class="list-group-item" data-key="skillPowerBI">Power BI</li>
             <li class="list-group-item" data-key="skillTableau">Tableau</li>
           </ul>
         </div>
         <div class="col-md-6 mb-3">
           <h3 data-key="skillsAnalysisTitle">Data Analysis & Manipulation</h3>
-          <ul class="list-group list-group-flush">
+          <ul class="list-group">
             <li class="list-group-item" data-key="skillSQL">SQL (Microsoft SQL Server, PostgreSQL)</li>
             <li class="list-group-item" data-key="skillDAX">DAX</li>
             <li class="list-group-item" data-key="skillPython">Python</li>
@@ -281,7 +286,7 @@
         </div>
         <div class="col-md-6 mb-3">
           <h3 data-key="skillsDBTitle">Database & Cloud Technologies</h3>
-          <ul class="list-group list-group-flush">
+          <ul class="list-group">
             <li class="list-group-item" data-key="skillMongoDB">MongoDB, Apache Gremlin, NoSQL</li>
             <li class="list-group-item" data-key="skillAzureSynapse">Azure Synapse Analytics</li>
             <li class="list-group-item" data-key="skillAzureDataFactory">Azure Data Factory</li>
@@ -290,7 +295,7 @@
         </div>
         <div class="col-md-6 mb-3">
           <h3 data-key="skillsExcelTitle">Excel & Automation</h3>
-          <ul class="list-group list-group-flush">
+          <ul class="list-group">
             <li class="list-group-item" data-key="skillVBA">VBA</li>
             <li class="list-group-item" data-key="skillPivot">Pivot Tables/Charts</li>
             <li class="list-group-item" data-key="skillPowerPivot">Power Pivot</li>
@@ -299,7 +304,7 @@
         </div>
         <div class="col-12">
           <h3 data-key="skillsGeneralTitle">General Software</h3>
-          <ul class="list-group list-group-flush">
+          <ul class="list-group">
             <li class="list-group-item" data-key="skillMSOffice">Microsoft Office Suite (Excel, Access, Word, PowerPoint, Visio, OneNote, Teams)</li>
           </ul>
         </div>
