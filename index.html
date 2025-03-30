@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Resume & Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Resume & Portfolio</h1>
+  </header>
+  <main>
+    <!-- About Me Section with Language Picker -->
+    <section id="about">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <div class="language-picker">
+          <label for="about-language">Language: </label>
+          <select id="about-language">
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+          </select>
+        </div>
+      </div>
+      <p id="about-text">
+        Hello! With a solid background in Information Systems and Operations Management, I’ve dedicated my career to harnessing data to drive strategic decisions and optimize processes. Whether managing databases or refining business intelligence, I approach every challenge with the focus of a tactician on the field – always pushing for excellence. Let’s connect and create meaningful impact.
+      </p>
+      <img src="pictures/profile.jpg" alt="Profile Picture" class="profile-img" />
+    </section>
+
+    <!-- Personal Pictures Carousel -->
+    <section id="carousel">
+      <h2>Gallery</h2>
+      <div class="carousel">
+        <img class="carousel-img active" src="pictures/personal1.jpg" alt="Personal Image 1" />
+        <img class="carousel-img" src="pictures/personal2.jpg" alt="Personal Image 2" />
+        <img class="carousel-img" src="pictures/personal3.jpg" alt="Personal Image 3" />
+        <!-- Add more images as needed -->
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Associate Data Analyst – Össur</h3>
+          <span class="date">Feb 2023 - Present</span>
+          <p>Irvine, CA</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Global Supply Chain Intern – Howmet Aerospace</h3>
+          <span class="date">Jun 2022 - Sep 2022</span>
+          <p>Carson, CA</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Internal Audit Analyst Intern – Optum</h3>
+          <span class="date">Jun 2021 - Aug 2021</span>
+          <p>Irvine, CA</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+      <p>
+        <strong>California State University, Long Beach</strong><br />
+        BBA in Management Information Systems & Operations Management<br />
+        Aug 2018 - Dec 2022
+      </p>
+    </section>
+
+    <!-- Certifications Section with Individual Images and Badge Links -->
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="certifications-grid">
+        <div class="cert-card">
+          <img src="pictures/powerbi.jpg" alt="Power BI Certification" class="cert-img" />
+          <h3>Microsoft Certified: Power BI Data Analyst Associate</h3>
+          <a href="https://www.yourbadgeurl.com/powerbi" target="_blank">View Badge</a>
+        </div>
+        <div class="cert-card">
+          <img src="pictures/azuredata.jpg" alt="Azure Data Fundamentals" class="cert-img" />
+          <h3>Microsoft Certified: Azure Data Fundamentals</h3>
+          <a href="https://www.yourbadgeurl.com/azuredata" target="_blank">View Badge</a>
+        </div>
+        <div class="cert-card">
+          <img src="pictures/azurefund.jpg" alt="Azure Fundamentals" class="cert-img" />
+          <h3>Microsoft Certified: Azure Fundamentals</h3>
+          <a href="https://www.yourbadgeurl.com/azurefund" target="_blank">View Badge</a>
+        </div>
+        <div class="cert-card">
+          <img src="pictures/tableau.jpg" alt="Tableau Certification" class="cert-img" />
+          <h3>Tableau Certified Data Analyst</h3>
+          <a href="https://www.yourbadgeurl.com/tableau" target="_blank">View Badge</a>
+        </div>
+        <div class="cert-card">
+          <img src="pictures/alteryx.jpg" alt="Alteryx Certification" class="cert-img" />
+          <h3>Alteryx Designer Advanced Certification</h3>
+          <a href="https://www.yourbadgeurl.com/alteryx" target="_blank">View Badge</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="pictures/snapdragon.png" alt="Snapdragon-AI Screenshot" />
+          <h3>Snapdragon-AI</h3>
+          <p>
+            Transforming raw data into actionable insights, this project leverages <strong>Python</strong> and cutting-edge <strong>machine learning</strong> to predict trends with precision—a testament to innovative data engineering.
+          </p>
+          <a href="https://github.com/mneang/Snapdragon-AI" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="pictures/sakura-guide.png" alt="Sakura-Guide Screenshot" />
+          <h3>Sakura-Guide</h3>
+          <p>
+            Merging elegant design with analytics, Sakura-Guide uses <strong>JavaScript</strong>, <strong>HTML/CSS</strong>, and dynamic <strong>data visualization</strong> to deliver an immersive exploration of local trends.
+          </p>
+          <a href="https://github.com/mneang/Sakura-Guide" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="pictures/supplychain.png" alt="Supply Chain Optimization Screenshot" />
+          <h3>Supply Chain Optimization</h3>
+          <p>
+            By integrating <strong>Python</strong> with <strong>Tableau</strong>, this project refines supply chain operations, turning complex data into clear, actionable insights that streamline processes.
+          </p>
+          <a href="https://github.com/mneang/data-analytics/tree/main/Supply-chain-optimization" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="pictures/retail.png" alt="Retail Superstore Analysis Screenshot" />
+          <h3>Retail Superstore Analysis</h3>
+          <p>
+            An in-depth analysis using <strong>SQL</strong>, <strong>Excel</strong>, and <strong>Tableau</strong> that reveals key business trends, empowering data-driven decisions with clarity and precision.
+          </p>
+          <a href="https://github.com/mneang/data-analytics/tree/main/retail-superstore-analysis" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="pictures/smartainventory.png" alt="SmartAInventory Screenshot" />
+          <h3>SmartAInventory</h3>
+          <p>
+            Revolutionizing inventory management, SmartAInventory harnesses <strong>predictive analytics</strong> and <strong>data visualization</strong> to optimize stock levels and drive real-time decision-making.
+          </p>
+          <a href="https://github.com/mneang/SmartAInventory" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Key Competencies</h2>
+      <div class="skills-category">
+        <h3>Data Analytics & Visualization</h3>
+        <ul>
+          <li>Power BI</li>
+          <li>Tableau</li>
+          <li>SQL</li>
+          <li>Advanced Excel Techniques</li>
+          <li>Data Reporting & Visualization</li>
+        </ul>
+      </div>
+      <div class="skills-category">
+        <h3>Data Engineering & Automation</h3>
+        <ul>
+          <li>Python (pandas, numpy, matplotlib)</li>
+          <li>ETL Tools (Alteryx, Power Query)</li>
+          <li>Machine Learning</li>
+          <li>Automation & Scripting</li>
+        </ul>
+      </div>
+      <div class="skills-category">
+        <h3>Business Intelligence & Strategy</h3>
+        <ul>
+          <li>Business Reporting</li>
+          <li>Process Optimization</li>
+          <li>Data-Driven Decision Making</li>
+          <li>Supply Chain Analysis</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="mailto:mikeyneang11@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Your Name. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
