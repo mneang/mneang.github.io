@@ -1,13 +1,13 @@
-/* Global Overrides */
+/* Global Styles */
 body {
   background-color: #f9f9f9;
   color: #333;
   font-family: 'Inter', sans-serif;
 }
 
-/* Navbar */
+/* Navbar Overrides */
 .navbar-brand {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 .navbar .form-select {
@@ -15,21 +15,19 @@ body {
   color: #fff;
   border: none;
 }
+.navbar .form-select option {
+  background-color: #343a40;
+  color: #fff;
+}
 
 /* Hero Section */
 .hero-section {
-  background: url('pictures/hero-bg.jpg') center center/cover no-repeat;
-  /* Alternatively, use a gradient: */
-  /* background: linear-gradient(135deg, #343a40, #1f1f1f); */
-  min-height: 40vh;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding: 2rem 0;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  padding: 4rem 0;
 }
 .hero-section h1 {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 .hero-section p.lead {
   font-size: 1.25rem;
@@ -37,82 +35,61 @@ body {
 
 /* Section Headings */
 section h2 {
-  margin-bottom: 1rem;
   border-bottom: 2px solid #ddd;
   padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 /* About Section */
 #about p {
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1.8;
 }
 
-/* Gallery Carousel */
+/* Carousel */
 .carousel img {
   object-fit: cover;
-  max-height: 500px;
+  max-height: 400px;
 }
 
-/* List Group (Experience) */
-.list-group-item {
-  background-color: #fff;
-  color: #333;
-  border: none;
-  border-radius: 4px;
-  margin-bottom: 0.75rem;
-}
-
-/* Certifications & Projects Cards */
+/* Cards (Certifications, Projects) */
 .card {
   border: none;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
 .card-img-top {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  max-height: 200px;
-  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
-.card .card-title {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-.card .card-text {
+
+/* Project Award Text */
+.card-text.text-info {
   font-size: 0.9rem;
 }
 
-/* Project Award Styling */
-.project-award {
-  font-size: 0.85rem;
-  color: #0066cc;
+/* Skills Section */
+#skills h3 {
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
-
-/* Skills Section */
 #skills ul {
   list-style: disc;
   margin-left: 1.5rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 /* Contact Form */
-#contact .form-label {
+#contact label {
   font-weight: 600;
 }
 #contact input, #contact textarea {
-  background-color: #fff;
-  border: 1px solid #ccc;
-}
-#contact button {
-  transition: background-color 0.3s;
-}
-#contact button:hover {
-  background-color: #444;
+  font-size: 1rem;
 }
 
 /* Footer */
 footer {
+  background-color: #222;
+  color: #fff;
   font-size: 0.9rem;
 }
