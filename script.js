@@ -1,4 +1,4 @@
-// Translation dictionary for the page (culturally adapted)
+// Translation dictionary for culturally-aware, inspiring texts
 const translations = {
   en: {
     pageTitle: "My Professional Journey",
@@ -56,15 +56,14 @@ const translations = {
     sendMessageBtn: "Send Message",
     footerText: "© 2025 Michael Neang. All rights reserved."
   },
-  // The following translations have been adapted to sound natural and inspiring.
   ja: {
     pageTitle: "私のプロフェッショナル・ジャーニー",
     navbarTitle: "こんにちは、マイケルです",
     heroTitle: "データに情熱を、未来に挑む",
-    heroSubtitle: "データの力で、変革と感動を生み出す。",
+    heroSubtitle: "データの力で変革と感動を生み出す。",
     heroButton: "もっと知る",
     aboutTitle: "イントロダクション",
-    aboutText: "情報システムとオペレーションマネジメントの確かな基盤のもと、データを通して革新的な意思決定を実現しています。私にとって、すべての挑戦は成長と変革のチャンスです。一緒に、未来を切り拓きましょう。",
+    aboutText: "情報システムとオペレーションマネジメントの確固たる基盤を活かし、データを通して革新的な意思決定を実現しています。すべての挑戦は成長と変革の機会。共に未来を切り拓きましょう。",
     galleryTitle: "ギャラリー",
     carousel1: "東京のteamLab Borderlessの輝きを体感",
     carousel2: "ロサンゼルスで総領事との心温まるひととき",
@@ -90,16 +89,16 @@ const translations = {
     projectsTitle: "プロジェクト",
     proj1Title: "Snapdragon AI: 多言語翻訳機",
     proj1Award: "全27チーム中2位 – Windows on Snapdragon AI Hackathon",
-    proj1Text: "最先端のAIとPythonを駆使し、英語、日本語、韓国語、中国語間のリアルタイム・オフライン翻訳を実現する多言語オンデバイス翻訳機。効率的で迅速、そして控えめに強力。",
+    proj1Text: "最先端のAIとPythonを駆使し、英語、日本語、韓国語、中国語間のリアルタイム・オフライン翻訳を実現する多言語オンデバイス翻訳機。効率的で迅速、控えめに強力。",
     proj2Title: "Sakura Guide さくらガイド",
-    proj2Text: "日本旅行の洗練された伴侶。JavaScript、デザイン、リアルタイムガイダンスを融合し、バイリンガルかつ位置情報に基づく洞察を提供します。",
+    proj2Text: "日本旅行の洗練された伴侶。JavaScript、デザイン、リアルタイムガイダンスを融合し、優雅でバイリンガルな位置情報に基づく洞察を提供。",
     proj3Title: "Supply Chain Optimization",
-    proj3Text: "Pythonを活用してサプライヤーのリードタイムと在庫リスクの非効率性を明らかにし、具体的なデータ洞察で計画改善を支援。",
+    proj3Text: "Pythonを活用し、サプライヤーのリードタイムと在庫リスクの非効率性を明らかに、具体的なデータ洞察で計画改善を支援。",
     proj4Title: "Retail Superstore Analysis",
-    proj4Text: "SQL、Excel、Tableauで構築された小売パフォーマンスのダッシュボード。傾向とパターンを分析し、賢明な経営判断をサポートします。",
+    proj4Text: "SQL、Excel、Tableauで構築された小売パフォーマンスのダッシュボード。パターンと傾向を解析し、賢明な経営判断をサポート。",
     proj5Title: "SmartAInventory",
     proj5Award: "全83チーム中上位13位 – Microsoft Fabric and AI Learning Hackathon",
-    proj5Text: "Microsoft Fabric、Power BI、Azure OpenAIを駆使したデータ駆動の在庫管理システム。需要予測とリスク低減に優れ、柔軟な意思決定を実現します。",
+    proj5Text: "Microsoft Fabric、Power BI、Azure OpenAIを活用したデータ駆動の在庫管理システム。需要予測、リスク低減、柔軟な意思決定を実現。",
     skillsTitle: "主要スキル",
     skillsVisTitle: "データ可視化 & レポーティング",
     skillsAnalysisTitle: "データ分析 & 操作",
@@ -120,7 +119,7 @@ const translations = {
     heroSubtitle: "让数据驱动智慧，成就非凡。",
     heroButton: "了解更多",
     aboutTitle: "简介",
-    aboutText: "凭借信息系统与运营管理的坚实基础，我致力于用数据推动战略决策与创新。我相信每个挑战都是实现突破的机会，期待与您共同开启深远影响之旅。",
+    aboutText: "凭借信息系统与运营管理的坚实基础，我致力于用数据推动战略决策与创新。每个挑战都是突破的契机，期待与您共创深远影响。",
     galleryTitle: "画廊",
     carousel1: "感受东京teamLab Borderless的璀璨光芒",
     carousel2: "与日本总领事在洛杉矶共享温馨时刻",
@@ -155,7 +154,7 @@ const translations = {
     proj4Text: "基于SQL、Excel和Tableau构建的零售绩效仪表板，揭示关键模式与趋势，为智能商业决策提供支持。",
     proj5Title: "SmartAInventory",
     proj5Award: "83队中前13名 – Microsoft Fabric and AI Learning Hackathon",
-    proj5Text: "采用Microsoft Fabric、Power BI和Azure OpenAI构建的数据驱动库存系统，实现需求预测、风险降低和敏捷决策。",
+    proj5Text: "采用Microsoft Fabric、Power BI和Azure OpenAI构建的数据驱动库存系统，实现需求预测、风险降低及敏捷决策。",
     skillsTitle: "核心技能",
     skillsVisTitle: "数据可视化 & 报告",
     skillsAnalysisTitle: "数据分析 & 操作",
