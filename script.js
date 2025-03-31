@@ -15,11 +15,11 @@ const translations = {
     prev: "Previous",
     next: "Next",
     experienceTitle: "Experience",
-    exp1Title: "Associate Data Analyst – Össur",
+    exp1Title: "Associate Data Analyst",
     exp1Details: "Feb 2023 - Present | Irvine, CA",
-    exp2Title: "Global Supply Chain Intern – Howmet Aerospace",
+    exp2Title: "Global Supply Chain Intern",
     exp2Details: "Jun 2022 - Sep 2022 | Carson, CA",
-    exp3Title: "Internal Audit Analyst Intern – Optum",
+    exp3Title: "Internal Audit Analyst Intern",
     exp3Details: "Jun 2021 - Aug 2021 | Irvine, CA",
     educationTitle: "Education",
     educationText: "California State University, Long Beach\nBBA in Management Information Systems & Operations Management\nAug 2018 - Dec 2022",
@@ -63,7 +63,7 @@ const translations = {
     heroSubtitle: "情報を力に変え、イノベーションと成長を生み出す。",
     heroButton: "もっと知る",
     aboutTitle: "イントロダクション",
-    aboutText: "私は、データを通して革新を促し、進歩を実現する情熱を持つプロフェッショナルです。情報システムとオペレーションマネジメントの堅固な基盤を活かし、創造性と献身をもってあらゆる挑戦に取り組んでいます。データは単なる数字ではなく、未来を切り拓く原動力です。共に可能性を広げ、変革を起こしましょう。",
+    aboutText: "私は、データを通して革新を促し、進歩を実現する情熱を持つプロフェッショナルです。情報システムとオペレーションマネジメントの確固たる基盤を活かし、創造性と献身をもってあらゆる挑戦に取り組んでいます。データは単なる数字ではなく、未来を切り拓く原動力です。共に可能性を広げ、変革を起こしましょう。",
     galleryTitle: "ギャラリー",
     carousel1: "東京のteamLab Borderlessの輝きを体感",
     carousel2: "ロサンゼルスで総領事との心温まるひととき",
@@ -71,11 +71,11 @@ const translations = {
     prev: "前へ",
     next: "次へ",
     experienceTitle: "経験",
-    exp1Title: "Associate Data Analyst – Össur",
+    exp1Title: "Associate Data Analyst",
     exp1Details: "2023年2月～現在 | Irvine, CA",
-    exp2Title: "Global Supply Chain Intern – Howmet Aerospace",
+    exp2Title: "Global Supply Chain Intern",
     exp2Details: "2022年6月～9月 | Carson, CA",
-    exp3Title: "Internal Audit Analyst Intern – Optum",
+    exp3Title: "Internal Audit Analyst Intern",
     exp3Details: "2021年6月～8月 | Irvine, CA",
     educationTitle: "学歴",
     educationText: "カリフォルニア州立大学ロングビーチ校\n経営情報システム＆オペレーションマネジメント学士\n2018年8月～2022年12月",
@@ -95,7 +95,7 @@ const translations = {
     proj3Title: "Supply Chain Optimization",
     proj3Text: "Pythonを活用し、サプライヤーのリードタイムと在庫リスクの非効率性を明らかにし、具体的で実践的な洞察を提供します。",
     proj4Title: "Retail Superstore Analysis",
-    proj4Text: "SQL、Excel、Tableauを駆使して構築された小売パフォーマンスのダッシュボード。傾向とパターンを分析し、戦略的な判断をサポートします。",
+    proj4Text: "SQL、Excel、Tableauを駆使して構築された小売パフォーマンスのダッシュボード。傾向とパターンを解析し、戦略的な判断をサポートします。",
     proj5Title: "SmartAInventory",
     proj5Award: "全83チーム中上位13位 – Microsoft Fabric and AI Learning Hackathon",
     proj5Text: "Microsoft Fabric、Power BI、Azure OpenAIを用いたデータ駆動型在庫管理システム。需要予測とリスク低減を実現し、柔軟な意思決定を支援します。",
@@ -127,11 +127,11 @@ const translations = {
     prev: "上一张",
     next: "下一张",
     experienceTitle: "经历",
-    exp1Title: "Associate Data Analyst – Össur",
+    exp1Title: "Associate Data Analyst",
     exp1Details: "2023年2月 - 现在 | Irvine, CA",
-    exp2Title: "Global Supply Chain Intern – Howmet Aerospace",
+    exp2Title: "Global Supply Chain Intern",
     exp2Details: "2022年6月 - 9月 | Carson, CA",
-    exp3Title: "Internal Audit Analyst Intern – Optum",
+    exp3Title: "Internal Audit Analyst Intern",
     exp3Details: "2021年6月 - 8月 | Irvine, CA",
     educationTitle: "教育背景",
     educationText: "加州州立大学长滩分校\n管理信息系统与运营管理学士\n2018年8月 - 2022年12月",
@@ -175,7 +175,7 @@ const translations = {
     heroSubtitle: "데이터의 힘으로 혁신을 이끌며 새로운 변화를 만들어갑니다.",
     heroButton: "더 알아보기",
     aboutTitle: "소개",
-    aboutText: "저는 데이터의 가치를 믿는 전문가로서, 정보시스템과 운영관리 분야에서 쌓은 탄탄한 경험을 바탕으로 창의적이고 혁신적인 솔루션을 제공합니다. 데이터는 단순한 숫자가 아니라, 미래를 개척하는 열쇠입니다. 저와 함께 그 가능성을 실현해보세요.",
+    aboutText: "저는 데이터의 가치를 믿는 전문가로서, 정보시스템 및 운영관리 분야에서 쌓은 탄탄한 경험을 바탕으로 창의적이고 혁신적인 솔루션을 제공합니다. 데이터는 단순한 숫자가 아니라, 미래를 개척하는 열쇠입니다. 저와 함께 그 가능성을 실현해보세요.",
     galleryTitle: "갤러리",
     carousel1: "도쿄 teamLab Borderless의 찬란한 빛을 체험",
     carousel2: "로스앤젤레스에서 일본 총영사와 소중한 순간을 나누다",
@@ -183,11 +183,11 @@ const translations = {
     prev: "이전",
     next: "다음",
     experienceTitle: "경력",
-    exp1Title: "Associate Data Analyst – Össur",
+    exp1Title: "Associate Data Analyst",
     exp1Details: "2023년 2월 - 현재 | Irvine, CA",
-    exp2Title: "Global Supply Chain Intern – Howmet Aerospace",
+    exp2Title: "Global Supply Chain Intern",
     exp2Details: "2022년 6월 - 9월 | Carson, CA",
-    exp3Title: "Internal Audit Analyst Intern – Optum",
+    exp3Title: "Internal Audit Analyst Intern",
     exp3Details: "2021년 6월 - 8월 | Irvine, CA",
     educationTitle: "학력",
     educationText: "캘리포니아 주립대 롱비치\n경영정보시스템 및 운영관리 학사\n2018년 8월 - 2022년 12월",
@@ -202,7 +202,7 @@ const translations = {
     proj1Title: "Snapdragon AI: 다국어 번역기",
     proj1Award: "27개 팀 중 2위 – Windows on Snapdragon AI Hackathon",
     proj1Text: "Snapdragon용 다국어 온디바이스 번역기로, 영어, 일본어, 한국어, 중국어 간의 실시간 오프라인 번역을 최적화된 AI와 Python으로 구현. 가볍고 빠르며 조용히 강력합니다.",
-    proj2Title: "Sakura Guide さくらガイド",
+    proj2Title: "Sakura Guide さくらガ이드",
     proj2Text: "일본 여행의 세련된 동반자 – JavaScript, 디자인, 실시간 가이드를 결합해 양언어 및 위치 기반 여행 인사이트를 우아하게 제공합니다.",
     proj3Title: "Supply Chain Optimization",
     proj3Text: "Python을 활용해 공급업체 리드 타임과 재고 위험을 분석, 비효율성을 식별하고 명확한 데이터 인사이트로 더 나은 계획을 지원합니다.",
@@ -246,14 +246,19 @@ document.addEventListener('DOMContentLoaded', () => {
     updateTranslations(e.target.value);
   });
 
-  // Setup Gallery Thumbnail Modal
-  const galleryThumbs = document.querySelectorAll('.gallery-thumb');
+  // Setup Gallery Thumbnail & Profile Image Modal
+  // Now, both gallery-thumb and profile-img elements will trigger the modal.
+  const galleryItems = document.querySelectorAll('.gallery-thumb, .profile-img');
   const modalImage = document.getElementById('modalImage');
-
-  galleryThumbs.forEach((thumb) => {
-    thumb.addEventListener('click', () => {
-      const fullSrc = thumb.getAttribute('data-full');
+  const modalCaption = document.getElementById('modalCaption'); // Ensure you have this in your modal
+  galleryItems.forEach((item) => {
+    item.addEventListener('click', () => {
+      // Use data-full if available, otherwise fall back to src.
+      const fullSrc = item.getAttribute('data-full') || item.src;
       modalImage.src = fullSrc;
+      if (modalCaption) {
+        modalCaption.textContent = item.alt;
+      }
     });
   });
 });
