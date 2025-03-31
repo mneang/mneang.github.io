@@ -246,14 +246,13 @@ document.addEventListener('DOMContentLoaded', () => {
     updateTranslations(e.target.value);
   });
 
-  // Setup Gallery Thumbnail & Profile Image Modal
-  // Now, both gallery-thumb and profile-img elements will trigger the modal.
-  const galleryItems = document.querySelectorAll('.gallery-thumb, .profile-img');
+  // Setup Gallery & Carousel Modal
+  // Both carousel images and gallery thumbnails trigger the modal.
   const modalImage = document.getElementById('modalImage');
-  const modalCaption = document.getElementById('modalCaption'); // Ensure you have this in your modal
-  galleryItems.forEach((item) => {
+  const modalCaption = document.getElementById('modalCaption');
+  const modalItems = document.querySelectorAll('.about-carousel-img, .gallery-thumb');
+  modalItems.forEach(item => {
     item.addEventListener('click', () => {
-      // Use data-full if available, otherwise fall back to src.
       const fullSrc = item.getAttribute('data-full') || item.src;
       modalImage.src = fullSrc;
       if (modalCaption) {
