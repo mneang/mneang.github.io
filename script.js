@@ -246,15 +246,30 @@ document.addEventListener('DOMContentLoaded', () => {
     updateTranslations(e.target.value);
   });
 
-  // Modal for the single portrait image
-  const portraitImg = document.querySelector('.portrait-img');
-  const modalPortrait = document.getElementById('modalPortrait');
+  // Setup vertical picture picker in About section
+  // The main portrait is shown in #mainPortrait; vertical thumbnails are in .vertical-thumb.
+  const mainPortrait = document.getElementById('mainPortrait');
   const portraitCaption = document.getElementById('portraitCaption');
-  if (portraitImg && modalPortrait && portraitCaption) {
-    portraitImg.addEventListener('click', () => {
-      // Use the same src and alt for the modal
-      modalPortrait.src = portraitImg.src;
-      portraitCaption.textContent = portraitImg.alt;
+  const verticalThumbs = document.querySelectorAll('.vertical-thumb');
+
+  verticalThumbs.forEach((thumb) => {
+    thumb.addEventListener('click', () => {
+      // Update main portrait image with the clicked thumbnail's data-full or src.
+      const newSrc = thumb.getAttribute('data-full') || thumb.src;
+      mainPortrait.src = newSrc;
+      // Update caption using the alt text.
+      portraitCaption.textContent = thumb.alt;
+    });
+  });
+
+  // Optionally, allow clicking on the main portrait to open a modal for a full view.
+  const modalPortrait = document.getElementById('modalPortrait');
+  const portraitModal = document.getElementById('portraitModal');
+  if (mainPortrait && modalPortrait) {
+    mainPortrait.addEventListener('click', () => {
+      modalPortrait.src = mainPortrait.src;
+      // Set caption from main portrait alt
+      portraitCaption.textContent = mainPortrait.alt;
     });
   }
 });

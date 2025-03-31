@@ -9,7 +9,7 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
-  <!-- Optional Bootstrap Icons (for badges if desired) -->
+  <!-- Optional Bootstrap Icons -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -48,49 +48,59 @@
   </header>
 
   <main class="container mb-5">
-    <!-- About Section with Single Portrait Image on the Right -->
+    <!-- About Section with Vertical Picture Picker -->
     <section id="about" class="mb-5">
       <h2 data-key="aboutTitle">Introduction</h2>
       <div class="row align-items-center">
+        <!-- Left: Text -->
         <div class="col-lg-8">
           <p data-key="aboutText">
             I am a dedicated data professional who believes in the power of information to spark innovation and drive progress. With a robust background in Information Systems and Operations Management, I approach every challenge with creativity and commitment. Data isn’t just numbers—it’s the catalyst for growth and innovation. Join me on this journey as I harness data to unlock potential and shape the future.
           </p>
         </div>
-        <div class="col-lg-4 text-center">
-          <!-- Single Portrait Image -->
-          <img
-            src="pictures/profile-portrait.jpeg"
-            alt="A confident, portrait-oriented shot reflecting my data-driven focus"
-            class="img-fluid portrait-img"
-            data-bs-toggle="modal"
-            data-bs-target="#portraitModal"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Modal for Full-Size Portrait Image -->
-    <div
-      class="modal fade"
-      id="portraitModal"
-      tabindex="-1"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <img
-            id="modalPortrait"
-            src=""
-            alt=""
-            class="img-fluid"
-          />
-          <div class="modal-footer">
-            <p id="portraitCaption" class="mb-0"></p>
+        <!-- Right: Vertical Picture Picker -->
+        <div class="col-lg-4">
+          <!-- Main Portrait Display -->
+          <div class="text-center mb-3">
+            <img
+              id="mainPortrait"
+              src="pictures/profile-portrait.jpeg"
+              alt="Profile: A confident professional portrait"
+              class="img-fluid portrait-img"
+              data-full="pictures/profile-portrait.jpeg"
+            />
+            <p id="portraitCaption" class="mt-2">Profile: A confident professional portrait</p>
+          </div>
+          <!-- Vertical Thumbnails -->
+          <div class="vertical-thumbs d-flex flex-column">
+            <img
+              src="pictures/profile-portrait.jpeg"
+              alt="Profile: A confident professional portrait"
+              class="img-fluid vertical-thumb mb-2"
+              data-full="pictures/profile-portrait.jpeg"
+            />
+            <img
+              src="pictures/personal1.jpeg"
+              alt="Capturing the vibrant energy of Tokyo’s teamLab Borderless"
+              class="img-fluid vertical-thumb mb-2"
+              data-full="pictures/personal1.jpeg"
+            />
+            <img
+              src="pictures/personal2.jpeg"
+              alt="Sharing a memorable moment with Japan’s Consul-General in LA"
+              class="img-fluid vertical-thumb mb-2"
+              data-full="pictures/personal2.jpeg"
+            />
+            <img
+              src="pictures/personal3.jpeg"
+              alt="Embarking on my data journey at Össur"
+              class="img-fluid vertical-thumb"
+              data-full="pictures/personal3.jpeg"
+            />
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Experience Section -->
     <section id="experience" class="mb-5">
@@ -280,7 +290,7 @@
               <h5 class="card-title" data-key="proj5Title">SmartAInventory</h5>
               <p class="card-text text-info" data-key="proj5Award">Top 13 out of 83 – Microsoft Fabric and AI Learning Hackathon</p>
               <p class="card-text" data-key="proj5Text">
-                A dynamic inventory management system built with Microsoft Fabric, Power BI, and Azure OpenAI that forecasts demand, reduces risk, and supports agile, insight-led decision-making.
+                A dynamic inventory management system built with Microsoft Fabric, Power BI, and Azure OpenAI that forecasts demand, minimizes risk, and supports agile, insight-led decision-making.
               </p>
               <p><strong>Skills Used:</strong> Power BI, Azure OpenAI, Microsoft Fabric</p>
             </div>
@@ -292,7 +302,7 @@
       </div>
     </section>
 
-    <!-- Expanded Skills Section as Badge Lists -->
+    <!-- Skills Section (Using Badges) -->
     <section id="skills" class="mb-5">
       <h2 data-key="skillsTitle">Key Competencies</h2>
       <div class="row">
