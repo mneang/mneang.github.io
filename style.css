@@ -40,14 +40,22 @@ body {
   line-height: 1.8;
 }
 
-/* About Carousel */
+/* Gallery Thumbnails */
+.gallery-thumb {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* About Carousel in About Section */
 .about-carousel-img {
   object-fit: cover;
   width: 100%;
   max-height: 300px;
 }
 
-/* Timeline (Experience) */
+/* Experience Section (Cards) */
 .timeline {
   position: relative;
   margin-left: 1.5rem;
@@ -73,7 +81,7 @@ body {
   margin-left: 1rem;
 }
 
-/* Cards (Certifications, Projects) */
+/* Cards (Certifications, Projects, Experience) */
 .card {
   border: none;
   border-radius: 0.5rem;
@@ -102,7 +110,7 @@ body {
   height: 150px;
 }
 
-/* Skills Section (Simple List with Custom Icons) */
+/* Skills Section */
 #skills h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
@@ -130,8 +138,7 @@ body {
   font-weight: 600;
   font-size: 1rem;
 }
-#contact input,
-#contact textarea {
+#contact input, #contact textarea {
   font-size: 1rem;
 }
 

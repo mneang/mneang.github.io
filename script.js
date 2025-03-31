@@ -7,7 +7,7 @@ const translations = {
     heroSubtitle: "Transforming insights into impact—one dataset at a time.",
     heroButton: "Discover More",
     aboutTitle: "Introduction",
-    aboutText: "Welcome! With a strong foundation in Information Systems and Operations Management, I dedicate my work to harnessing data to spark meaningful decisions and drive innovation. I view every challenge as an opportunity to excel and inspire change. Join me on this journey toward impactful transformation.",
+    aboutText: "I am a dedicated data professional with a relentless passion for transforming raw data into compelling stories and strategic insights. With a robust background in Information Systems and Operations Management, I tackle every challenge with creativity and commitment. I believe data isn’t just numbers—it’s the spark that ignites growth and innovation. Join me in this journey of exploration, excellence, and transformation.",
     galleryTitle: "Gallery",
     carousel1: "Experiencing the brilliance of Tokyo’s teamLab Borderless",
     carousel2: "A memorable moment with Japan’s Consul-General in LA",
@@ -33,7 +33,7 @@ const translations = {
     projectsTitle: "Projects",
     proj1Title: "Snapdragon AI: Multilingual Translator",
     proj1Award: "2nd Place out of 27 – Windows on Snapdragon AI Hackathon",
-    proj1Text: "An innovative on-device translator for Snapdragon that offers real-time, offline translation between English, Japanese, Korean, and Chinese using optimized AI and Python. Efficient, swift, and subtly powerful.",
+    proj1Text: "An innovative on-device translator for Snapdragon that offers real-time, offline translation between English, Japanese, Korean, and Chinese using optimized AI and Python.",
     proj2Title: "Sakura Guide さくらガイド",
     proj2Text: "A refined travel companion for Japan that fuses JavaScript, design, and real-time guidance to deliver elegant bilingual, location-based travel insights.",
     proj3Title: "Supply Chain Optimization",
@@ -237,7 +237,6 @@ function updateTranslations(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Set default language to English
   updateTranslations('en');
   const languageSelect = document.getElementById('languageSelect');
   languageSelect.addEventListener('change', (e) => {
