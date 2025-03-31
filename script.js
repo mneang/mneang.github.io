@@ -1,17 +1,17 @@
-// Translation dictionary for culturally-aware, inspiring texts
+// Translation dictionary for culturally-aware, inspiring texts with a cosmopolitan feel
 const translations = {
   en: {
     pageTitle: "My Professional Journey",
     navbarTitle: "Hi, I'm Michael",
     heroTitle: "Your Data, My Passion",
-    heroSubtitle: "Transforming insights into impact—one dataset at a time.",
+    heroSubtitle: "I transform raw numbers into dynamic insights that drive meaningful change.",
     heroButton: "Discover More",
     aboutTitle: "Introduction",
-    aboutText: "I am a dedicated data professional with a relentless passion for transforming raw data into compelling stories and strategic insights. With a robust background in Information Systems and Operations Management, I tackle every challenge with creativity and commitment. I believe data isn’t just numbers—it’s the spark that ignites growth and innovation. Join me in this journey of exploration, excellence, and transformation.",
+    aboutText: "I am a dedicated data professional who believes in the power of information to spark innovation and drive progress. With a robust background in Information Systems and Operations Management, I approach every challenge with creativity and commitment. Data isn’t just numbers—it’s the catalyst for growth and innovation. Join me on this journey as I harness data to unlock potential and shape the future.",
     galleryTitle: "Gallery",
-    carousel1: "Experiencing the brilliance of Tokyo’s teamLab Borderless",
-    carousel2: "A memorable moment with Japan’s Consul-General in LA",
-    carousel3: "My inaugural day as a data analyst at Össur",
+    carousel1: "Capturing the vibrant energy of Tokyo’s teamLab Borderless",
+    carousel2: "Sharing a memorable moment with Japan’s Consul-General in LA",
+    carousel3: "Embarking on my data journey at Össur",
     prev: "Previous",
     next: "Next",
     experienceTitle: "Experience",
@@ -35,14 +35,14 @@ const translations = {
     proj1Award: "2nd Place out of 27 – Windows on Snapdragon AI Hackathon",
     proj1Text: "An innovative on-device translator for Snapdragon that offers real-time, offline translation between English, Japanese, Korean, and Chinese using optimized AI and Python.",
     proj2Title: "Sakura Guide さくらガイド",
-    proj2Text: "A refined travel companion for Japan that fuses JavaScript, design, and real-time guidance to deliver elegant bilingual, location-based travel insights.",
+    proj2Text: "A refined travel companion for Japan that blends modern design with real-time guidance to deliver elegant, bilingual travel insights.",
     proj3Title: "Supply Chain Optimization",
-    proj3Text: "A focused analysis using Python to identify inefficiencies in supplier lead times and inventory risk, delivering clear, actionable insights for improved planning.",
+    proj3Text: "A focused analysis using Python to uncover inefficiencies in supplier lead times and inventory risk, providing actionable insights for smarter planning.",
     proj4Title: "Retail Superstore Analysis",
-    proj4Text: "A thoughtful dashboard built with SQL, Excel, and Tableau that uncovers patterns and trends in retail performance, empowering smart business decisions.",
+    proj4Text: "A thoughtfully designed dashboard built with SQL, Excel, and Tableau that reveals trends in retail performance, empowering strategic decisions.",
     proj5Title: "SmartAInventory",
     proj5Award: "Top 13 out of 83 – Microsoft Fabric and AI Learning Hackathon",
-    proj5Text: "A dynamic inventory management system built with Microsoft Fabric, Power BI, and Azure OpenAI that forecasts demand, reduces risk, and supports agile, insight-led decision-making.",
+    proj5Text: "A dynamic inventory management system built with Microsoft Fabric, Power BI, and Azure OpenAI that forecasts demand, minimizes risk, and supports agile, insight-led decision-making.",
     skillsTitle: "Key Competencies",
     skillsVisTitle: "Data Visualization & Reporting",
     skillsAnalysisTitle: "Data Analysis & Manipulation",
@@ -60,10 +60,10 @@ const translations = {
     pageTitle: "私のプロフェッショナル・ジャーニー",
     navbarTitle: "こんにちは、マイケルです",
     heroTitle: "データに情熱を、未来に挑む",
-    heroSubtitle: "データの力で変革と感動を生み出す。",
+    heroSubtitle: "情報を力に変え、イノベーションと成長を生み出す。",
     heroButton: "もっと知る",
     aboutTitle: "イントロダクション",
-    aboutText: "情報システムとオペレーションマネジメントの確固たる基盤を活かし、データを通して革新的な意思決定を実現しています。すべての挑戦は成長と変革の機会。共に未来を切り拓きましょう。",
+    aboutText: "私は、データを通して革新を促し、進歩を実現する情熱を持つプロフェッショナルです。情報システムとオペレーションマネジメントの堅固な基盤を活かし、創造性と献身をもってあらゆる挑戦に取り組んでいます。データは単なる数字ではなく、未来を切り拓く原動力です。共に可能性を広げ、変革を起こしましょう。",
     galleryTitle: "ギャラリー",
     carousel1: "東京のteamLab Borderlessの輝きを体感",
     carousel2: "ロサンゼルスで総領事との心温まるひととき",
@@ -89,16 +89,16 @@ const translations = {
     projectsTitle: "プロジェクト",
     proj1Title: "Snapdragon AI: 多言語翻訳機",
     proj1Award: "全27チーム中2位 – Windows on Snapdragon AI Hackathon",
-    proj1Text: "最先端のAIとPythonを駆使し、英語、日本語、韓国語、中国語間のリアルタイム・オフライン翻訳を実現する多言語オンデバイス翻訳機。効率的で迅速、控えめに強力。",
+    proj1Text: "最先端のAIとPythonを駆使し、英語、日本語、韓国語、中国語間のリアルタイム・オフライン翻訳を実現する多言語オンデバイス翻訳機。効率的で迅速、控えめに力強い。",
     proj2Title: "Sakura Guide さくらガイド",
-    proj2Text: "日本旅行の洗練された伴侶。JavaScript、デザイン、リアルタイムガイダンスを融合し、優雅でバイリンガルな位置情報に基づく洞察を提供。",
+    proj2Text: "洗練された日本旅行の伴侶。最新のデザインとリアルタイムガイダンスを融合し、優雅なバイリンガルの旅行インサイトを提供します。",
     proj3Title: "Supply Chain Optimization",
-    proj3Text: "Pythonを活用し、サプライヤーのリードタイムと在庫リスクの非効率性を明らかに、具体的なデータ洞察で計画改善を支援。",
+    proj3Text: "Pythonを活用し、サプライヤーのリードタイムと在庫リスクの非効率性を明らかにし、具体的で実践的な洞察を提供します。",
     proj4Title: "Retail Superstore Analysis",
-    proj4Text: "SQL、Excel、Tableauで構築された小売パフォーマンスのダッシュボード。パターンと傾向を解析し、賢明な経営判断をサポート。",
+    proj4Text: "SQL、Excel、Tableauを駆使して構築された小売パフォーマンスのダッシュボード。傾向とパターンを分析し、戦略的な判断をサポートします。",
     proj5Title: "SmartAInventory",
     proj5Award: "全83チーム中上位13位 – Microsoft Fabric and AI Learning Hackathon",
-    proj5Text: "Microsoft Fabric、Power BI、Azure OpenAIを駆使したデータ駆動の在庫管理システム。需要予測、リスク低減、柔軟な意思決定を実現。",
+    proj5Text: "Microsoft Fabric、Power BI、Azure OpenAIを用いたデータ駆動型在庫管理システム。需要予測とリスク低減を実現し、柔軟な意思決定を支援します。",
     skillsTitle: "主要スキル",
     skillsVisTitle: "データ可視化 & レポーティング",
     skillsAnalysisTitle: "データ分析 & 操作",
@@ -116,10 +116,10 @@ const translations = {
     pageTitle: "我的职业旅程",
     navbarTitle: "嗨，我是Michael",
     heroTitle: "用数据点亮未来",
-    heroSubtitle: "让数据驱动智慧，成就非凡。",
+    heroSubtitle: "我将原始数据转化为驱动深远变革的智慧洞察。",
     heroButton: "了解更多",
     aboutTitle: "简介",
-    aboutText: "凭借信息系统与运营管理的坚实基础，我致力于用数据推动战略决策与创新。每个挑战都是突破的契机，期待与您共创深远影响。",
+    aboutText: "我是一位专注于数据的专业人士，相信信息的力量能够启迪创新和推动进步。凭借扎实的信息系统和运营管理背景，我以创造性和决心迎接每一个挑战。数据不仅仅是数字，它是激发成长与革新的源泉。让我们一起探索未来的无限可能。",
     galleryTitle: "画廊",
     carousel1: "感受东京teamLab Borderless的璀璨光芒",
     carousel2: "与日本总领事在洛杉矶共享温馨时刻",
@@ -172,10 +172,10 @@ const translations = {
     pageTitle: "내 프로페셔널 여정",
     navbarTitle: "안녕하세요, 저는 Michael입니다",
     heroTitle: "데이터로 미래를 밝히다",
-    heroSubtitle: "데이터의 힘으로 혁신을 이끌며 새로운 변화를 만듭니다.",
+    heroSubtitle: "데이터의 힘으로 혁신을 이끌며 새로운 변화를 만들어갑니다.",
     heroButton: "더 알아보기",
     aboutTitle: "소개",
-    aboutText: "정보시스템 및 운영관리 분야에서 탄탄한 기반을 바탕으로, 데이터를 통해 전략적 의사결정과 혁신을 실현해왔습니다. 저는 모든 도전을 기회로 삼아 최선을 다하며, 함께 의미 있는 변화를 만들어가고자 합니다.",
+    aboutText: "저는 데이터의 가치를 믿는 전문가로서, 정보시스템과 운영관리 분야에서 쌓은 탄탄한 경험을 바탕으로 창의적이고 혁신적인 솔루션을 제공합니다. 데이터는 단순한 숫자가 아니라, 미래를 개척하는 열쇠입니다. 저와 함께 그 가능성을 실현해보세요.",
     galleryTitle: "갤러리",
     carousel1: "도쿄 teamLab Borderless의 찬란한 빛을 체험",
     carousel2: "로스앤젤레스에서 일본 총영사와 소중한 순간을 나누다",
@@ -202,7 +202,7 @@ const translations = {
     proj1Title: "Snapdragon AI: 다국어 번역기",
     proj1Award: "27개 팀 중 2위 – Windows on Snapdragon AI Hackathon",
     proj1Text: "Snapdragon용 다국어 온디바이스 번역기로, 영어, 일본어, 한국어, 중국어 간의 실시간 오프라인 번역을 최적화된 AI와 Python으로 구현. 가볍고 빠르며 조용히 강력합니다.",
-    proj2Title: "Sakura Guide さくらガ이드",
+    proj2Title: "Sakura Guide さくらガイド",
     proj2Text: "일본 여행의 세련된 동반자 – JavaScript, 디자인, 실시간 가이드를 결합해 양언어 및 위치 기반 여행 인사이트를 우아하게 제공합니다.",
     proj3Title: "Supply Chain Optimization",
     proj3Text: "Python을 활용해 공급업체 리드 타임과 재고 위험을 분석, 비효율성을 식별하고 명확한 데이터 인사이트로 더 나은 계획을 지원합니다.",
@@ -237,9 +237,23 @@ function updateTranslations(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Set default language to English
   updateTranslations('en');
+
+  // Handle language switching
   const languageSelect = document.getElementById('languageSelect');
   languageSelect.addEventListener('change', (e) => {
     updateTranslations(e.target.value);
+  });
+
+  // Setup Gallery Thumbnail Modal
+  const galleryThumbs = document.querySelectorAll('.gallery-thumb');
+  const modalImage = document.getElementById('modalImage');
+
+  galleryThumbs.forEach((thumb) => {
+    thumb.addEventListener('click', () => {
+      const fullSrc = thumb.getAttribute('data-full');
+      modalImage.src = fullSrc;
+    });
   });
 });
