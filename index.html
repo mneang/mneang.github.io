@@ -48,58 +48,49 @@
   </header>
 
   <main class="container mb-5">
-    <!-- About Section with Carousel -->
+    <!-- About Section with Single Portrait Image on the Right -->
     <section id="about" class="mb-5">
       <h2 data-key="aboutTitle">Introduction</h2>
-      <div class="row">
-        <div class="col-lg-12">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
           <p data-key="aboutText">
             I am a dedicated data professional who believes in the power of information to spark innovation and drive progress. With a robust background in Information Systems and Operations Management, I approach every challenge with creativity and commitment. Data isn’t just numbers—it’s the catalyst for growth and innovation. Join me on this journey as I harness data to unlock potential and shape the future.
           </p>
         </div>
-      </div>
-      <!-- Carousel: Includes your profile image as the first slide -->
-      <div id="aboutCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <!-- Slide 1: Profile Image -->
-          <div class="carousel-item active">
-            <img src="pictures/profile.jpeg" class="d-block w-100 about-carousel-img" alt="Profile: A focused professional portrait" data-full="pictures/profile.jpeg" />
-            <div class="carousel-caption d-none d-md-block">
-              <p>Profile: A focused professional portrait</p>
-            </div>
-          </div>
-          <!-- Slide 2: Personal Image 1 -->
-          <div class="carousel-item">
-            <img src="pictures/personal1.jpeg" class="d-block w-100 about-carousel-img" alt="Capturing the vibrant energy of Tokyo’s teamLab Borderless" data-full="pictures/personal1.jpeg" />
-            <div class="carousel-caption d-none d-md-block">
-              <p data-key="carousel1">Capturing the vibrant energy of Tokyo’s teamLab Borderless</p>
-            </div>
-          </div>
-          <!-- Slide 3: Personal Image 2 -->
-          <div class="carousel-item">
-            <img src="pictures/personal2.jpeg" class="d-block w-100 about-carousel-img" alt="Sharing a memorable moment with Japan’s Consul-General in LA" data-full="pictures/personal2.jpeg" />
-            <div class="carousel-caption d-none d-md-block">
-              <p data-key="carousel2">Sharing a memorable moment with Japan’s Consul-General in LA</p>
-            </div>
-          </div>
-          <!-- Slide 4: Personal Image 3 -->
-          <div class="carousel-item">
-            <img src="pictures/personal3.jpeg" class="d-block w-100 about-carousel-img" alt="Embarking on my data journey at Össur" data-full="pictures/personal3.jpeg" />
-            <div class="carousel-caption d-none d-md-block">
-              <p data-key="carousel3">Embarking on my data journey at Össur</p>
-            </div>
-          </div>
+        <div class="col-lg-4 text-center">
+          <!-- Single Portrait Image -->
+          <img
+            src="pictures/profile-portrait.jpeg"
+            alt="A confident, portrait-oriented shot reflecting my data-driven focus"
+            class="img-fluid portrait-img"
+            data-bs-toggle="modal"
+            data-bs-target="#portraitModal"
+          />
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden" data-key="prev">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden" data-key="next">Next</span>
-        </button>
       </div>
     </section>
+
+    <!-- Modal for Full-Size Portrait Image -->
+    <div
+      class="modal fade"
+      id="portraitModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img
+            id="modalPortrait"
+            src=""
+            alt=""
+            class="img-fluid"
+          />
+          <div class="modal-footer">
+            <p id="portraitCaption" class="mb-0"></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Experience Section -->
     <section id="experience" class="mb-5">

@@ -246,18 +246,15 @@ document.addEventListener('DOMContentLoaded', () => {
     updateTranslations(e.target.value);
   });
 
-  // Setup Gallery & Carousel Modal
-  // Both carousel images and gallery thumbnails trigger the modal.
-  const modalImage = document.getElementById('modalImage');
-  const modalCaption = document.getElementById('modalCaption');
-  const modalItems = document.querySelectorAll('.about-carousel-img, .gallery-thumb');
-  modalItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const fullSrc = item.getAttribute('data-full') || item.src;
-      modalImage.src = fullSrc;
-      if (modalCaption) {
-        modalCaption.textContent = item.alt;
-      }
+  // Modal for the single portrait image
+  const portraitImg = document.querySelector('.portrait-img');
+  const modalPortrait = document.getElementById('modalPortrait');
+  const portraitCaption = document.getElementById('portraitCaption');
+  if (portraitImg && modalPortrait && portraitCaption) {
+    portraitImg.addEventListener('click', () => {
+      // Use the same src and alt for the modal
+      modalPortrait.src = portraitImg.src;
+      portraitCaption.textContent = portraitImg.alt;
     });
-  });
+  }
 });
