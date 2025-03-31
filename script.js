@@ -246,20 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateTranslations(e.target.value);
   });
 
-  // Setup vertical picture picker in About section using a carousel with Prev/Next buttons
-  // (Since you want a vertical carousel-like behavior, we will use a Bootstrap carousel 
-  // but style it in portrait mode so images appear in a column)
-  
-  // No extra JS is needed for the carousel because Bootstrap handles it.
-  // However, if you want to ensure the modal displays the full image on click:
-  const modalPortrait = document.getElementById('modalPortrait');
-  const portraitCaption = document.getElementById('portraitCaption');
-  const carouselImages = document.querySelectorAll('.about-carousel-img');
-  carouselImages.forEach(img => {
-    img.addEventListener('click', () => {
-      const fullSrc = img.getAttribute('data-full') || img.src;
-      modalPortrait.src = fullSrc;
-      portraitCaption.textContent = img.alt;
-    });
-  });
+  // No special JS needed for the vertical carousel aside from the default 
+  // Bootstrap behavior. If you'd like to place controls top/bottom, you can
+  // do so with additional custom CSS or by re-positioning the .carousel-control elements.
 });
