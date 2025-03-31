@@ -43,35 +43,48 @@ body {
   line-height: 1.8;
 }
 
-/* Portrait Picture Picker (Right Column) */
-.portrait-img {
+/* Carousel for About Section */
+.about-carousel-img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 500px; /* Ensure full portrait image is shown */
+}
+
+/* Timeline for Experience Section */
+.timeline {
+  position: relative;
+  margin-left: 2rem;
+  padding-left: 1rem;
+  border-left: 3px solid #ddd;
+}
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+/* Education Card */
+.education-card {
+  overflow: hidden;
+}
+.education-img {
   object-fit: contain;
   width: 100%;
-  max-height: 500px;
-  cursor: pointer;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1);
+  height: 100%;
+  padding: 1rem;
 }
 
-/* Vertical Thumbnail List */
-.vertical-thumbs {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-.vertical-thumb {
-  width: 100%;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-.vertical-thumb:hover {
-  transform: scale(1.05);
-}
-
-/* Cards (Experience, Education, Certifications, Projects) */
+/* Certifications & Project Cards */
 .card {
   border: none;
   border-radius: 0.5rem;
@@ -80,7 +93,7 @@ body {
 .card-img-top {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
-  object-fit: contain;
+  object-fit: cover;
   height: 200px;
   width: 100%;
 }
@@ -89,14 +102,12 @@ body {
   width: 150px;
   height: 150px;
 }
-
-/* Project Cards Hover Effect */
 .project-card:hover {
   transform: translateY(-5px);
   transition: transform 0.3s ease;
 }
 
-/* Skills Section using Badges */
+/* Skills Section (Using Badges) */
 #skills .badge {
   font-size: 1rem;
   padding: 0.5em 0.75em;

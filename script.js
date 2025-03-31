@@ -246,30 +246,20 @@ document.addEventListener('DOMContentLoaded', () => {
     updateTranslations(e.target.value);
   });
 
-  // Setup vertical picture picker in About section
-  // The main portrait is shown in #mainPortrait; vertical thumbnails are in .vertical-thumb.
-  const mainPortrait = document.getElementById('mainPortrait');
+  // Setup vertical picture picker in About section using a carousel with Prev/Next buttons
+  // (Since you want a vertical carousel-like behavior, we will use a Bootstrap carousel 
+  // but style it in portrait mode so images appear in a column)
+  
+  // No extra JS is needed for the carousel because Bootstrap handles it.
+  // However, if you want to ensure the modal displays the full image on click:
+  const modalPortrait = document.getElementById('modalPortrait');
   const portraitCaption = document.getElementById('portraitCaption');
-  const verticalThumbs = document.querySelectorAll('.vertical-thumb');
-
-  verticalThumbs.forEach((thumb) => {
-    thumb.addEventListener('click', () => {
-      // Update main portrait image with the clicked thumbnail's data-full or src.
-      const newSrc = thumb.getAttribute('data-full') || thumb.src;
-      mainPortrait.src = newSrc;
-      // Update caption using the alt text.
-      portraitCaption.textContent = thumb.alt;
+  const carouselImages = document.querySelectorAll('.about-carousel-img');
+  carouselImages.forEach(img => {
+    img.addEventListener('click', () => {
+      const fullSrc = img.getAttribute('data-full') || img.src;
+      modalPortrait.src = fullSrc;
+      portraitCaption.textContent = img.alt;
     });
   });
-
-  // Optionally, allow clicking on the main portrait to open a modal for a full view.
-  const modalPortrait = document.getElementById('modalPortrait');
-  const portraitModal = document.getElementById('portraitModal');
-  if (mainPortrait && modalPortrait) {
-    mainPortrait.addEventListener('click', () => {
-      modalPortrait.src = mainPortrait.src;
-      // Set caption from main portrait alt
-      portraitCaption.textContent = mainPortrait.alt;
-    });
-  }
 });
