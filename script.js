@@ -246,6 +246,4 @@ document.addEventListener('DOMContentLoaded', () => {
   languageSelect.addEventListener('change', (e) => {
     updateTranslations(e.target.value);
   });
-
-  // No special JS is needed for the vertical carousel aside from the default Bootstrap behavior.
 });

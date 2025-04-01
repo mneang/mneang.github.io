@@ -1,194 +1,159 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-  <div class="container d-flex justify-content-between align-items-center">
-    <!-- Left side: Brand and Tagline -->
-    <div class="d-flex flex-column">
-      <a class="navbar-brand" href="#" data-key="navbarTitle">Michael Neang</a>
-      <span class="navbar-text small" data-key="heroSubtitle">Analytics • Insights • Impact</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-key="pageTitle">Michael's Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Optional Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light text-dark">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Left side: Brand and Tagline -->
+      <div class="d-flex flex-column">
+        <a class="navbar-brand" href="#" data-key="navbarTitle">Michael Neang</a>
+        <span class="navbar-text small" data-key="heroSubtitle">Analytics • Insights • Impact</span>
+      </div>
+      <!-- Right side: Language select and icons -->
+      <div class="d-flex align-items-center">
+        <select id="languageSelect" class="form-select form-select-sm me-3 w-auto">
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+          <option value="zh">中文</option>
+          <option value="ko">한국어</option>
+        </select>
+        <a href="https://www.linkedin.com/in/mneang" target="_blank" class="me-2">
+          <img src="pictures/linkedin.png" alt="LinkedIn" width="32" height="32">
+        </a>
+        <a href="https://github.com/mneang" target="_blank">
+          <img src="pictures/github.png" alt="GitHub" width="32" height="32">
+        </a>
+      </div>
     </div>
-    <!-- Right side: Language select and icons -->
-    <div class="d-flex align-items-center">
-      <select id="languageSelect" class="form-select form-select-sm me-3 w-auto">
-        <option value="en">English</option>
-        <option value="ja">日本語</option>
-        <option value="zh">中文</option>
-        <option value="ko">한국어</option>
-      </select>
-      <a href="https://www.linkedin.com/in/mneang" target="_blank" class="me-2">
-        <img src="pictures/linkedin.png" alt="LinkedIn" width="32" height="32" />
-      </a>
-      <a href="https://github.com/mneang" target="_blank">
-        <img src="pictures/github.png" alt="GitHub" width="32" height="32" />
-      </a>
-    </div>
-  </div>
-</nav>
+  </nav>
 
   <main class="container mb-5">
     <!-- About Section with Vertical "Portrait" Carousel on the Right -->
     <section id="about-detail" class="mb-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Left Column: About Me Text -->
-          <div class="col-lg-8">
-            <h2 data-key="aboutDetailTitle">About Me</h2>
-            <p data-key="aboutDetail1">
-              At 24 years old, I’ve embarked on a dynamic journey as a data analyst—but I’m more than just my job title. My path so far has been shaped by a strong educational foundation in Information Systems and Operations Management from California State University, Long Beach, bolstered by specialized certifications such as Microsoft’s Power BI Data Analyst (PL‑300) and Tableau’s Certified Data Analyst (TDA‑C01). This blend of formal education and practical expertise has given me a powerful toolkit to help stakeholders uncover hidden stories within their data and transform insights into impactful decisions.
-            </p>
-            <p data-key="aboutDetail2">
-              Throughout my career, I’ve collaborated closely with teams across sales operations and supply chain management, refining processes and amplifying performance. Each project and every dataset has taught me something new—not just about analytics or business strategy, but about the value of continuous growth and curiosity. I believe true innovation arises at the intersection of technical skill and relentless creativity, and my aspiration is to further evolve into roles such as data engineer or data scientist, where I can deepen my impact and help drive lasting organizational change.
-            </p>
-            <p data-key="aboutDetail3">
-              Every day presents fresh opportunities to learn and expand my horizons, and I approach each challenge with humility and eagerness. I’m passionate about leveraging data not merely as numbers, but as meaningful narratives that empower businesses and enrich lives. If you’re looking for someone who is dedicated, versatile, and constantly driven to grow—someone who understands the power of data to lead thoughtful change—then you’ve come to the right place. Let’s connect, collaborate, and create the future together.
-            </p>
-          </div>
-          
-          <!-- Right Column: Carousel with Captions -->
-          <div class="col-lg-4">
-            <div id="portraitCarousel" class="carousel slide vertical-carousel" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <!-- Slide 1: Professional Headshot -->
-                <div class="carousel-item active">
-                  <img
-                    src="pictures/profile.jpeg"
-                    alt="My professional headshot."
-                    class="d-block w-100 portrait-carousel-img"
-                  />
-                  <div class="carousel-caption d-none d-md-block">
-                    <p>My professional headshot.</p>
-                  </div>
-                </div>
-                <!-- Slide 2: teamLab Borderless (Updated Caption) -->
-                <div class="carousel-item">
-                  <img
-                    src="pictures/personal1.jpeg"
-                    alt="Experience with cutting-edge technology at Tokyo's teamLab Borderless"
-                    class="d-block w-100 portrait-carousel-img"
-                  />
-                  <div class="carousel-caption d-none d-md-block">
-                    <p>
-                      Exploring the fusion of digital innovation and art at Tokyo's teamLab Borderless.
-                    </p>
-                  </div>
-                </div>
-                <!-- Slide 3: Meeting with Japan’s Consul-General -->
-                <div class="carousel-item">
-                  <img
-                    src="pictures/personal2.jpeg"
-                    alt="Sharing a memorable meeting with Japan’s Consul-General in LA"
-                    class="d-block w-100 portrait-carousel-img"
-                  />
-                  <div class="carousel-caption d-none d-md-block">
-                    <p>Networking with Japan’s Consul-General in LA</p>
-                  </div>
-                </div>
-                <!-- Slide 4: Embarking on Career at Össur -->
-                <div class="carousel-item">
-                  <img
-                    src="pictures/personal3.jpeg"
-                    alt="Embarking on my career at Össur"
-                    class="d-block w-100 portrait-carousel-img"
-                  />
-                  <div class="carousel-caption d-none d-md-block">
-                    <p>Starting my first job at Össur</p>
-                  </div>
+      <div class="row align-items-center">
+        <!-- Left Column: About Me Text -->
+        <div class="col-lg-8">
+          <h2 data-key="aboutDetailTitle">About Me</h2>
+          <p data-key="aboutDetail1">
+            At 24 years old, I’ve embarked on a dynamic journey as a data analyst—but I’m more than just my job title. My path so far has been shaped by a strong educational foundation in Information Systems and Operations Management from California State University, Long Beach, bolstered by specialized certifications such as Microsoft’s Power BI Data Analyst (PL‑300) and Tableau’s Certified Data Analyst (TDA‑C01). This blend of formal education and practical expertise has given me a powerful toolkit to help stakeholders uncover hidden stories within their data and transform insights into impactful decisions.
+          </p>
+          <p data-key="aboutDetail2">
+            Throughout my career, I’ve collaborated closely with teams across sales operations and supply chain management, refining processes and amplifying performance. Each project and every dataset has taught me something new—not just about analytics or business strategy, but about the value of continuous growth and curiosity. I believe true innovation arises at the intersection of technical skill and relentless creativity, and my aspiration is to further evolve into roles such as data engineer or data scientist, where I can deepen my impact and help drive lasting organizational change.
+          </p>
+          <p data-key="aboutDetail3">
+            Every day presents fresh opportunities to learn and expand my horizons, and I approach each challenge with humility and eagerness. I’m passionate about leveraging data not merely as numbers, but as meaningful narratives that empower businesses and enrich lives. If you’re looking for someone who is dedicated, versatile, and constantly driven to grow—someone who understands the power of data to lead thoughtful change—then you’ve come to the right place. Let’s connect, collaborate, and create the future together.
+          </p>
+        </div>
+        <!-- Right Column: Carousel with Captions -->
+        <div class="col-lg-4">
+          <div id="portraitCarousel" class="carousel slide vertical-carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Slide 1: Professional Headshot -->
+              <div class="carousel-item active">
+                <img src="pictures/profile.jpeg" alt="My professional headshot." class="d-block w-100 portrait-carousel-img">
+                <div class="carousel-caption d-none d-md-block">
+                  <p data-key="carouselCaption1">My professional headshot</p>
                 </div>
               </div>
-              <!-- Carousel Controls -->
-              <button class="carousel-control-prev" type="button" data-bs-target="#portraitCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden" data-key="prev">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#portraitCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden" data-key="next">Next</span>
-              </button>
+              <!-- Slide 2: teamLab Borderless -->
+              <div class="carousel-item">
+                <img src="pictures/personal1.jpeg" alt="Experience with cutting-edge technology at Tokyo's teamLab Borderless" class="d-block w-100 portrait-carousel-img">
+                <div class="carousel-caption d-none d-md-block">
+                  <p data-key="carouselCaption2">Exploring the fusion of digital innovation and art at Tokyo's teamLab Borderless—reflecting my passion for technology and data analytics.</p>
+                </div>
+              </div>
+              <!-- Slide 3: Meeting with Japan’s Consul-General -->
+              <div class="carousel-item">
+                <img src="pictures/personal2.jpeg" alt="Sharing a memorable meeting with Japan’s Consul-General in LA" class="d-block w-100 portrait-carousel-img">
+                <div class="carousel-caption d-none d-md-block">
+                  <p data-key="carouselCaption3">Networking internationally with Japan’s Consul-General in LA</p>
+                </div>
+              </div>
+              <!-- Slide 4: Starting at Össur -->
+              <div class="carousel-item">
+                <img src="pictures/personal3.jpeg" alt="Embarking on my career at Össur" class="d-block w-100 portrait-carousel-img">
+                <div class="carousel-caption d-none d-md-block">
+                  <p data-key="carouselCaption4">Embarking on my professional journey at Össur</p>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#portraitCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden" data-key="prev">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#portraitCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden" data-key="next">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="mb-5">
+      <h2 data-key="experienceTitle">Experience</h2>
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content d-flex align-items-center">
+            <img src="pictures/ossur.png" alt="Össur Logo" class="me-3" style="width:40px; height:40px; object-fit:contain;">
+            <div>
+              <h5 data-key="exp1Title">Data Analyst (Sales Operations)</h5>
+              <p class="text-muted" data-key="exp1Details">Feb 2023 - Present | Irvine, CA</p>
+            </div>
+          </div>
+        </div>
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content d-flex align-items-center">
+            <img src="pictures/howmet.png" alt="Howmet Logo" class="me-3" style="width:40px; height:40px; object-fit:contain;">
+            <div>
+              <h5 data-key="exp2Title">Global Supply Chain Intern</h5>
+              <p class="text-muted" data-key="exp2Details">Jun 2022 - Sep 2022 | Carson, CA</p>
+            </div>
+          </div>
+        </div>
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content d-flex align-items-center">
+            <img src="pictures/optum.png" alt="Optum Logo" class="me-3" style="width:40px; height:40px; object-fit:contain;">
+            <div>
+              <h5 data-key="exp3Title">Internal Audit Analyst Intern</h5>
+              <p class="text-muted" data-key="exp3Details">Jun 2021 - Aug 2021 | Irvine, CA</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-<section id="experience" class="mb-5">
-  <h2 data-key="experienceTitle">Experience</h2>
-  <div class="timeline">
-    <!-- Timeline Item 1 -->
-    <div class="timeline-item">
-      <!-- Marker remains the small dot -->
-      <div class="timeline-marker"></div>
-      <!-- Content with logo + text in a row -->
-      <div class="timeline-content d-flex align-items-center">
-        <!-- Logo -->
-        <img 
-          src="pictures/ossur.png" 
-          alt="Össur Logo" 
-          class="me-3" 
-          style="width:40px; height:40px; object-fit:contain;" 
-        />
-        <!-- Text -->
-        <div>
-          <h5 data-key="exp1Title">Data Analyst (Sales Operations)</h5>
-          <p class="text-muted" data-key="exp1Details">Feb 2023 - Present | Irvine, CA</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Timeline Item 2 -->
-    <div class="timeline-item">
-      <div class="timeline-marker"></div>
-      <div class="timeline-content d-flex align-items-center">
-        <img 
-          src="pictures/howmet.png" 
-          alt="Howmet Logo" 
-          class="me-3" 
-          style="width:40px; height:40px; object-fit:contain;" 
-        />
-        <div>
-          <h5 data-key="exp2Title">Global Supply Chain Intern</h5>
-          <p class="text-muted" data-key="exp2Details">Jun 2022 - Sep 2022 | Carson, CA</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Timeline Item 3 -->
-    <div class="timeline-item">
-      <div class="timeline-marker"></div>
-      <div class="timeline-content d-flex align-items-center">
-        <img 
-          src="pictures/optum.png" 
-          alt="Optum Logo" 
-          class="me-3" 
-          style="width:40px; height:40px; object-fit:contain;" 
-        />
-        <div>
-          <h5 data-key="exp3Title">Internal Audit Analyst Intern</h5>
-          <p class="text-muted" data-key="exp3Details">Jun 2021 - Aug 2021 | Irvine, CA</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <!-- Education Section (Smaller Image) -->
+    <!-- Education Section -->
     <section id="education" class="mb-5">
       <h2 data-key="educationTitle">Education</h2>
       <div class="card bg-light shadow-sm education-card">
         <div class="row g-0">
-          <!-- Smaller col for logo -->
           <div class="col-md-3 d-flex align-items-center justify-content-center">
-            <img
-              src="pictures/school.png"
-              alt="CSULB Logo"
-              class="img-fluid p-2"
-              style="max-height:120px;"
-            />
+            <img src="pictures/school.png" alt="CSULB Logo" class="img-fluid p-2" style="max-height:120px;">
           </div>
-          <!-- Larger col for text -->
           <div class="col-md-9">
             <div class="card-body">
               <h5 class="card-title">California State University, Long Beach</h5>
               <p class="card-text" data-key="educationText">
-                BBA in Management Information Systems & Operations Management<br />
-                Aug 2018 - Dec 2022
+                BBA in Management Information Systems & Operations Management<br>Aug 2018 - Dec 2022
               </p>
             </div>
           </div>
@@ -203,7 +168,7 @@
         <!-- Certification Card 1 -->
         <div class="col">
           <div class="card h-100 text-center shadow-sm">
-            <img src="pictures/powerbi.png" class="card-img-top mx-auto mt-3 cert-img" alt="Power BI Certification" />
+            <img src="pictures/powerbi.png" class="card-img-top mx-auto mt-3 cert-img" alt="Power BI Certification">
             <div class="card-body">
               <h5 class="card-title" data-key="cert1Title">Microsoft Certified: Power BI Data Analyst Associate (PL-300)</h5>
               <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/6F27BF93FE06C73B?sharingId=4CF480AA9FFFCD47" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
@@ -213,7 +178,7 @@
         <!-- Certification Card 2 -->
         <div class="col">
           <div class="card h-100 text-center shadow-sm">
-            <img src="pictures/azuredata.png" class="card-img-top mx-auto mt-3 cert-img" alt="Azure Data Fundamentals" />
+            <img src="pictures/azuredata.png" class="card-img-top mx-auto mt-3 cert-img" alt="Azure Data Fundamentals">
             <div class="card-body">
               <h5 class="card-title" data-key="cert2Title">Microsoft Certified: Azure Data Fundamentals (DP-900)</h5>
               <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/4408CFDCBEA813A?sharingId=4CF480AA9FFFCD47" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
@@ -223,7 +188,7 @@
         <!-- Certification Card 3 -->
         <div class="col">
           <div class="card h-100 text-center shadow-sm">
-            <img src="pictures/azurefundamentals.png" class="card-img-top mx-auto mt-3 cert-img" alt="Azure Fundamentals" />
+            <img src="pictures/azurefundamentals.png" class="card-img-top mx-auto mt-3 cert-img" alt="Azure Fundamentals">
             <div class="card-body">
               <h5 class="card-title" data-key="cert3Title">Microsoft Certified: Azure Fundamentals (AZ-900)</h5>
               <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/6A74A3631AF155C0?sharingId=4CF480AA9FFFCD47" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
@@ -233,7 +198,7 @@
         <!-- Certification Card 4 -->
         <div class="col">
           <div class="card h-100 text-center shadow-sm">
-            <img src="pictures/tableau.png" class="card-img-top mx-auto mt-3 cert-img" alt="Tableau Certification" />
+            <img src="pictures/tableau.png" class="card-img-top mx-auto mt-3 cert-img" alt="Tableau Certification">
             <div class="card-body">
               <h5 class="card-title" data-key="cert4Title">Tableau Certified Data Analyst (TDA-C01)</h5>
               <a href="https://www.credly.com/badges/4964a3ec-ab2f-4755-9ff5-6e3568ea888a/public_url" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
@@ -243,7 +208,7 @@
         <!-- Certification Card 5 -->
         <div class="col">
           <div class="card h-100 text-center shadow-sm">
-            <img src="pictures/alteryx.png" class="card-img-top mx-auto mt-3 cert-img" alt="Alteryx Certification" />
+            <img src="pictures/alteryx.png" class="card-img-top mx-auto mt-3 cert-img" alt="Alteryx Certification">
             <div class="card-body">
               <h5 class="card-title" data-key="cert5Title">Alteryx Designer Advanced Certification</h5>
               <a href="https://www.credly.com/badges/8ef70123-e9aa-48c2-9a30-7b41ad9b7cfb" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
@@ -260,7 +225,7 @@
         <!-- Project Card 1 -->
         <div class="col">
           <div class="card h-100 project-card shadow-sm">
-            <img src="pictures/User Interface.jpg" class="card-img-top" alt="Snapdragon-AI Screenshot" style="object-fit: cover; max-height: 200px;" />
+            <img src="pictures/User Interface.jpg" class="card-img-top" alt="Snapdragon-AI Screenshot" style="object-fit: cover; max-height: 200px;">
             <div class="card-body">
               <h5 class="card-title" data-key="proj1Title">Snapdragon AI: Multilingual Translator</h5>
               <p class="card-text text-info" data-key="proj1Award">2nd Place out of 27 – Windows on Snapdragon AI Hackathon</p>
@@ -277,7 +242,7 @@
         <!-- Project Card 2 -->
         <div class="col">
           <div class="card h-100 project-card shadow-sm">
-            <img src="pictures/sakura guide.png" class="card-img-top" alt="Sakura-Guide Screenshot" style="object-fit: cover; max-height: 200px;" />
+            <img src="pictures/sakura guide.png" class="card-img-top" alt="Sakura-Guide Screenshot" style="object-fit: cover; max-height: 200px;">
             <div class="card-body">
               <h5 class="card-title" data-key="proj2Title">Sakura Guide さくらガイド</h5>
               <p class="card-text" data-key="proj2Text">
@@ -293,11 +258,11 @@
         <!-- Project Card 3 -->
         <div class="col">
           <div class="card h-100 project-card shadow-sm">
-            <img src="pictures/supplychainoptimization.png" class="card-img-top" alt="Supply Chain Optimization Screenshot" style="object-fit: cover; max-height: 200px;" />
+            <img src="pictures/supplychainoptimization.png" class="card-img-top" alt="Supply Chain Optimization Screenshot" style="object-fit: cover; max-height: 200px;">
             <div class="card-body">
               <h5 class="card-title" data-key="proj3Title">Supply Chain Optimization</h5>
               <p class="card-text" data-key="proj3Text">
-                A focused analysis using Python to identify inefficiencies in supplier lead times and inventory risk, delivering clear, actionable insights for improved planning.
+                A focused analysis using Python to uncover inefficiencies in supplier lead times and inventory risk, providing actionable insights for smarter planning.
               </p>
               <p><strong>Skills Used:</strong> Python, Excel, Data Analysis</p>
             </div>
@@ -309,7 +274,7 @@
         <!-- Project Card 4 -->
         <div class="col">
           <div class="card h-100 project-card shadow-sm">
-            <img src="pictures/retail.png" class="card-img-top" alt="Retail Superstore Analysis Screenshot" style="object-fit: cover; max-height: 200px;" />
+            <img src="pictures/retail.png" class="card-img-top" alt="Retail Superstore Analysis Screenshot" style="object-fit: cover; max-height: 200px;">
             <div class="card-body">
               <h5 class="card-title" data-key="proj4Title">Retail Superstore Analysis</h5>
               <p class="card-text" data-key="proj4Text">
@@ -325,7 +290,7 @@
         <!-- Project Card 5 -->
         <div class="col">
           <div class="card h-100 project-card shadow-sm">
-            <img src="pictures/smartainventory.png" class="card-img-top" alt="SmartAInventory Screenshot" style="object-fit: cover; max-height: 200px;" />
+            <img src="pictures/smartainventory.png" class="card-img-top" alt="SmartAInventory Screenshot" style="object-fit: cover; max-height: 200px;">
             <div class="card-body">
               <h5 class="card-title" data-key="proj5Title">SmartAInventory</h5>
               <p class="card-text text-info" data-key="proj5Award">Top 13 out of 83 – Microsoft Fabric and AI Learning Hackathon</p>
@@ -342,7 +307,7 @@
       </div>
     </section>
 
-    <!-- Skills Section (Using Badges) -->
+    <!-- Skills Section -->
     <section id="skills" class="mb-5">
       <h2 data-key="skillsTitle">Key Competencies</h2>
       <div class="row">
@@ -421,11 +386,11 @@
       <form action="mailto:mikeyneang11@gmail.com" method="post" enctype="text/plain" class="w-100">
         <div class="mb-3">
           <label for="name" class="form-label" data-key="contactNameLabel">Name:</label>
-          <input type="text" id="name" name="name" class="form-control" required />
+          <input type="text" id="name" name="name" class="form-control" required>
         </div>
         <div class="mb-3">
           <label for="email" class="form-label" data-key="contactEmailLabel">Email:</label>
-          <input type="email" id="email" name="email" class="form-control" required />
+          <input type="email" id="email" name="email" class="form-control" required>
         </div>
         <div class="mb-3">
           <label for="message" class="form-label" data-key="contactMessageLabel">Message:</label>
