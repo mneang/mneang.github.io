@@ -34,15 +34,10 @@ body {
 }
 
 /* Vertical "Portrait" Carousel */
-/* Force fixed height for carousel container and items */
-.vertical-carousel,
-.vertical-carousel .carousel-inner,
-.vertical-carousel .carousel-item {
-  height: 500px;
-}
+/* Remove fixed height on carousel container so captions can appear below */
 .vertical-carousel .carousel-item img {
   width: 100%;
-  height: 100%;
+  height: 500px;
   object-fit: contain;
 }
 
@@ -62,8 +57,11 @@ body {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
-#experience img {
-  flex-shrink: 0;
+/* Increase logo size for better visual appeal */
+#experience img.experience-logo {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
 }
 
 /* Education Card */
