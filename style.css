@@ -85,25 +85,23 @@ body {
   object-fit: contain;
 }
 
-/* Certifications Section: gradient background */
+/* Section Backgrounds: Using light solid colors with reduced opacity */
 #certifications {
   padding: 2rem;
   border-radius: 0.5rem;
-  background: linear-gradient(160deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-color: rgba(195, 207, 226, 0.3);
   margin-bottom: 2rem;
 }
-
-/* Projects, Skills, and Contact Sections: same gradient background for consistency */
 #projects,
 #skills,
 #contact {
   padding: 2rem;
   border-radius: 0.5rem;
-  background: linear-gradient(160deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-color: rgba(195, 207, 226, 0.3);
   margin-bottom: 2rem;
 }
 
-/* Card styling (applies to both Projects & Certs) */
+/* Card styling (applies to both Projects & Certifications) */
 .card {
   border-radius: 0.5rem;
   border: none;
@@ -125,7 +123,7 @@ body {
   display: block;
 }
 
-/* Hover Animation for project-card (used by Projects & Certs) */
+/* Hover Animation for project-card (used by Projects & Certifications) */
 .project-card {
   transition: all 0.3s ease;
   border: 1px solid #ddd;
