@@ -93,14 +93,13 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Projects, Skills, and Contact Sections: subtle solid background */
+/* Projects, Skills, and Contact Sections: same gradient background for consistency */
 #projects,
 #skills,
 #contact {
   padding: 2rem;
   border-radius: 0.5rem;
-  background-color: #f8f9fa;
-  border: 1px solid #ddd;
+  background: linear-gradient(160deg, #f5f7fa 0%, #c3cfe2 100%);
   margin-bottom: 2rem;
 }
 
