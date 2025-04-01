@@ -44,8 +44,9 @@
             I’ve worked in healthcare and medical devices, using data to support business decisions and optimize processes. I’m passionate about developing into a data engineer or data scientist — constantly evolving and applying insights that empower smarter, lasting decisions.
           </p>
         </div>
-        <div class="col-lg-4">
-          <div id="portraitCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Right column (Carousel) -->
+        <div class="col-md-4">
+          <div id="portraitCarousel" class="carousel slide vertical-carousel" data-bs-ride="carousel">
             <div class="carousel-inner fixed-carousel">
               <div class="carousel-item active">
                 <img src="pictures/profile.jpeg" class="d-block w-100" alt="Professional headshot">
@@ -72,6 +73,7 @@
         </div>
       </div>
     </section>
+    
 
     <section id="experience" class="mb-5">
       <h2 data-key="experienceTitle">Experience</h2>
@@ -98,13 +100,16 @@
       </div>
     </section>
 
+    <!-- Education Section -->
     <section id="education" class="mb-5">
       <h2 data-key="educationTitle">Education</h2>
       <div class="card bg-light shadow-sm education-card d-flex flex-row align-items-center p-3">
         <img src="pictures/school.png" alt="CSULB Logo" class="education-logo me-4"/>
         <div>
+          <!-- The name appears here only once -->
           <h5 class="mb-1">California State University, Long Beach</h5>
-          <p class="mb-0" data-key="educationText">BBA in Management Information Systems & Operations Management | Aug 2018 - Dec 2022</p>
+          <!-- The text below will be translated, but no repeated name -->
+          <p class="mb-0" data-key="educationText">BBA in Management Information Systems &amp; Operations Management | Aug 2018 - Dec 2022</p>
         </div>
       </div>
     </section>
@@ -113,53 +118,64 @@
     <section id="certifications" class="mb-5">
       <h2 data-key="certificationsTitle">Certifications</h2>
       <div class="row row-cols-1 row-cols-md-2 g-4">
-        <!-- Certification Card 1 -->
+        <!-- Each card has project-card class for hover animation -->
         <div class="col">
-          <div class="card h-100 text-center shadow-sm">
+          <div class="card h-100 text-center shadow-sm project-card">
             <img src="pictures/powerbi.png" class="card-img-top mx-auto mt-3 cert-img" alt="Power BI Certification">
             <div class="card-body">
               <h5 class="card-title" data-key="cert1Title">Microsoft Certified: Power BI Data Analyst Associate (PL-300)</h5>
-              <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/6F27BF93FE06C73B?sharingId=4CF480AA9FFFCD47" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
+              <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/6F27BF93FE06C73B?sharingId=4CF480AA9FFFCD47"
+                 target="_blank"
+                 class="btn btn-primary btn-sm"
+                 data-key="viewBadge">View Badge</a>
             </div>
           </div>
         </div>
-        <!-- Certification Card 2 -->
         <div class="col">
-          <div class="card h-100 text-center shadow-sm">
+          <div class="card h-100 text-center shadow-sm project-card">
             <img src="pictures/azuredata.png" class="card-img-top mx-auto mt-3 cert-img" alt="Azure Data Fundamentals">
             <div class="card-body">
               <h5 class="card-title" data-key="cert2Title">Microsoft Certified: Azure Data Fundamentals (DP-900)</h5>
-              <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/4408CFDCBEA813A?sharingId=4CF480AA9FFFCD47" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
+              <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/4408CFDCBEA813A?sharingId=4CF480AA9FFFCD47"
+                 target="_blank"
+                 class="btn btn-primary btn-sm"
+                 data-key="viewBadge">View Badge</a>
             </div>
           </div>
         </div>
-        <!-- Certification Card 3 -->
         <div class="col">
-          <div class="card h-100 text-center shadow-sm">
+          <div class="card h-100 text-center shadow-sm project-card">
             <img src="pictures/azurefundamentals.png" class="card-img-top mx-auto mt-3 cert-img" alt="Azure Fundamentals">
             <div class="card-body">
               <h5 class="card-title" data-key="cert3Title">Microsoft Certified: Azure Fundamentals (AZ-900)</h5>
-              <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/6A74A3631AF155C0?sharingId=4CF480AA9FFFCD47" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
+              <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelNeang/6A74A3631AF155C0?sharingId=4CF480AA9FFFCD47"
+                 target="_blank"
+                 class="btn btn-primary btn-sm"
+                 data-key="viewBadge">View Badge</a>
             </div>
           </div>
         </div>
-        <!-- Certification Card 4 -->
         <div class="col">
-          <div class="card h-100 text-center shadow-sm">
+          <div class="card h-100 text-center shadow-sm project-card">
             <img src="pictures/tableau.png" class="card-img-top mx-auto mt-3 cert-img" alt="Tableau Certification">
             <div class="card-body">
               <h5 class="card-title" data-key="cert4Title">Tableau Certified Data Analyst (TDA-C01)</h5>
-              <a href="https://www.credly.com/badges/4964a3ec-ab2f-4755-9ff5-6e3568ea888a/public_url" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
+              <a href="https://www.credly.com/badges/4964a3ec-ab2f-4755-9ff5-6e3568ea888a/public_url"
+                 target="_blank"
+                 class="btn btn-primary btn-sm"
+                 data-key="viewBadge">View Badge</a>
             </div>
           </div>
         </div>
-        <!-- Certification Card 5 -->
         <div class="col">
-          <div class="card h-100 text-center shadow-sm">
+          <div class="card h-100 text-center shadow-sm project-card">
             <img src="pictures/alteryx.png" class="card-img-top mx-auto mt-3 cert-img" alt="Alteryx Certification">
             <div class="card-body">
               <h5 class="card-title" data-key="cert5Title">Alteryx Designer Advanced Certification</h5>
-              <a href="https://www.credly.com/badges/8ef70123-e9aa-48c2-9a30-7b41ad9b7cfb" target="_blank" class="btn btn-primary btn-sm" data-key="viewBadge">View Badge</a>
+              <a href="https://www.credly.com/badges/8ef70123-e9aa-48c2-9a30-7b41ad9b7cfb"
+                 target="_blank"
+                 class="btn btn-primary btn-sm"
+                 data-key="viewBadge">View Badge</a>
             </div>
           </div>
         </div>

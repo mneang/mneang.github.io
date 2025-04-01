@@ -22,7 +22,7 @@ const translations = {
     exp3Title: "Internal Audit Analyst Intern",
     exp3Details: "Jun 2021 - Aug 2021 | Irvine, CA",
     educationTitle: "Education",
-    educationText: "California State University, Long Beach\nBBA in Management Information Systems & Operations Management\nAug 2018 - Dec 2022",
+    educationText: "BBA in Management Information Systems & Operations Management\nAug 2018 - Dec 2022",
     certificationsTitle: "Certifications",
     cert1Title: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
     cert2Title: "Microsoft Certified: Azure Data Fundamentals (DP-900)",
@@ -77,7 +77,7 @@ const translations = {
     exp3Title: "Internal Audit Analyst Intern",
     exp3Details: "2021年6月～8月 | Irvine, CA",
     educationTitle: "学歴",
-    educationText: "カリフォルニア州立大学ロングビーチ校\n経営情報システム＆オペレーションマネジメント学士\n2018年8月～2022年12月",
+    educationText: "経営情報システム＆オペレーションマネジメント学士\n2018年8月～2022年12月",
     certificationsTitle: "認定資格",
     cert1Title: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
     cert2Title: "Microsoft Certified: Azure Data Fundamentals (DP-900)",
@@ -132,7 +132,7 @@ const translations = {
     exp3Title: "Internal Audit Analyst Intern",
     exp3Details: "2021年6月 - 8月 | Irvine, CA",
     educationTitle: "教育背景",
-    educationText: "加州州立大学长滩分校\n管理信息系统与运营管理学士\n2018年8月 - 2022年12月",
+    educationText: "管理信息系统与运营管理学士\n2018年8月 - 2022年12月",
     certificationsTitle: "认证",
     cert1Title: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
     cert2Title: "Microsoft Certified: Azure Data Fundamentals (DP-900)",
@@ -187,7 +187,7 @@ const translations = {
     exp3Title: "Internal Audit Analyst Intern",
     exp3Details: "2021년 6월 – 8월 | Irvine, CA",
     educationTitle: "학력",
-    educationText: "캘리포니아 주립대학교 롱비치 캠퍼스\n정보 시스템 및 운영 관리 전공 학사\n2018년 8월 – 2022년 12월",
+    educationText: "정보 시스템 및 운영 관리 전공 학사\n2018년 8월 – 2022년 12월",
     certificationsTitle: "자격증",
     cert1Title: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
     cert2Title: "Microsoft Certified: Azure Data Fundamentals (DP-900)",
@@ -255,8 +255,8 @@ document.addEventListener('DOMContentLoaded', () => {
     { threshold: 0.3 }
   );
 
+  // Fade-in effect for skill badges
   document.querySelectorAll("#skills .badge").forEach((badge) => {
     observer.observe(badge);
   });
-
 });
