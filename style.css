@@ -3,6 +3,7 @@ body {
   background-color: #f9f9f9;
   color: #333;
   font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -21,6 +22,9 @@ body {
 }
 
 /* About Section */
+#about-detail {
+  margin-top: 3rem;
+}
 #about-detail h2 {
   margin-bottom: 1rem;
 }
@@ -28,21 +32,36 @@ body {
   font-size: 1.15rem;
   line-height: 1.8;
 }
-#about-detail {
-  margin-top: 3rem;
+
+/* Carousel Wrapper - Lock height */
+#portraitCarousel {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Carousel */
-.vertical-carousel .carousel-item img {
-  width: 100%;
-  height: auto;
+/* Ensure all carousel items and images fit inside without distortion */
+#portraitCarousel .carousel-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#portraitCarousel img {
+  max-height: 400px;
   object-fit: contain;
+  width: auto;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+#portraitCarousel img:hover {
+  transform: scale(1.03);
 }
 .caption-below {
   background-color: #f9f9f9;
   color: #333;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
+  min-height: 60px;
+  padding: 0.5rem;
 }
 
 /* Experience Section */
@@ -74,10 +93,11 @@ body {
   border: none;
   border-radius: 0.5rem;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15);
 }
 .card-img-top {
   border-top-left-radius: 0.5rem;
@@ -92,16 +112,22 @@ body {
   height: 150px;
 }
 
-/* Skills Badges */
+/* Skills Section */
+#skills h2 {
+  margin-bottom: 1.5rem;
+}
+#skills .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#skills .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
+}
 #skills .badge {
   font-size: 1rem;
   padding: 0.5em 0.75em;
   margin: 0.25em;
-  animation: fadeIn 1s ease forwards;
-  opacity: 0;
-}
-#skills .badge.visible {
-  opacity: 1;
+  background-color: #0d6efd;
 }
 
 /* Contact */
@@ -109,7 +135,8 @@ body {
   font-weight: 600;
   font-size: 1rem;
 }
-#contact input, #contact textarea {
+#contact input,
+#contact textarea {
   font-size: 1rem;
 }
 
@@ -119,16 +146,4 @@ footer {
   color: #fff;
   font-size: 0.9rem;
   padding: 1rem;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
