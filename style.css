@@ -28,19 +28,22 @@ body {
   font-size: 1.15rem;
   line-height: 1.8;
 }
-/* Add extra spacing above the About section */
+/* Extra top spacing for About section */
 #about-detail {
   margin-top: 3rem;
 }
 
 /* Vertical "Portrait" Carousel */
-.vertical-carousel {
-  position: relative;
+/* Force fixed height for carousel container and items */
+.vertical-carousel,
+.vertical-carousel .carousel-inner,
+.vertical-carousel .carousel-item {
+  height: 500px;
 }
-.portrait-carousel-img {
-  object-fit: contain;
+.vertical-carousel .carousel-item img {
   width: 100%;
-  height: 500px; /* Adjust as needed */
+  height: 100%;
+  object-fit: contain;
 }
 
 /* Custom caption style below carousel images */
