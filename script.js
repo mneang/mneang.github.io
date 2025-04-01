@@ -49,11 +49,11 @@ const translations = {
     skillsDBTitle: "Database & Cloud Technologies",
     skillsExcelTitle: "Excel & Automation",
     skillsGeneralTitle: "General Software",
-    contactTitle: "Get in Touch",
+    contactTitle: "Contact",
     contactNameLabel: "Name:",
     contactEmailLabel: "Email:",
     contactMessageLabel: "Message:",
-    sendMessageBtn: "Send Message",
+    sendMessageBtn: "Send",
     footerText: "© 2025 Michael Neang. All rights reserved."
   },
   ja: {
@@ -104,7 +104,7 @@ const translations = {
     skillsDBTitle: "データベース & クラウド技術",
     skillsExcelTitle: "Excel & 自動化",
     skillsGeneralTitle: "一般ソフトウェア",
-    contactTitle: "お問い合わせ",
+    contactTitle: "コンタクト",
     contactNameLabel: "お名前:",
     contactEmailLabel: "メール:",
     contactMessageLabel: "メッセージ:",
