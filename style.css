@@ -20,8 +20,6 @@ body {
   color: #fff;
 }
 
-/* Since the Hero Section is removed, its styling is omitted */
-
 /* About Section */
 #about-detail h2 {
   margin-bottom: 1rem;
@@ -30,11 +28,14 @@ body {
   font-size: 1.15rem;
   line-height: 1.8;
 }
+/* Add extra spacing above the About section */
+#about-detail {
+  margin-top: 3rem;
+}
 
 /* Vertical "Portrait" Carousel */
 .vertical-carousel {
   position: relative;
-  /* Additional custom styling can be added here if needed */
 }
 .portrait-carousel-img {
   object-fit: contain;
@@ -42,29 +43,24 @@ body {
   height: 500px; /* Adjust as needed */
 }
 
-/* Timeline for Experience */
-.timeline {
-  position: relative;
-  margin-left: 2rem;
-  padding-left: 1rem;
-  border-left: 3px solid #ddd;
+/* Custom caption style below carousel images */
+.caption-below {
+  background-color: #f9f9f9;
+  color: #333;
+  margin-top: 0.5rem;
 }
-.timeline-item {
-  margin-bottom: 2rem;
-  position: relative;
+
+/* Experience Section (Simplified Layout) */
+#experience h2 {
+  margin-bottom: 1.5rem;
 }
-.timeline-marker {
-  position: absolute;
-  left: -12px;
-  top: 0;
-  width: 20px;
-  height: 20px;
-  background-color: #007bff;
-  border: 3px solid #fff;
-  border-radius: 50%;
+#experience .d-flex {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
-.timeline-content {
-  margin-left: 1rem;
+#experience img {
+  flex-shrink: 0;
 }
 
 /* Education Card */
