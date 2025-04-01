@@ -54,7 +54,8 @@ const translations = {
     contactEmailLabel: "Email:",
     contactMessageLabel: "Message:",
     sendMessageBtn: "Send",
-    footerText: "© 2025 Michael Neang. All rights reserved."
+    footerText: "© 2025 Michael Neang. All rights reserved.",
+    viewOnGitHub: "View on GitHub"
   },
   ja: {
     pageTitle: "Michael's Portfolio",
@@ -62,8 +63,8 @@ const translations = {
     heroSubtitle: "アナリティクス・インサイト・インパクト",
     aboutDetailTitle: "イントロダクション",
     aboutDetail1: "はじめまして。情報システムとオペレーションマネジメントの知識を基盤に、私は医療機器業界を中心にデータアナリストとしての経験を積んできました。営業オペレーションやサプライチェーンの分野で、ビジネスの現場に寄り添った分析を行い、意思決定を支えるインサイトを提供してきました。数字の裏側にある流れや意味を見出し、行動へとつなげることにやりがいを感じています。",
-  aboutDetail2: "キャリアはまだ始まったばかりですが、常に学びを大切にし、課題には静かな情熱と探究心で取り組んでいます。データの力を信じ、より深い専門性を求めて日々スキルを磨いており、将来的にはデータエンジニアやデータサイエンティストへの成長を目指しています。業界を問わず、複雑な課題に向き合い、本質を見抜く力で組織に貢献したいと考えています。",    
-  carouselCaption1: "私のプロフェッショナルなヘッドショット",
+    aboutDetail2: "キャリアはまだ始まったばかりですが、常に学びを大切にし、課題には静かな情熱と探究心で取り組んでいます。データの力を信じ、より深い専門性を求めて日々スキルを磨いており、将来的にはデータエンジニアやデータサイエンティストへの成長を目指しています。業界を問わず、複雑な課題に向き合い、本質を見抜く力で組織に貢献したいと考えています。",
+    carouselCaption1: "私のプロフェッショナルなヘッドショット",
     carouselCaption2: "東京のteamLab Borderlessでテクノロジーとアートの融合を体感",
     carouselCaption3: "ロサンゼルスで日本総領事との出会い",
     carouselCaption4: "Össurでキャリアの第一歩を踏み出す",
@@ -109,7 +110,8 @@ const translations = {
     contactEmailLabel: "メール:",
     contactMessageLabel: "メッセージ:",
     sendMessageBtn: "送信する",
-    footerText: "© 2025 Michael Neang. All rights reserved."
+    footerText: "© 2025 Michael Neang. All rights reserved.",
+    viewOnGitHub: "GitHubで見る"
   },
   zh: {
     pageTitle: "Michael's Portfolio",
@@ -132,7 +134,7 @@ const translations = {
     exp3Title: "Internal Audit Analyst Intern",
     exp3Details: "2021年6月 - 8月 | Irvine, CA",
     educationTitle: "教育背景",
-    educationText: "管理信息系统与运营管理学士\n2018年8月 - 2022年12月",
+    educationText: "加州州立大学长滩分校\n管理信息系统与运营管理学士\n2018年8月 - 2022年12月",
     certificationsTitle: "认证",
     cert1Title: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
     cert2Title: "Microsoft Certified: Azure Data Fundamentals (DP-900)",
@@ -164,7 +166,8 @@ const translations = {
     contactEmailLabel: "电子邮件:",
     contactMessageLabel: "留言:",
     sendMessageBtn: "发送消息",
-    footerText: "© 2025 Michael Neang. All rights reserved."
+    footerText: "© 2025 Michael Neang. All rights reserved.",
+    viewOnGitHub: "在 GitHub 查看"
   },
   ko: {
     pageTitle: "Michael's Portfolio",
@@ -219,7 +222,8 @@ const translations = {
     contactEmailLabel: "이메일:",
     contactMessageLabel: "메시지:",
     sendMessageBtn: "보내기",
-    footerText: "© 2025 Michael Neang. All rights reserved."
+    footerText: "© 2025 Michael Neang. All rights reserved.",
+    viewOnGitHub: "GitHub에서 보기"
   }
 };
 

@@ -85,7 +85,7 @@ body {
   object-fit: contain;
 }
 
-/* Certifications Section Enhancement */
+/* Certifications Section: gradient background */
 #certifications {
   padding: 2rem;
   border-radius: 0.5rem;
@@ -93,17 +93,18 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Projects Section Enhancement */
-/* Option B: Subtle solid background for projects */
-#projects {
+/* Projects, Skills, and Contact Sections: subtle solid background */
+#projects,
+#skills,
+#contact {
   padding: 2rem;
   border-radius: 0.5rem;
-  background-color: #f8f9fa; /* soft off-white */
+  background-color: #f8f9fa;
   border: 1px solid #ddd;
   margin-bottom: 2rem;
 }
 
-/* Certifications & Projects Cards */
+/* Card styling (applies to both Projects & Certs) */
 .card {
   border-radius: 0.5rem;
   border: none;
@@ -125,7 +126,7 @@ body {
   display: block;
 }
 
-/* Enhanced Hover Animation for Cards */
+/* Hover Animation for project-card (used by Projects & Certs) */
 .project-card {
   transition: all 0.3s ease;
   border: 1px solid #ddd;
@@ -147,7 +148,7 @@ body {
   background-color: #0056b3;
 }
 
-/* Skills section */
+/* Skills badges */
 #skills .badge {
   font-size: 1rem;
   padding: 0.5em 0.75em;
