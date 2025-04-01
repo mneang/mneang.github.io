@@ -2,24 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title data-key="pageTitle">Michael's Portfolio</title>
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Optional Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-light text-dark">
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
     <div class="container d-flex justify-content-between align-items-center">
-      <!-- Left side: Brand and Tagline -->
       <div class="d-flex flex-column">
         <a class="navbar-brand" href="#" data-key="navbarTitle">Michael Neang</a>
         <span class="navbar-text small" data-key="heroSubtitle">Analytics • Insights • Impact</span>
       </div>
-      <!-- Right side: Language select and icons -->
       <div class="d-flex align-items-center">
         <select id="languageSelect" class="form-select form-select-sm me-3 w-auto">
           <option value="en">English</option>
@@ -38,60 +33,52 @@
   </nav>
 
   <main class="container mb-5 mt-5">
-    <!-- About Section with Vertical "Portrait" Carousel on the Right -->
     <section id="about-detail" class="mb-5">
-      <div class="row align-items-center">
-        <!-- Left Column: About Me Text (Two Paragraphs) -->
+      <div class="row align-items-start">
         <div class="col-lg-8">
           <h2 data-key="aboutDetailTitle">About Me</h2>
           <p data-key="aboutDetail1">
-            At 24 years old, I’ve embarked on a dynamic journey as a data analyst—but I’m more than just my job title. My path has been shaped by a strong educational foundation in Information Systems and Operations Management from California State University, Long Beach, along with specialized certifications such as Microsoft’s Power BI Data Analyst (PL‑300) and Tableau’s Certified Data Analyst (TDA‑C01). This blend of formal education and practical expertise has given me a powerful toolkit to help stakeholders uncover hidden stories within their data.
+            With a solid background in Information Systems and Operations Management, I've built my early career at the intersection of analytics and business strategy. From medical devices to healthcare, I've helped teams make data-driven decisions with clarity and precision.
           </p>
           <p data-key="aboutDetail2">
-            Throughout my career, I’ve collaborated with teams in sales operations and supply chain management, refining processes and amplifying performance. Each project has taught me the value of continuous growth and curiosity, fueling my aspiration to evolve into roles such as data engineer or data scientist.
+            Whether supporting sales ops or streamlining supply chain processes, I immerse myself fully in the details, always striving to evolve. I’m working toward roles in data engineering or science—driven by curiosity and fueled by purpose.
           </p>
         </div>
-        <!-- Right Column: Carousel with Captions Below -->
         <div class="col-lg-4">
-          <div id="portraitCarousel" class="carousel slide vertical-carousel" data-bs-ride="carousel">
+          <div id="portraitCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <!-- Slide 1: Professional Headshot -->
               <div class="carousel-item active">
-                <img src="pictures/profile.jpeg" alt="My professional headshot." class="d-block w-100">
+                <img src="pictures/profile.jpeg" class="d-block w-100" alt="My professional headshot">
                 <div class="caption-below text-center p-2">
-                  <p data-key="carouselCaption1">My professional headshot.</p>
+                  <p data-key="carouselCaption1">Professional headshot</p>
                 </div>
               </div>
-              <!-- Slide 2: teamLab Borderless -->
               <div class="carousel-item">
-                <img src="pictures/personal1.jpeg" alt="Experience with cutting-edge technology at Tokyo's teamLab Borderless" class="d-block w-100">
+                <img src="pictures/personal1.jpeg" class="d-block w-100" alt="teamLab Borderless in Tokyo">
                 <div class="caption-below text-center p-2">
-                  <p data-key="carouselCaption2">Exploring the fusion of digital innovation and art at Tokyo's teamLab Borderless.</p>
+                  <p data-key="carouselCaption2">teamLab Borderless in Tokyo</p>
                 </div>
               </div>
-              <!-- Slide 3: Networking in LA -->
               <div class="carousel-item">
-                <img src="pictures/personal2.jpeg" alt="Meeting with Japan’s Consul-General in LA" class="d-block w-100">
+                <img src="pictures/personal2.jpeg" class="d-block w-100" alt="Meeting Japan’s Consul-General">
                 <div class="caption-below text-center p-2">
-                  <p data-key="carouselCaption3">Meeting with Japan’s Consul-General in LA</p>
+                  <p data-key="carouselCaption3">Meeting Japan’s Consul-General</p>
                 </div>
               </div>
-              <!-- Slide 4: Starting at Össur -->
               <div class="carousel-item">
-                <img src="pictures/personal3.jpeg" alt="Starting my first job at Össur" class="d-block w-100">
+                <img src="pictures/personal3.jpeg" class="d-block w-100" alt="First day at Össur">
                 <div class="caption-below text-center p-2">
-                  <p data-key="carouselCaption4">Starting my first job at Össur</p>
+                  <p data-key="carouselCaption4">First day at Össur</p>
                 </div>
               </div>
             </div>
-            <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#portraitCarousel" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#portraitCarousel" data-bs-slide="prev" aria-label="Previous">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden" data-key="prev">Previous</span>
+              <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#portraitCarousel" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#portraitCarousel" data-bs-slide="next" aria-label="Next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden" data-key="next">Next</span>
+              <span class="visually-hidden">Next</span>
             </button>
           </div>
         </div>

@@ -1,119 +1,84 @@
-/* ========== Global Styles ========== */
+/* Global Styles */
 body {
   background-color: #f9f9f9;
   color: #333;
   font-family: 'Inter', sans-serif;
-  line-height: 1.7;
-  font-size: 1rem;
 }
 
-/* ========== Navbar ========== */
+/* Navbar */
 .navbar-brand {
   font-size: 1.8rem;
   font-weight: 600;
 }
-
 .navbar .form-select {
   background-color: #343a40;
   color: #fff;
   border: none;
 }
-
 .navbar .form-select option {
   background-color: #343a40;
   color: #fff;
 }
 
-/* ========== About Section ========== */
+/* About Section */
+#about-detail h2 {
+  margin-bottom: 1rem;
+}
+#about-detail p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
 #about-detail {
   margin-top: 3rem;
 }
 
-#about-detail h2 {
-  margin-bottom: 1rem;
-}
-
-#about-detail p {
-  font-size: 1.15rem;
-  line-height: 1.85;
-}
-
-/* Keep About Text vertically centered next to the carousel */
-#about-detail .col-lg-8 {
-  min-height: 480px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* ========== Portrait Carousel ========== */
-#portraitCarousel .carousel-inner {
+/* Carousel */
+.vertical-carousel .carousel-item img {
   width: 100%;
-  height: 480px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-#portraitCarousel .carousel-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-#portraitCarousel .carousel-item img {
-  height: 100%;
-  width: auto;
+  height: auto;
   object-fit: contain;
-  border-radius: 0.5rem;
 }
-
-/* Carousel caption below image */
 .caption-below {
-  background-color: transparent;
+  background-color: #f9f9f9;
   color: #333;
-  text-align: center;
-  font-size: 0.95rem;
   margin-top: 0.5rem;
+  font-size: 0.9rem;
 }
 
-/* ========== Experience Section ========== */
+/* Experience Section */
 #experience h2 {
   margin-bottom: 1.5rem;
 }
-
 #experience .d-flex {
   border-bottom: 1px solid #ddd;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
-
 #experience img.experience-logo {
   max-width: 80px;
   max-height: 80px;
   object-fit: contain;
 }
 
-/* ========== Education Card ========== */
+/* Education */
 .education-card {
   overflow: hidden;
 }
-
 .education-card img {
   object-fit: contain;
   width: 100%;
-  padding: 1rem;
 }
 
-/* ========== Certifications & Projects ========== */
+/* Certifications & Projects */
 .card {
   border: none;
   border-radius: 0.5rem;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
-
+.card:hover {
+  transform: translateY(-5px);
+}
 .card-img-top {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -121,55 +86,49 @@ body {
   height: 200px;
   width: 100%;
 }
-
 .cert-img {
   object-fit: contain;
   width: 150px;
   height: 150px;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
-}
-
-/* ========== Skills Section ========== */
-#skills .card {
-  border-left: 4px solid #0d6efd;
-  background-color: #fff;
-  padding: 1rem;
-}
-
-#skills .card-title {
-  font-size: 1.2rem;
-  margin-bottom: 0.8rem;
-  font-weight: 600;
-}
-
+/* Skills Badges */
 #skills .badge {
-  font-size: 0.95rem;
-  font-weight: 500;
-  background-color: #e9f3ff;
-  color: #0d6efd;
+  font-size: 1rem;
   padding: 0.5em 0.75em;
-  margin: 0.3em 0.4em 0.3em 0;
+  margin: 0.25em;
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+#skills .badge.visible {
+  opacity: 1;
 }
 
-/* ========== Contact Form ========== */
+/* Contact */
 #contact label {
   font-weight: 600;
   font-size: 1rem;
 }
-
-#contact input,
-#contact textarea {
+#contact input, #contact textarea {
   font-size: 1rem;
 }
 
-/* ========== Footer ========== */
+/* Footer */
 footer {
   background-color: #222;
   color: #fff;
   font-size: 0.9rem;
   padding: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

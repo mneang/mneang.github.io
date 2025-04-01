@@ -242,4 +242,21 @@ document.addEventListener('DOMContentLoaded', () => {
   languageSelect.addEventListener('change', (e) => {
     updateTranslations(e.target.value);
   });
+
+  // Skills animation trigger
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  document.querySelectorAll("#skills .badge").forEach((badge) => {
+    observer.observe(badge);
+  });
+
 });
