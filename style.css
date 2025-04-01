@@ -1,11 +1,15 @@
-/* Global Styles */
+/* ===============================
+   Global Styles
+================================== */
 body {
   background-color: #f9f9f9;
   color: #333;
   font-family: 'Inter', sans-serif;
 }
 
-/* Navbar */
+/* ===============================
+   Navbar
+================================== */
 .navbar-brand {
   font-size: 1.8rem;
   font-weight: 600;
@@ -20,52 +24,54 @@ body {
   color: #fff;
 }
 
-/* About Section */
+/* ===============================
+   About Section + Carousel
+================================== */
 #about-detail {
   margin-top: 3rem;
 }
+
 #about-detail h2 {
   margin-bottom: 1rem;
 }
+
 #about-detail p {
   font-size: 1.15rem;
   line-height: 1.8;
 }
 
-/* Portrait Carousel (Fixed Frame Layout) */
-#portraitCarousel {
-  max-height: 500px;
+/* Carousel Container: Fix height so images don't shift layout */
+.vertical-carousel {
+  max-height: 540px;
   overflow: hidden;
-  position: relative;
-  background-color: #f9f9f9;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.05);
-}
-#portraitCarousel .carousel-item {
-  height: 440px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#portraitCarousel .carousel-item img {
-  max-height: 400px;
-  width: auto;
-  object-fit: contain;
-  margin: 0 auto;
-  transition: transform 0.3s ease;
-}
-#portraitCarousel .caption-below {
-  height: 60px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding: 0.5rem;
-  font-size: 0.9rem;
-  background-color: #f9f9f9;
-  color: #333;
-  text-align: center;
+  border-radius: 12px;
 }
 
-/* Experience Section */
+/* Images inside carousel: consistent size and object fit */
+.vertical-carousel .carousel-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+/* Carousel caption under image (optional, can be toggled off) */
+.caption-below {
+  text-align: center;
+  font-size: 0.95rem;
+  padding-top: 0.5rem;
+  color: #555;
+}
+
+/* Hide captions easily if not needed */
+.caption-below p {
+  margin: 0;
+}
+
+/* ===============================
+   Experience
+================================== */
 #experience h2 {
   margin-bottom: 1.5rem;
 }
@@ -80,96 +86,75 @@ body {
   object-fit: contain;
 }
 
-/* Education Section */
+/* ===============================
+   Education Section
+================================== */
 .education-card {
   overflow: hidden;
+  padding: 1rem;
 }
-.education-card img {
+.education-logo {
+  max-height: 80px;
   object-fit: contain;
-  width: 100%;
 }
 
-/* Card Layouts for Certifications & Projects */
+/* ===============================
+   Certifications & Projects
+================================== */
 .card {
   border: none;
   border-radius: 0.5rem;
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
 }
 .card-img-top {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
   object-fit: cover;
   height: 200px;
   width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 .cert-img {
   object-fit: contain;
   width: 150px;
   height: 150px;
-  margin-bottom: 1rem;
 }
 .project-card:hover {
-  transform: translateY(-6px);
-  transition: all 0.3s ease;
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
 }
 
-/* Skills Section */
-#skills h2 {
-  margin-bottom: 1.5rem;
-}
-#skills .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-#skills .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
-}
+/* ===============================
+   Skills Section
+================================== */
 #skills .badge {
   font-size: 1rem;
   padding: 0.5em 0.75em;
-  margin: 0.25em 0.5em 0.5em 0;
+  margin: 0.25em 0.25em 0 0;
+  transition: all 0.3s ease;
+}
+#skills .badge:hover {
   background-color: #0d6efd;
   color: #fff;
-  border-radius: 0.5rem;
+  transform: scale(1.05);
 }
 
-/* Contact Form */
+/* ===============================
+   Contact
+================================== */
 #contact label {
   font-weight: 600;
   font-size: 1rem;
 }
-#contact input,
-#contact textarea {
+#contact input, #contact textarea {
   font-size: 1rem;
 }
-#contact button {
-  padding: 0.6rem 1.2rem;
-}
 
-/* Footer */
+/* ===============================
+   Footer
+================================== */
 footer {
   background-color: #222;
   color: #fff;
   font-size: 0.9rem;
   padding: 1rem;
-}
-
-/* Animations (Optional) */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.fade-in {
-  animation: fadeUp 0.6s ease-in-out;
 }
