@@ -22,7 +22,7 @@ const translations = {
     exp3Title: "Internal Audit Analyst Intern",
     exp3Details: "Jun 2021 - Aug 2021 | Irvine, CA",
     educationTitle: "Education",
-    educationText: "BBA in Management Information Systems &amp; Operations Management | Aug 2018 - Dec 2022",
+    educationText: "BBA in Management Information Systems & Operations Management | Aug 2018 - Dec 2022",
     certificationsTitle: "Certifications",
     cert1Title: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
     cert2Title: "Microsoft Certified: Azure Data Fundamentals (DP-900)",
