@@ -5,84 +5,114 @@ const translations = {
     pageTitle: "Michael's Portfolio",
     navbarTitle: "Michael Neang",
     heroSubtitle: "Analytics | Insights | Impact",
+
     aboutDetailTitle: "About Me",
-    aboutDetail1: "With a background rooted in Information Systems and Operations Management, I’ve spent the last few years growing as a data analyst—primarily in the healthcare and medical device industries. I’ve supported sales operations and supply chain initiatives, blending analytics with business context to uncover the patterns that guide smart, timely decisions. While my work is technical, my mindset is strategic: I thrive on connecting data to action, and always keep the bigger picture in view.",
-    aboutDetail2: "Though early in my career, I approach every challenge with quiet determination and a deep curiosity. I’m constantly learning, refining my skills, and seeking new ways to create impact—from process optimization to predictive insights. My long-term path leads toward data engineering or data science, and I’m excited by any opportunity that challenges me to grow. Whether in tech, logistics, or beyond, I bring focus, flexibility, and a genuine passion for turning complexity into clarity.",    
-    carouselCaption1: "My professional headshot",
-    carouselCaption2: "Exploring the fusion of digital innovation and art at Tokyo's teamLab Borderless",
-    carouselCaption3: "Meeting with Japan’s Consul-General in LA",
-    carouselCaption4: "Starting my first job at Össur",
+    aboutDetail1:
+      "Building on my foundation in Information Systems and Operations Management, I blend analytical rigor with business strategy—most recently driving impact in financial services at Wintrust Specialty Finance. Certified in Power BI, Tableau, and Microsoft Fabric, I harness AI and data pipelines to translate complexity into clarity.",
+    aboutDetail2:
+      "From healthcare analytics to financial modeling, I immerse myself in every challenge with curiosity and purpose. I thrive at the intersection of data and decision-making, continually evolving toward roles as a data engineer or data scientist. Let’s unlock insights that power smarter growth.",
+
     prev: "Previous",
     next: "Next",
+
     experienceTitle: "Experience",
-    exp1Title: "Data Analyst (Sales Operations)",
-    exp1Details: "Feb 2023 - Present | Irvine, CA",
-    exp2Title: "Global Supply Chain Intern",
-    exp2Details: "Jun 2022 - Sep 2022 | Carson, CA",
-    exp3Title: "Internal Audit Analyst Intern",
-    exp3Details: "Jun 2021 - Aug 2021 | Irvine, CA",
+    exp1Title: "Business Analyst – Wintrust Specialty Finance",
+    exp1Details: "Jun 2025 – Present | Irvine, CA",
+    exp2Title: "Data Analyst (Sales Operations)",
+    exp2Details: "Feb 2023 – Jun 2025 | Irvine, CA",
+    exp3Title: "Global Supply Chain Intern",
+    exp3Details: "Jun 2022 – Sep 2022 | Carson, CA",
+    exp4Title: "Internal Audit Analyst Intern",
+    exp4Details: "Jun 2021 – Aug 2021 | Irvine, CA",
+
     educationTitle: "Education",
-    educationText: "BBA in Management Information Systems & Operations Management | Aug 2018 - Dec 2022",
+    educationText:
+      "BBA in Management Information Systems & Operations Management | Aug 2018 – Dec 2022",
+
     certificationsTitle: "Certifications",
-    cert1Title: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
-    cert2Title: "Microsoft Certified: Azure Data Fundamentals (DP-900)",
-    cert3Title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
-    cert4Title: "Tableau Certified Data Analyst (TDA-C01)",
+    cert1Title:
+      "Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)",
+    cert2Title:
+      "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
+    cert3Title:
+      "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
+    cert4Title:
+      "Tableau Certified Data Analyst (TDA-C01)",
     cert5Title: "Alteryx Designer Advanced Certification",
     viewBadge: "View Badge",
+
     projectsTitle: "Projects",
     proj1Title: "Snapdragon AI: Multilingual Translator",
-    proj1Award: "2nd Place out of 27 – Windows on Snapdragon AI Hackathon",
-    proj1Text: "An innovative on-device translator for Snapdragon that offers real-time, offline translation between English, Japanese, Korean, and Chinese using optimized AI and Python.",
+    proj1Award:
+      "2nd Place out of 27 – Windows on Snapdragon AI Hackathon",
+    proj1Text:
+      "An innovative on-device translator for Snapdragon that offers real-time, offline translation between English, Japanese, Korean, and Chinese using optimized AI and Python.",
     proj2Title: "Sakura Guide さくらガイド",
-    proj2Text: "A refined travel companion for Japan that blends modern design with real-time guidance to deliver elegant, bilingual travel insights.",
+    proj2Text:
+      "A refined travel companion for Japan that blends modern design with real-time guidance to deliver elegant, bilingual travel insights.",
     proj3Title: "Supply Chain Optimization",
-    proj3Text: "A focused analysis using Python to uncover inefficiencies in supplier lead times and inventory risk, providing actionable insights for smarter planning.",
+    proj3Text:
+      "A focused analysis using Python to uncover inefficiencies in supplier lead times and inventory risk, providing actionable insights for smarter planning.",
     proj4Title: "Retail Superstore Analysis",
-    proj4Text: "A thoughtfully designed dashboard built with SQL, Excel, and Tableau that reveals trends in retail performance, empowering strategic decisions.",
+    proj4Text:
+      "A thoughtfully designed dashboard built with SQL, Excel, and Tableau that reveals trends in retail performance, empowering strategic decisions.",
     proj5Title: "SmartAInventory",
-    proj5Award: "Top 13 out of 83 – Microsoft Fabric and AI Learning Hackathon",
-    proj5Text: "A dynamic inventory management system built with Microsoft Fabric, Power BI, and Azure OpenAI that forecasts demand, minimizes risk, and supports agile, insight-led decision-making.",
+    proj5Award:
+      "Top 13 out of 83 – Microsoft Fabric and AI Learning Hackathon",
+    proj5Text:
+      "A dynamic inventory management system built with Microsoft Fabric, Power BI, and Azure OpenAI that forecasts demand, minimizes risk, and supports agile, insight-led decision-making.",
+
     skillsTitle: "Key Competencies",
     skillsVisTitle: "Data Visualization & Reporting",
     skillsAnalysisTitle: "Data Analysis & Manipulation",
     skillsDBTitle: "Database & Cloud Technologies",
     skillsExcelTitle: "Excel & Automation",
     skillsGeneralTitle: "General Software",
-    contactTitle: "Contact",
+
+    contactTitle: "Get in Touch",
     contactNameLabel: "Name:",
     contactEmailLabel: "Email:",
     contactMessageLabel: "Message:",
-    sendMessageBtn: "Send",
-    footerText: "© 2025 Michael Neang. All rights reserved.",
-    viewOnGitHub: "View on GitHub"
+    sendMessageBtn: "Send Message",
+
+    viewOnGitHub: "View on GitHub",
+    footerText: "© 2025 Michael Neang. All rights reserved."
   },
   ja: {
     pageTitle: "Michael's Portfolio",
     navbarTitle: "Michael Neang",
     heroSubtitle: "アナリティクス・インサイト・インパクト",
+
     aboutDetailTitle: "イントロダクション",
-    aboutDetail1: "はじめまして。情報システムとオペレーションマネジメントの知識を基盤に、私は医療機器業界を中心にデータアナリストとしての経験を積んできました。営業オペレーションやサプライチェーンの分野で、ビジネスの現場に寄り添った分析を行い、意思決定を支えるインサイトを提供してきました。数字の裏側にある流れや意味を見出し、行動へとつなげることにやりがいを感じています。",
-    aboutDetail2: "キャリアはまだ始まったばかりですが、常に学びを大切にし、課題には静かな情熱と探究心で取り組んでいます。データの力を信じ、より深い専門性を求めて日々スキルを磨いており、将来的にはデータエンジニアやデータサイエンティストへの成長を目指しています。業界を問わず、複雑な課題に向き合い、本質を見抜く力で組織に貢献したいと考えています。",
-    carouselCaption1: "私のプロフェッショナルなヘッドショット",
-    carouselCaption2: "東京のteamLab Borderlessでテクノロジーとアートの融合を体感",
-    carouselCaption3: "ロサンゼルスで日本総領事との出会い",
-    carouselCaption4: "Össurでキャリアの第一歩を踏み出す",
+    aboutDetail1:
+      "情報システムとオペレーションマネジメントを基盤に、分析とビジネス戦略を融合。最近ではWintrust Specialty Financeで金融サービスのデータ活用を推進し、Power BI、Tableau、Microsoft Fabric の認定を取得。AIとデータパイプラインで複雑な情報を明瞭なインサイトに転換します。",
+    aboutDetail2:
+      "医療分析から金融モデリングまで、好奇心と目的意識をもってあらゆる課題に取り組んでいます。データと意思決定の交差点で成長を続け、データエンジニアやデータサイエンティストへの進化を目指します。",
+
     prev: "前へ",
     next: "次へ",
+
     experienceTitle: "経験",
-    exp1Title: "Associate Data Analyst",
-    exp1Details: "2023年2月～現在 | Irvine, CA",
-    exp2Title: "Global Supply Chain Intern",
-    exp2Details: "2022年6月～9月 | Carson, CA",
-    exp3Title: "Internal Audit Analyst Intern",
-    exp3Details: "2021年6月～8月 | Irvine, CA",
+    exp1Title: "ビジネスアナリスト — Wintrust Specialty Finance",
+    exp1Details: "2025年6月〜現在 | Irvine, CA",
+    exp2Title: "データアナリスト（営業オペレーション）",
+    exp2Details: "2023年2月〜2025年6月 | Irvine, CA",
+    exp3Title: "グローバルサプライチェーン・インターン",
+    exp3Details: "2022年6月〜9月 | Carson, CA",
+    exp4Title: "内部監査分析インターン",
+    exp4Details: "2021年6月〜8月 | Irvine, CA",
+
     educationTitle: "学歴",
-    educationText: "経営情報システム＆オペレーションマネジメント学士 | 2018年8月～2022年12月",
+    educationText:
+      "経営情報システム＆オペレーションマネジメント学士 | 2018年8月〜2022年12月",
+
     certificationsTitle: "認定資格",
-    cert1Title: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
-    cert2Title: "Microsoft Certified: Azure Data Fundamentals (DP-900)",
-    cert3Title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
+    cert1Title:
+      "Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)",
+    cert2Title:
+      "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
+    cert3Title:
+      "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
     cert4Title: "Tableau Certified Data Analyst (TDA-C01)",
     cert5Title: "Alteryx Designer Advanced Certification",
     viewBadge: "認定証を見る",
@@ -117,28 +147,37 @@ const translations = {
     pageTitle: "Michael's Portfolio",
     navbarTitle: "Michael Neang",
     heroSubtitle: "分析 • 洞察 • 影响",
+
     aboutDetailTitle: "关于我",
-    aboutDetail1: "我拥有信息系统与运营管理的专业背景，近年来专注于医疗与医疗设备行业的分析工作。在支持销售运营和供应链项目的过程中，我将数据分析与商业判断相结合，挖掘背后的关键洞察，助力更高效的决策。我的工作虽以技术为基础，但始终以战略视角驱动结果。",
-    aboutDetail2: "虽然职业生涯仍处于初期，我始终保持谦逊、专注与好奇心，持续学习和成长。我正朝着数据工程或数据科学方向不断拓展专业能力，并乐于接受来自各行业的新挑战。我相信数据不仅是信息，更是推动组织变革与持续发展的核心力量。",
-    carouselCaption1: "我的专业头像",
-    carouselCaption2: "在东京teamLab Borderless体验科技与艺术的融合",
-    carouselCaption3: "在洛杉矶与日本总领事交流",
-    carouselCaption4: "在Össur踏出数据分析师的第一步",
+    aboutDetail1:
+      "凭借信息系统与运营管理背景，我将分析严谨性与商业战略相结合——最近在 Wintrust Specialty Finance 推动金融服务的数据应用。已获 Power BI、Tableau、Microsoft Fabric 认证，擅长用 AI 和数据管道将复杂数据转化为清晰洞察。",
+    aboutDetail2:
+      "从医疗分析到金融建模，我始终以好奇心与使命感迎接每个挑战。在数据与决策的交汇处不断进阶，志在成为数据工程师或数据科学家。",
+
     prev: "上一张",
     next: "下一张",
+
     experienceTitle: "经历",
-    exp1Title: "Associate Data Analyst",
-    exp1Details: "2023年2月 - 现在 | Irvine, CA",
-    exp2Title: "Global Supply Chain Intern",
-    exp2Details: "2022年6月 - 9月 | Carson, CA",
-    exp3Title: "Internal Audit Analyst Intern",
-    exp3Details: "2021年6月 - 8月 | Irvine, CA",
+    exp1Title: "商务分析师 — Wintrust Specialty Finance",
+    exp1Details: "2025年6月 – 现在 | Irvine, CA",
+    exp2Title: "数据分析师（销售运营）",
+    exp2Details: "2023年2月 – 2025年6月 | Irvine, CA",
+    exp3Title: "全球供应链实习生",
+    exp3Details: "2022年6月 – 9月 | Carson, CA",
+    exp4Title: "内部审计分析实习生",
+    exp4Details: "2021年6月 – 8月 | Irvine, CA",
+
     educationTitle: "教育背景",
-    educationText: "管理信息系统与运营管理学士 | 2018年8月 - 2022年12月",
+    educationText:
+      "管理信息系统与运营管理学士 | 2018年8月 – 2022年12月",
+
     certificationsTitle: "认证",
-    cert1Title: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
-    cert2Title: "Microsoft Certified: Azure Data Fundamentals (DP-900)",
-    cert3Title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
+    cert1Title:
+      "Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)",
+    cert2Title:
+      "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
+    cert3Title:
+      "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
     cert4Title: "Tableau Certified Data Analyst (TDA-C01)",
     cert5Title: "Alteryx Designer Advanced Certification",
     viewBadge: "查看认证",
@@ -173,28 +212,37 @@ const translations = {
     pageTitle: "Michael's Portfolio",
     navbarTitle: "Michael Neang",
     heroSubtitle: "분석 • 통찰 • 임팩트",
+
     aboutDetailTitle: "소개",
-    aboutDetail1: "저는 정보 시스템과 운영 관리 배경을 바탕으로, 최근에는 헬스케어 및 의료기기 분야에서 데이터 분석가로 활동하고 있습니다. 영업 운영과 공급망 프로젝트를 지원하며, 데이터를 통해 비즈니스 상황을 입체적으로 파악하고 실행 가능한 인사이트를 도출해왔습니다. 기술과 전략을 연결하는 데서 보람을 느끼며, 항상 더 나은 의사결정을 위한 해답을 찾고자 노력하고 있습니다.",
-    aboutDetail2: "비교적 이른 커리어 단계에 있지만, 꾸준한 성장과 배움을 중시하며 다양한 산업 분야에서 역량을 넓히고 있습니다. 조용한 열정과 호기심으로 새로운 도전에 임하고 있으며, 향후에는 데이터 엔지니어 또는 데이터 사이언티스트로 발전해 조직에 더욱 깊이 있는 영향을 주는 전문가가 되고자 합니다.",
-    carouselCaption1: "전문적인 프로필 사진",
-    carouselCaption2: "도쿄 teamLab Borderless에서 기술과 예술을 경험하며",
-    carouselCaption3: "LA에서 일본 총영사님과 만남",
-    carouselCaption4: "Össur에서 데이터 분석가 첫 날",
+    aboutDetail1:
+      "정보 시스템과 운영 관리 배경을 바탕으로, 최근 Wintrust Specialty Finance에서 금융 서비스 데이터 활용을 주도했습니다. Power BI, Tableau, Microsoft Fabric 인증 보유, AI와 데이터 파이프라인으로 복잡함을 명료함으로 전환합니다.",
+    aboutDetail2:
+      "의료 분석부터 금융 모델링까지 호기심과 목적 의식으로 모든 과제에 임합니다. 데이터와 의사결정의 교차점에서 성장하며 데이터 엔지니어 혹은 데이터 과학자를 목표로 합니다.",
+
     prev: "이전",
     next: "다음",
+
     experienceTitle: "경력",
-    exp1Title: "Associate Data Analyst",
-    exp1Details: "2023년 2월 – 현재 | Irvine, CA",
-    exp2Title: "Global Supply Chain Intern",
-    exp2Details: "2022년 6월 – 9월 | Carson, CA",
-    exp3Title: "Internal Audit Analyst Intern",
-    exp3Details: "2021년 6월 – 8월 | Irvine, CA",
+    exp1Title: "비즈니스 애널리스트 — Wintrust Specialty Finance",
+    exp1Details: "2025년 6월 – 현재 | Irvine, CA",
+    exp2Title: "데이터 애널리스트 (영업 운영)",
+    exp2Details: "2023년 2월 – 2025년 6월 | Irvine, CA",
+    exp3Title: "글로벌 공급망 인턴",
+    exp3Details: "2022년 6월 – 9월 | Carson, CA",
+    exp4Title: "내부 감사 분석 인턴",
+    exp4Details: "2021년 6월 – 8월 | Irvine, CA",
+
     educationTitle: "학력",
-    educationText: "정보 시스템 및 운영 관리 전공 학사 | 2018년 8월 – 2022년 12월",
+    educationText:
+      "정보 시스템 및 운영 관리 학사 | 2018년 8월 – 2022년 12월",
+
     certificationsTitle: "자격증",
-    cert1Title: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
-    cert2Title: "Microsoft Certified: Azure Data Fundamentals (DP-900)",
-    cert3Title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
+    cert1Title:
+      "Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)",
+    cert2Title:
+      "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
+    cert3Title:
+      "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
     cert4Title: "Tableau Certified Data Analyst (TDA-C01)",
     cert5Title: "Alteryx Designer Advanced Certification",
     viewBadge: "배지 보기",
