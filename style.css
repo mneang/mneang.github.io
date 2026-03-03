@@ -25,24 +25,6 @@ body {
   line-height: 1.85;
 }
 
-/* “Value strip” chips (not a skills section) */
-.value-strip {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-.chip {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.35rem 0.7rem;
-  border-radius: 999px;
-  background: rgba(0, 123, 255, 0.10);
-  border: 1px solid rgba(0, 123, 255, 0.20);
-  color: #0b5ed7;
-  font-size: 0.95rem;
-  font-weight: 500;
-}
-
 /* Carousel: lock height & keep layout stable */
 .vertical-carousel {
   height: 560px;
