@@ -1,50 +1,61 @@
-// Revised script.js for Michael's Portfolio
+// script.js (multilingual)
 
 const translations = {
   en: {
     pageTitle: "Michael's Portfolio",
     navbarTitle: "Michael Neang",
-    heroSubtitle: "Analytics | Insights | Impact",
+    heroSubtitle: "Analytics • Insights • Impact",
 
-    aboutDetailTitle: "About Me",
+    aboutDetailTitle: "About",
     aboutDetail1:
-      "Building on my foundation in Information Systems and Operations Management, I blend analytical rigor with business strategy—most recently driving impact in financial services at Wintrust Specialty Finance. Certified in Power BI, Tableau, and Microsoft Fabric, I harness AI and data pipelines to translate complexity into clarity.",
+      "I partner with teams at the intersection of business, operations, and data—turning messy inputs into clean reporting, reliable pipelines, and decisions people can move on.",
     aboutDetail2:
-      "From healthcare analytics to financial modeling, I immerse myself in every challenge with curiosity and purpose. I thrive at the intersection of data and decision-making, continually evolving toward roles as a data engineer or data scientist. Let’s unlock insights that power smarter growth.",
+      "Today I’m a Business Analyst / Data Administrator at Wintrust Specialty Finance, building clarity across workflows and stakeholders. I’m especially interested in practical AI and modern analytics platforms—shipping solutions that stay grounded in what the business actually needs.",
+
+    valueChip1: "Business Analytics",
+    valueChip2: "AI Transformation",
+    valueChip3: "Microsoft Fabric",
+    valueChip4: "Power BI",
+    valueChip5: "SQL & Automation",
+
+    carouselCaption1: "Professional headshot",
+    carouselCaption2: "Tokyo teamLab Borderless — digital systems, human experience",
+    carouselCaption3: "A moment of connection — LA",
+    carouselCaption4: "Dotonbori, Osaka — energy, systems, motion",
 
     prev: "Previous",
     next: "Next",
 
     experienceTitle: "Experience",
-    exp1Title: "Business Analyst – Wintrust Specialty Finance",
+    exp1Title: "Business Analyst / Data Administrator",
     exp1Details: "Jun 2025 – Present | Irvine, CA",
+    exp1Note: "Business operations • reporting • data governance • automation",
     exp2Title: "Data Analyst (Sales Operations)",
     exp2Details: "Feb 2023 – Jun 2025 | Irvine, CA",
+    exp2Note: "Pricing analytics • data quality • stakeholder reporting",
     exp3Title: "Global Supply Chain Intern",
     exp3Details: "Jun 2022 – Sep 2022 | Carson, CA",
+    exp3Note: "Dashboards • process improvement • data accuracy",
     exp4Title: "Internal Audit Analyst Intern",
     exp4Details: "Jun 2021 – Aug 2021 | Irvine, CA",
+    exp4Note: "Root-cause analysis • controls • client communication",
 
     educationTitle: "Education",
     educationText:
-      "BBA in Management Information Systems & Operations Management | Aug 2018 – Dec 2022",
+      "BBA in Management Information Systems & Operations Management | Aug 2018 - Dec 2022",
 
     certificationsTitle: "Certifications",
-    cert1Title:
-      "Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)",
-    cert2Title:
-      "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
-    cert3Title:
-      "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
-    cert4Title:
-      "Tableau Certified Data Analyst (TDA-C01)",
-    cert5Title: "Alteryx Designer Advanced Certification",
+    cert1Title: "Microsoft Certified: AI Transformation Leader (AB-731)",
+    cert2Title: "Microsoft Certified: Fabric Data Engineer Associate (DP-700)",
+    cert3Title: "Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)",
+    cert4Title: "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
+    cert5Title: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
+    cert6Title: "Tableau Certified Data Analyst (TDA-C01)",
     viewBadge: "View Badge",
 
     projectsTitle: "Projects",
     proj1Title: "Snapdragon AI: Multilingual Translator",
-    proj1Award:
-      "2nd Place out of 27 – Windows on Snapdragon AI Hackathon",
+    proj1Award: "2nd Place out of 27 – Windows on Snapdragon AI Hackathon",
     proj1Text:
       "An innovative on-device translator for Snapdragon that offers real-time, offline translation between English, Japanese, Korean, and Chinese using optimized AI and Python.",
     proj2Title: "Sakura Guide さくらガイド",
@@ -57,27 +68,22 @@ const translations = {
     proj4Text:
       "A thoughtfully designed dashboard built with SQL, Excel, and Tableau that reveals trends in retail performance, empowering strategic decisions.",
     proj5Title: "SmartAInventory",
-    proj5Award:
-      "Top 13 out of 83 – Microsoft Fabric and AI Learning Hackathon",
+    proj5Award: "Top 13 out of 83 – Microsoft Fabric and AI Learning Hackathon",
     proj5Text:
       "A dynamic inventory management system built with Microsoft Fabric, Power BI, and Azure OpenAI that forecasts demand, minimizes risk, and supports agile, insight-led decision-making.",
 
-    skillsTitle: "Key Competencies",
-    skillsVisTitle: "Data Visualization & Reporting",
-    skillsAnalysisTitle: "Data Analysis & Manipulation",
-    skillsDBTitle: "Database & Cloud Technologies",
-    skillsExcelTitle: "Excel & Automation",
-    skillsGeneralTitle: "General Software",
+    skillsUsedLabel: "Skills Used:",
 
-    contactTitle: "Get in Touch",
+    contactTitle: "Contact",
     contactNameLabel: "Name:",
     contactEmailLabel: "Email:",
     contactMessageLabel: "Message:",
     sendMessageBtn: "Send Message",
 
     viewOnGitHub: "View on GitHub",
-    footerText: "© 2025 Michael Neang. All rights reserved."
+    footerText: "© 2026 Michael Neang. All rights reserved."
   },
+
   ja: {
     pageTitle: "Michael's Portfolio",
     navbarTitle: "Michael Neang",
@@ -85,64 +91,82 @@ const translations = {
 
     aboutDetailTitle: "イントロダクション",
     aboutDetail1:
-      "情報システムとオペレーションマネジメントを基盤に、分析とビジネス戦略を融合。最近ではWintrust Specialty Financeで金融サービスのデータ活用を推進し、Power BI、Tableau、Microsoft Fabric の認定を取得。AIとデータパイプラインで複雑な情報を明瞭なインサイトに転換します。",
+      "ビジネス・オペレーション・データの交差点で、曖昧な情報を整え、判断できる形へ落とし込みます。レポーティングだけでなく、運用に根づく“使われる仕組み”を作ることを重視しています。",
     aboutDetail2:
-      "医療分析から金融モデリングまで、好奇心と目的意識をもってあらゆる課題に取り組んでいます。データと意思決定の交差点で成長を続け、データエンジニアやデータサイエンティストへの進化を目指します。",
+      "現在はWintrust Specialty FinanceでBusiness Analyst / Data Administratorとして、業務フローとステークホルダーの間に「見える化」と整合性をつくっています。実務に効くAIと最新の分析基盤に関心があり、机上ではなく現場で役立つ形で届けます。",
+
+    valueChip1: "業務分析",
+    valueChip2: "AI 変革",
+    valueChip3: "Microsoft Fabric",
+    valueChip4: "Power BI",
+    valueChip5: "SQL・自動化",
+
+    carouselCaption1: "プロフィール写真",
+    carouselCaption2: "teamLab Borderless（東京）— 体験とシステムの融合",
+    carouselCaption3: "LAでの交流",
+    carouselCaption4: "道頓堀（大阪）— 流れと熱量",
 
     prev: "前へ",
     next: "次へ",
 
     experienceTitle: "経験",
-    exp1Title: "ビジネスアナリスト — Wintrust Specialty Finance",
+    exp1Title: "ビジネスアナリスト／データ管理",
     exp1Details: "2025年6月〜現在 | Irvine, CA",
+    exp1Note: "業務運用 • レポーティング • ガバナンス • 自動化",
     exp2Title: "データアナリスト（営業オペレーション）",
     exp2Details: "2023年2月〜2025年6月 | Irvine, CA",
+    exp2Note: "価格分析 • データ品質 • ステークホルダー向け可視化",
     exp3Title: "グローバルサプライチェーン・インターン",
     exp3Details: "2022年6月〜9月 | Carson, CA",
+    exp3Note: "ダッシュボード • 業務改善 • 精度向上",
     exp4Title: "内部監査分析インターン",
     exp4Details: "2021年6月〜8月 | Irvine, CA",
+    exp4Note: "原因分析 • 統制 • コミュニケーション",
 
     educationTitle: "学歴",
     educationText:
       "経営情報システム＆オペレーションマネジメント学士 | 2018年8月〜2022年12月",
 
     certificationsTitle: "認定資格",
-    cert1Title:
-      "Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)",
-    cert2Title:
-      "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
-    cert3Title:
-      "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
-    cert4Title: "Tableau Certified Data Analyst (TDA-C01)",
-    cert5Title: "Alteryx Designer Advanced Certification",
+    cert1Title: "マイクロソフト認定: AI 変革リーダー (AB-731)",
+    cert2Title: "マイクロソフト認定資格: Fabric データ エンジニア アソシエイト (DP-700)",
+    cert3Title: "マイクロソフト認定: ファブリック分析エンジニア アソシエイト (DP-600)",
+    cert4Title: "マイクロソフト認定: Azure AI エンジニア アソシエイト (AI-102)",
+    cert5Title: "マイクロソフト認定: Power BI データアナリスト アソシエイト資格 (PL-300)",
+    cert6Title: "Tableau Certified Data Analyst (TDA-C01)",
     viewBadge: "認定証を見る",
+
     projectsTitle: "プロジェクト",
     proj1Title: "Snapdragon AI: 多言語翻訳機",
     proj1Award: "全27チーム中2位 – Windows on Snapdragon AI Hackathon",
-    proj1Text: "最先端のAIとPythonを駆使し、英語、日本語、韓国語、中国語間のリアルタイム・オフライン翻訳を実現する多言語オンデバイス翻訳機。効率的で迅速、控えめに力強い。",
+    proj1Text:
+      "Snapdragon向けのオンデバイス翻訳。最適化したAIとPythonで多言語をリアルタイム・オフライン対応。",
     proj2Title: "Sakura Guide さくらガイド",
-    proj2Text: "洗練された日本旅行の伴侶。最新のデザインとリアルタイムガイダンスを融合し、優雅なバイリンガルの旅行インサイトを提供します。",
+    proj2Text:
+      "デザインとリアルタイム情報を統合した日本旅行アシスタント。言語と場所に合わせて案内します。",
     proj3Title: "Supply Chain Optimization",
-    proj3Text: "Pythonを活用し、サプライヤーのリードタイムと在庫リスクの非効率性を明らかにし、具体的で実践的な洞察を提供します。",
+    proj3Text:
+      "Pythonでリードタイムと在庫リスクを分析し、意思決定につながる示唆を整理。",
     proj4Title: "Retail Superstore Analysis",
-    proj4Text: "SQL、Excel、Tableauを駆使して構築された小売パフォーマンスのダッシュボード。傾向とパターンを解析し、戦略的な判断をサポートします。",
+    proj4Text:
+      "SQL/Excel/Tableauで小売の傾向を可視化し、実務に使えるダッシュボードへ。",
     proj5Title: "SmartAInventory",
     proj5Award: "全83チーム中上位13位 – Microsoft Fabric and AI Learning Hackathon",
-    proj5Text: "Microsoft Fabric、Power BI、Azure OpenAIを用いたデータ駆動型在庫管理システム。需要予測とリスク低減を実現し、柔軟な意思決定を支援します。",
-    skillsTitle: "主要スキル",
-    skillsVisTitle: "データ可視化 & レポーティング",
-    skillsAnalysisTitle: "データ分析 & 報告",
-    skillsDBTitle: "データベース & クラウド技術",
-    skillsExcelTitle: "Excel & 自動化",
-    skillsGeneralTitle: "一般ソフトウェア",
+    proj5Text:
+      "Microsoft FabricとAIで需要予測と在庫判断を支える仕組みを設計。",
+
+    skillsUsedLabel: "使用スキル:",
+
     contactTitle: "コンタクト",
     contactNameLabel: "お名前:",
     contactEmailLabel: "メール:",
     contactMessageLabel: "メッセージ:",
     sendMessageBtn: "送信する",
-    footerText: "© 2025 Michael Neang. All rights reserved.",
-    viewOnGitHub: "GitHubで見る"
+
+    viewOnGitHub: "GitHubで見る",
+    footerText: "© 2026 Michael Neang. All rights reserved."
   },
+
   zh: {
     pageTitle: "Michael's Portfolio",
     navbarTitle: "Michael Neang",
@@ -150,64 +174,82 @@ const translations = {
 
     aboutDetailTitle: "关于我",
     aboutDetail1:
-      "凭借信息系统与运营管理背景，我将分析严谨性与商业战略相结合——最近在 Wintrust Specialty Finance 推动金融服务的数据应用。已获 Power BI、Tableau、Microsoft Fabric 认证，擅长用 AI 和数据管道将复杂数据转化为清晰洞察。",
+      "我在业务、运营与数据的交汇处工作：把零散信息整理成可信的报表与可复用的流程，让团队能够更快做出判断并落地行动。我更看重“能被用起来”的体系，而不是只停留在展示。",
     aboutDetail2:
-      "从医疗分析到金融建模，我始终以好奇心与使命感迎接每个挑战。在数据与决策的交汇处不断进阶，志在成为数据工程师或数据科学家。",
+      "目前我在 Wintrust Specialty Finance 担任 Business Analyst / Data Administrator，致力于打通流程与协作，让数据口径更统一、决策更清晰。我尤其关注可落地的 AI 与现代分析平台——用贴近业务的方式交付价值。",
+
+    valueChip1: "业务分析",
+    valueChip2: "AI 转型",
+    valueChip3: "Microsoft Fabric",
+    valueChip4: "Power BI",
+    valueChip5: "SQL 与自动化",
+
+    carouselCaption1: "职业头像",
+    carouselCaption2: "东京 teamLab Borderless：科技与艺术的融合",
+    carouselCaption3: "洛杉矶的一次交流",
+    carouselCaption4: "大阪道顿堀：系统与节奏",
 
     prev: "上一张",
     next: "下一张",
 
     experienceTitle: "经历",
-    exp1Title: "商务分析师 — Wintrust Specialty Finance",
+    exp1Title: "业务分析师 / 数据管理员",
     exp1Details: "2025年6月 – 现在 | Irvine, CA",
+    exp1Note: "业务运营 • 报表体系 • 数据治理 • 自动化",
     exp2Title: "数据分析师（销售运营）",
     exp2Details: "2023年2月 – 2025年6月 | Irvine, CA",
+    exp2Note: "定价分析 • 数据质量 • 决策支持",
     exp3Title: "全球供应链实习生",
     exp3Details: "2022年6月 – 9月 | Carson, CA",
+    exp3Note: "仪表板 • 流程优化 • 数据准确性",
     exp4Title: "内部审计分析实习生",
     exp4Details: "2021年6月 – 8月 | Irvine, CA",
+    exp4Note: "根因分析 • 风控 • 沟通协作",
 
     educationTitle: "教育背景",
     educationText:
       "管理信息系统与运营管理学士 | 2018年8月 – 2022年12月",
 
     certificationsTitle: "认证",
-    cert1Title:
-      "Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)",
-    cert2Title:
-      "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
-    cert3Title:
-      "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
-    cert4Title: "Tableau Certified Data Analyst (TDA-C01)",
-    cert5Title: "Alteryx Designer Advanced Certification",
+    cert1Title: "Microsoft认证：AI 转型领导者 (AB-731)",
+    cert2Title: "Microsoft 认证：Fabric 数据工程师助理 (DP-700)",
+    cert3Title: "Microsoft 认证: Fabric Analytics Engineer Associate (DP-600)",
+    cert4Title: "Microsoft认证：Azure AI 工程师助理 (AI-102)",
+    cert5Title: "Microsoft认证：Power BI 数据分析师助理 (PL-300)",
+    cert6Title: "Tableau Certified Data Analyst (TDA-C01)",
     viewBadge: "查看认证",
+
     projectsTitle: "项目",
-    proj1Title: "Snapdragon AI: 多语种翻译器",
+    proj1Title: "Snapdragon AI：多语种翻译器",
     proj1Award: "27队中第2名 – Windows on Snapdragon AI Hackathon",
-    proj1Text: "专为Snapdragon打造的多语种设备内翻译器，实现英语、日语、韩语及中文之间的实时离线翻译，采用高效AI与Python。轻便、快速且低调强大。",
+    proj1Text:
+      "面向 Snapdragon 的端侧翻译器，AI + Python 实现多语种离线实时翻译。",
     proj2Title: "Sakura Guide さくらガイド",
-    proj2Text: "为日本之行量身定制的贴心伴侣，融合JavaScript、设计与实时引导，提供优雅且基于位置的双语旅行洞察。",
+    proj2Text:
+      "面向日本旅行的轻量助手：结合设计与实时信息，提供双语、位置相关的引导。",
     proj3Title: "Supply Chain Optimization",
-    proj3Text: "利用Python深入分析供应商交货期与库存风险，识别低效环节，并通过清晰的数据洞察支持更优规划。",
+    proj3Text:
+      "用 Python 分析供应商交期与库存风险，输出可执行的规划建议。",
     proj4Title: "Retail Superstore Analysis",
-    proj4Text: "基于SQL、Excel和Tableau构建的零售绩效仪表板，揭示关键模式与趋势，为智能商业决策提供支持。",
+    proj4Text:
+      "SQL/Excel/Tableau 搭建零售分析看板，提炼趋势并支持决策。",
     proj5Title: "SmartAInventory",
     proj5Award: "83队中前13名 – Microsoft Fabric and AI Learning Hackathon",
-    proj5Text: "采用Microsoft Fabric、Power BI和Azure OpenAI构建的数据驱动库存系统，实现需求预测、风险降低及敏捷决策。",
-    skillsTitle: "核心技能",
-    skillsVisTitle: "数据可视化 & 报告",
-    skillsAnalysisTitle: "数据分析 & 报告",
-    skillsDBTitle: "数据库 & 云技术",
-    skillsExcelTitle: "Excel & 自动化",
-    skillsGeneralTitle: "常用软件",
+    proj5Text:
+      "基于 Microsoft Fabric 的库存决策系统：预测需求、降低风险、提升响应。",
+
+    skillsUsedLabel: "使用技术:",
+
     contactTitle: "联系我",
-    contactNameLabel: "电子邮件:",
-    contactEmailLabel: "电子邮件:",
+    contactNameLabel: "姓名:",
+    contactEmailLabel: "邮箱:",
     contactMessageLabel: "留言:",
-    sendMessageBtn: "发送消息",
-    footerText: "© 2025 Michael Neang. All rights reserved.",
-    viewOnGitHub: "在 GitHub 查看"
+    sendMessageBtn: "发送",
+
+    viewOnGitHub: "在 GitHub 查看",
+    footerText: "© 2026 Michael Neang. All rights reserved."
   },
+
   ko: {
     pageTitle: "Michael's Portfolio",
     navbarTitle: "Michael Neang",
@@ -215,68 +257,87 @@ const translations = {
 
     aboutDetailTitle: "소개",
     aboutDetail1:
-      "정보 시스템과 운영 관리 배경을 바탕으로, 최근 Wintrust Specialty Finance에서 금융 서비스 데이터 활용을 주도했습니다. Power BI, Tableau, Microsoft Fabric 인증 보유, AI와 데이터 파이프라인으로 복잡함을 명료함으로 전환합니다.",
+      "저는 비즈니스·운영·데이터의 교차점에서 일합니다. 흩어진 정보를 정리해 신뢰할 수 있는 리포트와 재사용 가능한 흐름으로 만들고, 팀이 더 빠르게 실행할 수 있도록 돕습니다. 보여주기보다 실제로 ‘쓰이는’ 체계를 만드는 데 집중합니다.",
     aboutDetail2:
-      "의료 분석부터 금융 모델링까지 호기심과 목적 의식으로 모든 과제에 임합니다. 데이터와 의사결정의 교차점에서 성장하며 데이터 엔지니어 혹은 데이터 과학자를 목표로 합니다.",
+      "현재 Wintrust Specialty Finance에서 Business Analyst / Data Administrator로 일하며 프로세스와 협업 사이의 ‘정합성’과 ‘가시성’을 구축하고 있습니다. 특히 실무에 바로 적용되는 AI와 현대적 분석 플랫폼에 관심이 많고, 비즈니스에 맞는 형태로 빠르게 전달합니다.",
+
+    valueChip1: "비즈니스 분석",
+    valueChip2: "AI 혁신",
+    valueChip3: "Microsoft Fabric",
+    valueChip4: "Power BI",
+    valueChip5: "SQL·자동화",
+
+    carouselCaption1: "프로필 사진",
+    carouselCaption2: "도쿄 teamLab Borderless — 기술과 경험",
+    carouselCaption3: "LA에서의 한 장면",
+    carouselCaption4: "오사카 도톤보리 — 흐름과 에너지",
 
     prev: "이전",
     next: "다음",
 
     experienceTitle: "경력",
-    exp1Title: "비즈니스 애널리스트 — Wintrust Specialty Finance",
+    exp1Title: "비즈니스 애널리스트 / 데이터 관리자",
     exp1Details: "2025년 6월 – 현재 | Irvine, CA",
-    exp2Title: "데이터 애널리스트 (영업 운영)",
+    exp1Note: "업무 운영 • 리포팅 • 데이터 거버넌스 • 자동화",
+    exp2Title: "데이터 애널리스트(영업 운영)",
     exp2Details: "2023년 2월 – 2025년 6월 | Irvine, CA",
+    exp2Note: "가격 분석 • 데이터 품질 • 의사결정 지원",
     exp3Title: "글로벌 공급망 인턴",
     exp3Details: "2022년 6월 – 9월 | Carson, CA",
+    exp3Note: "대시보드 • 프로세스 개선 • 정확도 향상",
     exp4Title: "내부 감사 분석 인턴",
     exp4Details: "2021년 6월 – 8월 | Irvine, CA",
+    exp4Note: "근본 원인 분석 • 통제 • 커뮤니케이션",
 
     educationTitle: "학력",
     educationText:
-      "정보 시스템 및 운영 관리 학사 | 2018년 8월 – 2022년 12월",
+      "경영정보시스템 & 운영관리 학사 | 2018년 8월 – 2022년 12월",
 
     certificationsTitle: "자격증",
-    cert1Title:
-      "Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)",
-    cert2Title:
-      "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
-    cert3Title:
-      "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
-    cert4Title: "Tableau Certified Data Analyst (TDA-C01)",
-    cert5Title: "Alteryx Designer Advanced Certification",
+    cert1Title: "Microsoft 인증: 인공지능 혁신 리더 (AB-731)",
+    cert2Title: "Microsoft 인증: Fabric Data Engineer Associate (DP-700)",
+    cert3Title: "Microsoft 인증: 패브릭 분석 엔지니어 어소시에이트 (DP-600)",
+    cert4Title: "Microsoft 인증: Azure AI 엔지니어 준회원 (AI-102)",
+    cert5Title: "Microsoft 인증: Power BI 데이터 분석 전문가 어소시에이트 (PL-300)",
+    cert6Title: "Tableau Certified Data Analyst (TDA-C01)",
     viewBadge: "배지 보기",
+
     projectsTitle: "프로젝트",
     proj1Title: "Snapdragon AI: 다국어 번역기",
     proj1Award: "총 27팀 중 2위 – Windows on Snapdragon AI Hackathon",
-    proj1Text: "Snapdragon용으로 개발된 다국어 번역기. 영어, 일본어, 한국어, 중국어 간의 실시간 오프라인 번역을 지원하며, 최적화된 AI와 Python 기반으로 제작. 빠르고 안정적인 성능 제공.",
+    proj1Text:
+      "Snapdragon용 온디바이스 번역기. AI + Python으로 다국어 오프라인 실시간 번역 지원.",
     proj2Title: "Sakura Guide さくらガイド",
-    proj2Text: "일본 여행자를 위한 감성적인 가이드. JavaScript, 디자인, 위치 기반 기능을 활용해, 실시간으로 양방향 정보를 제공하는 우아한 동반자입니다.",
+    proj2Text:
+      "일본 여행을 위한 가벼운 동반자. 디자인과 실시간 정보를 결합해 양언어·위치 기반 안내 제공.",
     proj3Title: "Supply Chain Optimization",
-    proj3Text: "공급업체 리드 타임과 재고 리스크를 Python으로 분석하여 비효율을 찾아내고, 명확한 데이터 인사이트로 계획을 최적화한 프로젝트입니다.",
+    proj3Text:
+      "Python으로 리드타임과 재고 리스크를 분석해 계획 수립에 필요한 인사이트 도출.",
     proj4Title: "Retail Superstore Analysis",
-    proj4Text: "SQL, Excel, Tableau로 구축한 리테일 분석 대시보드. 실적 흐름과 트렌드를 파악하여 전략적 의사결정을 지원합니다.",
+    proj4Text:
+      "SQL/Excel/Tableau로 리테일 성과를 시각화하고 추세를 분석.",
     proj5Title: "SmartAInventory",
     proj5Award: "총 83팀 중 상위 13위 – Microsoft Fabric and AI Learning Hackathon",
-    proj5Text: "Microsoft Fabric, Power BI, Azure OpenAI 기반의 재고 시스템. 수요 예측과 리스크 감소를 통해 민첩하고 전략적인 운영을 지원합니다.",
-    skillsTitle: "핵심 역량",
-    skillsVisTitle: "데이터 시각화 및 리포팅",
-    skillsAnalysisTitle: "데이터 분석 및 가공",
-    skillsDBTitle: "데이터베이스 및 클라우드",
-    skillsExcelTitle: "Excel 및 자동화",
-    skillsGeneralTitle: "일반 소프트웨어",
-    contactTitle: "문의하기",
+    proj5Text:
+      "Microsoft Fabric 기반 재고 의사결정 시스템: 수요 예측, 리스크 감소, 빠른 대응 지원.",
+
+    skillsUsedLabel: "사용 기술:",
+
+    contactTitle: "문의",
     contactNameLabel: "이름:",
     contactEmailLabel: "이메일:",
     contactMessageLabel: "메시지:",
     sendMessageBtn: "보내기",
-    footerText: "© 2025 Michael Neang. All rights reserved.",
-    viewOnGitHub: "GitHub에서 보기"
+
+    viewOnGitHub: "GitHub 보기",
+    footerText: "© 2026 Michael Neang. All rights reserved."
   }
 };
 
 function updateTranslations(lang) {
-  const dict = translations[lang];
+  const dict = translations[lang] || translations.en;
+  document.title = dict.pageTitle;
+
   for (const key in dict) {
     const elements = document.querySelectorAll(`[data-key="${key}"]`);
     elements.forEach(el => {
@@ -286,29 +347,12 @@ function updateTranslations(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Set default language to English
   updateTranslations('en');
 
-  // Handle language switching
   const languageSelect = document.getElementById('languageSelect');
-  languageSelect.addEventListener('change', (e) => {
-    updateTranslations(e.target.value);
-  });
-
-  // Skills animation trigger
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    },
-    { threshold: 0.3 }
-  );
-
-  // Fade-in effect for skill badges
-  document.querySelectorAll("#skills .badge").forEach((badge) => {
-    observer.observe(badge);
-  });
+  if (languageSelect) {
+    languageSelect.addEventListener('change', (e) => {
+      updateTranslations(e.target.value);
+    });
+  }
 });
